@@ -5,17 +5,15 @@ const ATITPostmethod = async (req, res) => {
   const {
     fname,
     email,
-    password,
     phone,
-    text,
+    message,
   } = req.body;
   try {
     const newUser = new Sehema({
         fname,
         email,
-        password,
         phone,
-        text,
+        message,
     });
     const existingUser = await Sehema.findOne({ email });
 
