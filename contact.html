@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-md py-0 col-lg-10 col-md-11  mx-auto">
             <div class="container-fluid p-0" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom"
                 data-aos-duration="500">
-                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="#">
                     <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,11 +39,16 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">course</a>
-                            
+                            <div><a class="nav-link cursor">Courses</a></div>
+                            <div class="nav-drop">
+                                <a class="nav-link" href="#">Software Developement</a>
+                                <a class="nav-link" href="#">Software Testing</a>
+                                <a class="nav-link" href="#">Devops</a>
+                                <a class="nav-link" href="#">Machine Learning & AI</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">palacement</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -94,13 +99,11 @@
             </div>
         </div>
     </section>
-
-    <!-- ======= Footer from  dev ======= -->
     <footer id="footer" class="footer pt-5 pb-3">
 
         <div class="container">
             <div class="row gy-3 mt-4">
-                <div class="col-lg-3 col-md-6 d-flex">
+                <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-duration="700">
                     <i class="bi bi-geo-alt icon"></i>
                     <div>
                         <h4>Address</h4>
@@ -114,7 +117,7 @@
 
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                <div class="col-lg-3 col-md-6 footer-links d-flex"  data-aos="fade-up" data-aos-duration="800">
                     <i class="bi bi-telephone icon"></i>
                     <div>
                         <h4>Reservations</h4>
@@ -128,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
+                <div class="col-lg-3 col-md-6 footer-links d-flex"  data-aos="fade-up" data-aos-duration="900">
                     <i class="bi bi-clock icon"></i>
                     <div class="text-decoration-none">
                         <h4>Skills</h4>
@@ -145,7 +148,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-3 col-md-6 footer-links"  data-aos="fade-up" data-aos-duration="1000">
                     <h4>Follow Us</h4>
                     <div class="social-links d-flex">
                         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -164,8 +167,15 @@
 
         </div>
 
-    </footer><!-- End Footer -->
+        <!-- //only comes last // -->
 
+        <div id="rocket-container" data-aos="zoom-in">
+            <img src="./assets/imagesandvectors/vectors/gif1.gif" alt="Rocket" id="rocket">
+        </div>
+
+    </footer>
+
+  
     <!-- <div class="topArrow shadow "><a href="#" class="scroll-top d-flex align-items-end display-4"><i
             class="bi bi-arrow-up-short"></i></a>
         </div> -->
@@ -174,7 +184,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-        <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/contact.js"></script>
+  
 </body>
 
 </html>
