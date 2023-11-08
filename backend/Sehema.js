@@ -13,7 +13,7 @@ const EmployerSchema = new Schema({
   phone: {
     type: Number
   },
-  text: {
+  message: {
     type: String
   }
 });

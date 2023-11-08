@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
         integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -43,7 +40,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">course</a>
-
+                            
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">palacement</a>
@@ -53,63 +50,50 @@
             </div>
         </nav>
     </div>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-5">
+                    <h6 class="text-center mt-5 display-5 fw-semibold text-white display-6">Get Your Business Boom in
+                        the Digital World</h6>
+                    <h4 class="text-white mx-5 mt-5 ">Put yourself in the driver's seat, we will fuel up
+                        your strong online presence today.</h4>
+                </div>
 
-    <div class="container">
-        <section class="atit-box">
-            <div class="container">
-                <div class="card-container">
-                    <div class="atit-card row">
-                        <div class="atit-card-1 col-md-3 ">
-                            <div class="slide-service-item">
+                <div class="col-md-4 mt-3 d-flex justify-content-end">
+                    <section class="vh-100 mt-5">
+                        <div class="row d-flex justify-content-center align-items-center text-capitalize">
+                            <div class="card shadow-2-strong text-capitalize" style="border-radius: 1rem;">
+                                <div class="card-body text-center text-capitalize mb-2 ">
+                                    <form id="contactForm">
+                                        <input type="text" name="fname" id="fname"
+                                            class="form-control mt-3 mb-2  shadow-none border-0 rounded-0 border-bottom ps-0"
+                                            placeholder="Username">
 
-                                <div class="glyph">
-                                    <i class="fa-solid fa-rocket fa-lg"></i>
+                                        <input type="email" name="email" id="email"
+                                            class="form-control mt-3 mb-1 pb-2 shadow-none border-0 rounded-0 border-bottom ps-0"
+                                            placeholder="E-mail">
 
-                                    </i>
+                                        <input type="number" name="phone" id="phone"
+                                            class="form-control mt-3 mb-1 pb-2  shadow-none border-0 rounded-0 border-bottom ps-0"
+                                            placeholder="Phone-Number">
+
+                                        <textarea name="message"
+                                            class="form-control mt-3 mb-1 pb-2  shadow-none border-0 rounded-0 border-bottom ps-0"
+                                            placeholder="Message" name="message" id="message" rows="1"></textarea>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary form-control mb-2 ">Submit</button>
+                                        <p>We respect your <a href="#" class="text-danger text-decoration-none">privacy
+                                                policy </a>and we will never spam you</p>
+                                    </form>
+                                    <div id="output"></div>
                                 </div>
-                                <h3>Dedications</h3>
-                                <p>We are dedicated to helping you achieve your goals and reach your highest potential
-                                    needs to launching careers to experts elevating skills.</p>
                             </div>
                         </div>
-                        <div class="atit-card-1  col-md-3">
-                            <div class="slide-service-item">
-
-                                <div class="glyph"><i class="fa-solid fa-diagram-successor fa-lg"></i>
-
-                                </div>
-                                <h3>Practical Approach</h3>
-                                <p>We reinforce your understanding while also preparing you for the challenges.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="atit-card-1  col-md-3">
-                            <div class="slide-service-item">
-
-                                <div class="glyph"><i class="fa-regular fa-pen-to-square"></i>
-
-                                    </i></div>
-                                <h3>Experiences</h3>
-                                <p>What sets us apart is our commitment to providing a dynamic and immersive learning
-                                    experience.</p>
-                            </div>
-                        </div>
-                        <div class="atit-card-1  col-md-3">
-                            <div class="slide-service-item">
-
-                                <div class="glyph"><i class="fa-solid fa-business-time"></i>
-
-                                    </i></div>
-                                <h3>Technology Trends</h3>
-                                <p>At ATIT, we understand the importance of staying at the forefront of technology.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
 
     <!-- ======= Footer from  dev ======= -->
     <footer id="footer" class="footer pt-5 pb-3">
@@ -189,6 +173,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+        <script src="./assets/js/contact.js"></script>
 </body>
 
 </html>

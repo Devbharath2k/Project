@@ -13,7 +13,14 @@
     letter-spacing: .1em;
 }
 
-img {
+.linear-gradient-text {
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  /* Replace these colors with your desired gradient */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+ img {
     display: block;
     width: 100%;
 }
@@ -194,8 +201,8 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.hero-split-card {
-    height: 220px !important;
+.hero-split-card{
+    /* height: 400px; */
     cursor: pointer;
     height: 100%;
 }
@@ -211,11 +218,11 @@ img {
 .hero-split-card::before {
     position: absolute;
     content: '';
-    /* background: linear-gradient(180deg,rgba(218,57,43,0),rgba(218,57,43,0.8)); */
+    background: linear-gradient(180deg,rgba(218,57,43,0),rgba(218,57,43,0.8));
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition:  1s cubic-bezier(0.14, 0.4, 0.09, 0.99) ;
 }
 
 .hero-split-card:hover::before {
@@ -226,7 +233,7 @@ img {
     top: unset;
     text-align: center;
     height: 100%;
-    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition:  1s cubic-bezier(0.14, 0.4, 0.09, 0.99) ;
 }
 
 .hero-split-card:hover img {
@@ -377,19 +384,31 @@ img {
 }
 
 
+.primary-mb {
+    position: relative;
+    overflow: hidden;
+}
 .curve-top {
+  position: absolute;
+  top: -100px; /* Adjust the curve position as needed */
+  left: 0;
+  right: 0;
+  height: 200px; /* Adjust the curve height as needed */
+  background-color: #fff; /* Set the background color to match the page background or any color you prefer */
+  border-radius: 0 0 50% 50%; /* Create the curve effect */
+}
+  
+
+  .primary-mb::before {
+    content: "";
     position: absolute;
-    top: -100px;
-    /* Adjust the curve position as needed */
+    top: -100px; /* Adjust the curve position */
     left: 0;
     right: 0;
-    height: 200px;
-    /* Adjust the curve height as needed */
-    background-color: #fff;
-    /* Set the background color to match the page background or any color you prefer */
-    border-radius: 0 0 50% 50%;
-    /* Create the curve effect */
-}
+    height: 200px; /* Adjust the curve height */
+    background-color: #fff; /* Set the background color to match the page background */
+    border-radius: 50%;
+  }
 
 /* nivetha knowledge starts---------- */
 
@@ -445,6 +464,7 @@ img {
     background: #f1d5db;
     overflow: hidden;
 }
+
 
 @keyframes statusRowFirst {
 
@@ -574,13 +594,6 @@ vertical-align: middle;
         transform: scale(1.2);
     }
 }
-
-@media(max-width:768px) {
-    .statusrow {
-        display: none;
-    }
-}
-
 /* nivetha knowledge ends---------- */
 
 /*jay----------------------------------------*/
@@ -633,13 +646,11 @@ vertical-align: middle;
     }
 }
 
-.whatwedo .d-flex.align-items-center {
+  .d-flex.align-items-center {
     display: flex;
     align-items: center;
-    height: 100px;
-}
-
-/* jai ends----- */
+  }
+  /* jai ends----- */
 
 /* saga-start */
 
@@ -798,6 +809,17 @@ vertical-align: middle;
 
 /* saga end */
 
+
+/* /contact from dev */
+.contact {
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("/assets/img/coworkers.jpg") fixed center center;
+    background-size: cover;
+    padding: 57px 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+
 /*dev footer */
 #footer {
     margin: 0;
@@ -813,11 +835,10 @@ vertical-align: middle;
 .contact {
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("img/coworkers.jpg") fixed center center;
     background-size: cover;
-    padding: 57px 0 !important;
+    padding: 57px 0 !important; 
     display: flex;
     justify-content: center;
 }
-
 .footer {
     font-size: 14px;
     background-color: #1f1f24;
