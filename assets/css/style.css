@@ -55,12 +55,22 @@ img {
     background-color: var(--primary-color);
 }
 
-.primary-mb{
+.primary-mb {
     margin-bottom: 100px;
+}
+
+.secondary-text{
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: var(--link-color);
 }
 
 .cursor {
     cursor: pointer;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 .shadow1 {
@@ -118,7 +128,8 @@ img {
     position: relative;
 }
 
-.nav-item:hover>.nav-drop , .nav-item:target>.nav-drop {
+.nav-item:hover>.nav-drop,
+.nav-item:target>.nav-drop {
     transform: none;
     top: calc(100% + 10px);
 }
@@ -285,12 +296,26 @@ img {
         transform: unset;
         margin: auto;
     }
-}
-    @media(min-width:992px){
-        .overflow-lg-visible{
-            overflow: visible !important;
-        }
+
+    .left-sec .left-go {
+        transform: none !important;
     }
+
+    .right-sec .right-go {
+        transform: none !important;
+    }
+    .hero-banner, .hero-split{
+        margin-bottom: 50px !important;
+    }
+
+}
+
+@media(min-width:992px) {
+    .overflow-lg-visible {
+        overflow: visible !important;
+    }
+
+}
 
 /* ////dev/// */
 
@@ -369,25 +394,21 @@ img {
 /* nivetha knowledge starts---------- */
 
 
-#DevelopmentProgram h2 {
-    color: var(--primary-color);
-}
-
 #DevelopmentProgram {
     background-color: #b9d8ea;
+    padding: 150px 0;
 }
 
 .DevelopmentProgram-content img {
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
 }
 
 .TechnicalSkills-container,
 .OurMission-container {
     position: relative;
-}
-
-.anim-wrapper {
-    margin-top: 6rem;
 }
 
 .TechnicalSkills-container .statusrow::after {
@@ -423,12 +444,6 @@ img {
     height: 0.4rem;
     background: #f1d5db;
     overflow: hidden;
-}
-
-.anim-wrapper p {
-    text-align: center;
-    max-width: 263px;
-    margin: 0 auto;
 }
 
 @keyframes statusRowFirst {
