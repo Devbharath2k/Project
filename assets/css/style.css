@@ -110,9 +110,10 @@
     font-weight: 400;
     background-color: var(--primary-color);
     letter-spacing: 0;
-    width: 120px;
+    width: 200px;
     padding: 10px;
-    background: white;
+    box-shadow: none;
+    background: transparent;
 }
 
 .nav-link.active,
