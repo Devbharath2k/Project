@@ -56,3 +56,7 @@ $(document).ready(function () {
         previousScroll = currentScroll;
     });
 });
+
+$('#rocket-container').click(function(){
+    $('html').animate({ scrollTop: 0 }, 'fast');
+})

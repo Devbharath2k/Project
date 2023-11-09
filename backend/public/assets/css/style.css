@@ -282,6 +282,7 @@ img {
     position: fixed;
     bottom: 10px;
     right: 0;
+    z-index: 999;
 }
 
 #rocket {
