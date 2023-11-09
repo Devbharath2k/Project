@@ -85,7 +85,7 @@
 }
 
 .nav-holder {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 678;
@@ -139,7 +139,7 @@
 .nav-item:hover>.nav-drop,
 .nav-item:target>.nav-drop {
     transform: none;
-    top: calc(100% + 10px);
+    top: calc(100% + 2px);
 }
 
 .nav-drop .nav-link {
@@ -206,6 +206,12 @@
     /* height: 400px; */
     cursor: pointer;
     height: 100%;
+    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transform: rotate(-10deg);
+}
+
+.hero-split-card:hover {
+    transform: rotate(0deg);
 }
 
 .hero-split-card img {
