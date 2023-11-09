@@ -17,6 +17,7 @@
 .linear-gradient-text {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent;
+    -webkit-background-clip: text;
 }
 
 img {
@@ -229,18 +230,18 @@ img {
     /* height: 400px; */
     cursor: pointer;
     height: 100%;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
     transform: rotate(-10deg);
 }
 
-.hero-split-card:hover {
+.hero-split-card:hover, .hero-split-card.active {
     transform: rotate(0deg);
 }
 
 .hero-split-card img {
     height: 100%;
     object-fit: cover;
-    transition: .5s ease-in;
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
     opacity: .5;
     object-position: top;
 }
@@ -249,10 +250,12 @@ img {
     position: absolute;
     content: '';
     background: linear-gradient(180deg, rgba(218, 57, 43, 0), rgba(218, 57, 43, 0.8));
+    background: linear-gradient(180deg, rgba(218, 57, 43, 0), rgb(2 16 24));
+    background: linear-gradient(180deg, rgb(0 0 0), rgb(0 0 0));
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
 }
 
 .hero-split-card:hover::before {
@@ -263,10 +266,10 @@ img {
     top: unset;
     text-align: center;
     height: 100%;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
 }
 
-.hero-split-card:hover img {
+.hero-split-card:hover img, .hero-split-card.active img {
     transform: scale(1.1);
     opacity: 1;
 }
@@ -281,6 +284,7 @@ img {
     position: fixed;
     bottom: 10px;
     right: 0;
+    z-index: 999;
 }
 
 #rocket {
@@ -310,14 +314,7 @@ img {
 .company-logos img {
     width: 120px;
     margin: auto;
-    filter: grayscale(1);
-    transition: .3s;
-    cursor: pointer;
 }
-.company-logos img:hover{
-    filter: grayscale(0);
-}
-
 @keyframes hero-right {
     0% {
         -webkit-transform: translateY(0) scaleX(1);
@@ -372,8 +369,6 @@ img {
 
 .linear-gradient-text {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
-    /* Replace these colors with your desired gradient */
-    -webkit-background-clip: text;
     color: transparent;
 }
 
@@ -522,7 +517,11 @@ img {
     background: #f1d5db;
     overflow: hidden;
 }
-
+@media (max-width: 768px){
+    .statusrow, .statusrow::after{
+        display: none;
+    }
+}
 
 @keyframes statusRowFirst {
 
@@ -653,11 +652,7 @@ vertical-align: middle;
     }
 }
 
-@media (max-width: 768px) {
-    .statusrow , .statusrow::after{
-                 display: none;
-    }
-}
+
 
 /* nivetha knowledge ends---------- */
 
@@ -718,7 +713,7 @@ vertical-align: middle;
 
 /* jai ends----- */
 
-/* saga-start */
+/* saga-start from about page */
 
 
 .atit-box .atit-card-1 {
@@ -873,7 +868,7 @@ vertical-align: middle;
     }
 }
 
-/* saga end */
+/* saga end form about page */
 
 
 /* /contact from dev */
@@ -885,6 +880,8 @@ vertical-align: middle;
     justify-content: center;
 }
 
+/* =========================================================================================================
+*lava */
 /*devops*/
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
@@ -1013,7 +1010,7 @@ vertical-align: middle;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 .coursesList #footer {
     margin: 0;
@@ -1023,6 +1020,7 @@ vertical-align: middle;
     text-decoration: none !important;
     list-style: none;
     transition: .3s;
+    overflow: hidden;
 }
 
 
@@ -1131,6 +1129,122 @@ vertical-align: middle;
     height: 50px;
     text-align: center;
 }
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+    padding: 80px 0;
+    background: url("../img/testimonials-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .testimonials::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.404);
+  }
+  
+  .testimonials .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .testimonials .testimonials-carousel,
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+  
+  .testimonials .testimonial-item {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-left,
+  .testimonials .testimonial-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 26px;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+  }
+  
+  .testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0.5;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffc451;
+    opacity: 1;
+  }
+  
+  @media (min-width: 1024px) {
+    .testimonials {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .testimonials .testimonial-item p {
+      width: 80%;
+    }
+  }
+
+
+
+
+
+
 
 
 /*dev footer */
