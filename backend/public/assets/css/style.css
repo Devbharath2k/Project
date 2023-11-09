@@ -229,18 +229,18 @@ img {
     /* height: 400px; */
     cursor: pointer;
     height: 100%;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
     transform: rotate(-10deg);
 }
 
-.hero-split-card:hover {
+.hero-split-card:hover, .hero-split-card.active {
     transform: rotate(0deg);
 }
 
 .hero-split-card img {
     height: 100%;
     object-fit: cover;
-    transition: .5s ease-in;
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
     opacity: .5;
     object-position: top;
 }
@@ -249,10 +249,12 @@ img {
     position: absolute;
     content: '';
     background: linear-gradient(180deg, rgba(218, 57, 43, 0), rgba(218, 57, 43, 0.8));
+    background: linear-gradient(180deg, rgba(218, 57, 43, 0), rgb(2 16 24));
+    background: linear-gradient(180deg, rgb(0 0 0), rgb(0 0 0));
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
 }
 
 .hero-split-card:hover::before {
@@ -263,10 +265,10 @@ img {
     top: unset;
     text-align: center;
     height: 100%;
-    transition: 1s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+    transition: .5s cubic-bezier(0.14, 0.4, 0.09, 0.99);
 }
 
-.hero-split-card:hover img {
+.hero-split-card:hover img, .hero-split-card.active img {
     transform: scale(1.1);
     opacity: 1;
 }
@@ -311,14 +313,7 @@ img {
 .company-logos img {
     width: 120px;
     margin: auto;
-    filter: grayscale(1);
-    transition: .3s;
-    cursor: pointer;
 }
-.company-logos img:hover{
-    filter: grayscale(0);
-}
-
 @keyframes hero-right {
     0% {
         -webkit-transform: translateY(0) scaleX(1);
@@ -1024,6 +1019,7 @@ vertical-align: middle;
     text-decoration: none !important;
     list-style: none;
     transition: .3s;
+    overflow: hidden;
 }
 
 
