@@ -13,7 +13,10 @@
     letter-spacing: .1em;
 }
 
+
 .linear-gradient-text {
+    background-image: linear-gradient(to right, #ff0000, #00ff00);
+    color: transparent;
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     /* Replace these colors with your desired gradient */
     -webkit-background-clip: text;
@@ -30,6 +33,7 @@ img {
     --link-color: #535353;
     --box-shadow1: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     --transition1: .3s cubic-bezier(0.02, 0.02, 0, 1.06);
+    --fam2: 'Jost', sans-serif;
 }
 
 .primary-header {
@@ -55,11 +59,20 @@ img {
     border-radius: 2rem;
     line-height: 1.5;
     transition: .3s;
+    background: transparent;
 }
 
 .primary-btn:hover {
     color: #ffffff;
     background-color: var(--primary-color);
+}
+
+.primary-text {
+    color: #343434;
+    /* font-family: var(--fam2); */
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .5px;
 }
 
 .primary-mb {
@@ -90,6 +103,20 @@ img {
     left: 0;
     z-index: 678;
     width: 100%;
+}
+
+.nav-animate {
+    transform: translate(0%, -100%);
+    transition: .5s;
+}
+
+.nav-holder.nav-fixed {
+    transform: translate(0%, 0%);
+    position: fixed;
+}
+
+.nav-holder.nav-fixed .navbar-brand {
+    display: none;
 }
 
 .nav-link,
@@ -258,6 +285,7 @@ img {
     position: fixed;
     bottom: 10px;
     right: 0;
+    z-index: 999;
 }
 
 #rocket {
@@ -282,6 +310,17 @@ img {
     background-size: contain;
     /* transform: rotate(359deg); */
     transform: scaleX(-1);
+}
+
+.company-logos img {
+    width: 120px;
+    margin: auto;
+    filter: grayscale(1);
+    transition: .3s;
+    cursor: pointer;
+}
+.company-logos img:hover{
+    filter: grayscale(0);
 }
 
 @keyframes hero-right {
@@ -348,6 +387,10 @@ img {
     box-shadow: 7px 5px 30px 0px rgba(0, 0, 0, 0.12);
     transition: .3s;
     cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatwedo .card:hover,
@@ -426,6 +469,9 @@ img {
     /* Set the background color to match the page background */
     border-radius: 50%;
 }
+
+
+
 
 /* nivetha knowledge starts---------- */
 
@@ -611,7 +657,6 @@ vertical-align: middle;
         transform: scale(1.3);
     }
 }
-
 /* nivetha knowledge ends---------- */
 
 /*jay----------------------------------------*/
@@ -968,6 +1013,8 @@ vertical-align: middle;
 }
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 .coursesList #footer {
     margin: 0;
     padding: 0;
@@ -1211,6 +1258,7 @@ vertical-align: middle;
     text-decoration: none !important;
     list-style: none;
     transition: .3s;
+    position: relative;
 }
 
 .footer {
@@ -1287,7 +1335,7 @@ vertical-align: middle;
 .footer .copyright {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .footer .credits {
@@ -1319,6 +1367,72 @@ a:hover {
     color: var(--primary-color);
 }
 
+/* nivetha lines starts----------- */
+
+
+.lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+  }
+  .line {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background: rgba(255, 255, 255, 0);
+      overflow: hidden;
+    }
+    
+    .line::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 15vh;
+      width: 100%;
+      top: -50%;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+      animation: drop 7s 0s infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    }
+    
+    .line:nth-child(1) {
+        
+        margin-left: -25%;
+      }
+      
+      .line:nth-child(3) {
+   
+        margin-left: 25%;
+      }
+    .line:nth-child(1)::after {
+      animation-delay: 2s;
+      margin-left: -25%;
+    }
+    
+    .line:nth-child(3)::after {
+      animation-delay: 2.5s;
+      margin-left: 25%;
+    }
+    
+    @keyframes drop {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 110%;
+      }
+    }
+    
+  /* nivetha line ends------------- */
+  
 
 /* nivetha howitworks starts about----------- */
 #atit-HowItWorks .HowItWorks-item {
