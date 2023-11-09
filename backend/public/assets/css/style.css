@@ -13,6 +13,9 @@
     letter-spacing: .1em;
 }
 
+body, *{
+    cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
+}
 
 .linear-gradient-text {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
