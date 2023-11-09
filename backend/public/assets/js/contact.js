@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             output.textContent = "All fields are required!";
             return;
         }
-console.log("name, email, phone, message",fname, email, phone, message)
+            console.log("name, email, phone, message",fname, email, phone, message)
         fetch("http://localhost:4000/api/post", {
             method: "POST",
             headers: {
@@ -27,9 +27,11 @@ console.log("name, email, phone, message",fname, email, phone, message)
         .then(apiData => {
             
             console.log(apiData);
+            alert("Form submitted successfully!")
             output.textContent = "Form submitted successfully!";
             // You can also reset the form here if needed
-            // form.reset();
+            form.reset();
+
         })
         .catch(error => {
             // Handle errors

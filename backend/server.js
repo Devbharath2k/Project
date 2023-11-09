@@ -7,7 +7,8 @@ const MoinPlug =require("./Router/router.js");
 require('dotenv').config();
 
 
-
+app.use(express.static('public'));
+// app.use(express.static('assets'));
 app.use(express.json());
 app.use(MoinPlug)
 app.use(cors());
