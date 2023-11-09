@@ -13,10 +13,9 @@
     letter-spacing: .1em;
 }
 
+
 .linear-gradient-text {
   background-image: linear-gradient(to right, #ff0000, #00ff00);
-  /* Replace these colors with your desired gradient */
-  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -417,6 +416,9 @@
     border-radius: 50%;
   }
 
+
+
+
 /* nivetha knowledge starts---------- */
 
 
@@ -601,6 +603,20 @@ vertical-align: middle;
         transform: scale(1.3);
     }
 }
+
+
+@media (max-width: 768px) {
+ 
+.statusrow , .statusrow::after{
+    display: none;
+}
+
+
+
+
+
+}
+
 /* nivetha knowledge ends---------- */
 
 /*jay----------------------------------------*/
@@ -1076,6 +1092,7 @@ vertical-align: middle;
     text-decoration: none !important;
     list-style: none;
     transition: .3s;
+    position: relative;
 }
 
 .footer {
@@ -1152,7 +1169,7 @@ vertical-align: middle;
 .footer .copyright {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .footer .credits {
@@ -1184,6 +1201,72 @@ a:hover {
     color: var(--primary-color);
 }
 
+/* nivetha lines starts----------- */
+
+
+.lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+  }
+  .line {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background: rgba(255, 255, 255, 0);
+      overflow: hidden;
+    }
+    
+    .line::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 15vh;
+      width: 100%;
+      top: -50%;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+      animation: drop 7s 0s infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    }
+    
+    .line:nth-child(1) {
+        
+        margin-left: -25%;
+      }
+      
+      .line:nth-child(3) {
+   
+        margin-left: 25%;
+      }
+    .line:nth-child(1)::after {
+      animation-delay: 2s;
+      margin-left: -25%;
+    }
+    
+    .line:nth-child(3)::after {
+      animation-delay: 2.5s;
+      margin-left: 25%;
+    }
+    
+    @keyframes drop {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 110%;
+      }
+    }
+    
+  /* nivetha line ends------------- */
+  
 
 /* nivetha howitworks starts about----------- */
 #atit-HowItWorks .HowItWorks-item {
