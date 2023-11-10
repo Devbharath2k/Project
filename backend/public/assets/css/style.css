@@ -448,36 +448,6 @@ body > div {
     overflow: hidden;
 }
 
-.curve-top {
-    position: absolute;
-    top: -100px;
-    /* Adjust the curve position as needed */
-    left: 0;
-    right: 0;
-    height: 200px;
-    /* Adjust the curve height as needed */
-    /* background-color: #fff; */
-    /* Set the background color to match the page background or any color you prefer */
-    border-radius: 0 0 50% 50%;
-    /* Create the curve effect */
-}
-
-
-.primary-mb::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    /* Adjust the curve position */
-    left: 0;
-    right: 0;
-    height: 200px;
-    /* Adjust the curve height */
-    background-color: #fff;
-    /* Set the background color to match the page background */
-    border-radius: 50%;
-}
-
-
 
 
 /* nivetha knowledge starts---------- */
@@ -903,6 +873,8 @@ vertical-align: middle;
 /* =========================================================================================================
 *lava */
 /*devops*/
+*lava */
+
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
     width: 70px;
@@ -917,7 +889,7 @@ vertical-align: middle;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%);
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("../img/cloud.jpg") fixed center center;
 }
 
 .coursesList .home-hero-banner {
@@ -1003,7 +975,8 @@ vertical-align: middle;
 
 .coursesList .feature i {
     font-size: 40px;
-    color: rgb(4, 0, 255);
+    color:#0c4b75;
+    ;
     /* Change the icon color as desired */
     margin-bottom: 10px;
 }
@@ -1045,7 +1018,7 @@ vertical-align: middle;
 
 
 .coursesList .contact {
-    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("img/coworkers.jpg") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/coworkers.jpg") fixed center center;
     background-size: cover;
     padding: 57px 0 !important;
     display: flex;
@@ -1149,6 +1122,8 @@ vertical-align: middle;
     height: 50px;
     text-align: center;
 }
+
+
 
 
 /*--------------------------------------------------------------
