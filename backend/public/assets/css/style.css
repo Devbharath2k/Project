@@ -449,7 +449,7 @@ img {
     right: 0;
     height: 200px;
     /* Adjust the curve height as needed */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* Set the background color to match the page background or any color you prefer */
     border-radius: 0 0 50% 50%;
     /* Create the curve effect */
