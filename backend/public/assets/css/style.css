@@ -828,7 +828,8 @@ vertical-align: middle;
 
 /* =========================================================================================================
 *lava */
-*lava */ .coursesList .vector-imgs,
+*lava */ 
+.coursesList .vector-imgs,
 
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
@@ -929,6 +930,9 @@ vertical-align: middle;
     display: block;
     margin: 10px auto;
 }
+
+/* ---------------------------------------------------------------------- */
+
 
 /*--------------------------------------------------------------
 # Testimonials
