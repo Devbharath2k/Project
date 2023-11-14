@@ -38,6 +38,10 @@ img {
     --fam2: 'Jost', sans-serif;
 }
 
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
 .primary-header {
     font-size: 50px;
     font-family: 'Jost', sans-serif;
@@ -344,48 +348,6 @@ img {
     }
 }
 
-@media(max-width:992px) {
-    .hero-split {
-        position: unset;
-        transform: unset;
-        margin: auto;
-    }
-
-    
-body > div {
-    overflow-x: hidden;
-}
-
-    .hero-split-card{
-        transform: none;
-    }
-
-    .left-sec .left-go {
-        transform: none !important;
-    }
-
-    .right-sec .right-go {
-        transform: none !important;
-    }
-
-    .hero-banner,
-    .hero-split {
-        margin-bottom: 50px !important;
-    }
-
-    .company-logos img {
-        width: 120px;
-        margin: auto;
-    }
-
-}
-
-@media(min-width:992px) {
-    .overflow-lg-visible {
-        overflow: visible !important;
-    }
-
-}
 
 /* ////dev/// */
 
@@ -511,13 +473,7 @@ body > div {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
 
-    .statusrow,
-    .statusrow::after {
-        display: none;
-    }
-}
 
 @keyframes statusRowFirst {
 
@@ -877,10 +833,7 @@ vertical-align: middle;
 }
 
 /* =========================================================================================================
-*lava */
-/*devops*/
-/* *lava */ 
-
+*lava devops*/
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
     width: 70px;
@@ -919,8 +872,6 @@ vertical-align: middle;
     width: 100%;
 }
 
-
-
 .coursesList .flyingvector {
     position: absolute;
     height: 70px;
@@ -951,32 +902,9 @@ vertical-align: middle;
     height: fit-content;
 }
 
-
-/* .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-    margin: 20px 0;
-    justify-content: center; 
-    align-items: center;
-}
-
-.feature {
-    padding: 20px;
-    padding-right: 33px !important;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-} */
 .coursesList .feature-grid {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; */
     text-align: center;
-    /* margin: 20px 0; */
     justify-content: center;
-    /* Center items horizontally */
     align-items: center;
 
 }
@@ -991,9 +919,10 @@ vertical-align: middle;
 
 .coursesList .feature i {
     font-size: 40px;
-    color:#0c4b75;
+    color: #0c4b75;
     ;
     /* Change the icon color as desired */
+    color:#0c4b75;
     margin-bottom: 10px;
 }
 
@@ -1004,7 +933,6 @@ vertical-align: middle;
 
 .coursesList .feature:hover i {
     color: green;
-    /* Change the color to your desired hover color */
 }
 
 .coursesList #cerimg {
@@ -1013,134 +941,8 @@ vertical-align: middle;
     display: flex;
     justify-content: center;
     display: block;
-    /* Make the image a block-level element */
     margin: 10px auto;
-
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-.coursesList #footer {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none !important;
-    list-style: none;
-    transition: .3s;
-    overflow: hidden;
-}
-
-
-.coursesList .contact {
-    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/coworkers.jpg") fixed center center;
-    background-size: cover;
-    padding: 57px 0 !important;
-    display: flex;
-    justify-content: center;
-}
-
-.coursesList .footer {
-    font-size: 14px;
-    background-color: #1f1f24;
-    padding: 50px 0;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.coursesList .footer .icon {
-    margin-right: 15px;
-    font-size: 24px;
-    line-height: 0;
-}
-
-.coursesList .footer h4 {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 5px;
-    color: #fff;
-}
-
-.coursesList .footer .footer-links {
-    margin-bottom: 30px;
-}
-
-.coursesList .footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.coursesList .footer .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-.coursesList .footer .footer-links ul li:first-child {
-    padding-top: 0;
-}
-
-.coursesList .footer .footer-links ul a {
-    color: rgba(255, 255, 255, 0.6);
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-}
-
-.coursesList .footer .footer-links ul a:hover {
-    color: #fff;
-}
-
-.coursesList .footer .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 10px;
-    transition: 0.3s;
-}
-
-.coursesList .footer .social-links a:hover {
-    color:var(--primary-color);
-    border-color:var(--primary-color);
-}
-
-.coursesList .footer .copyright {
-    text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.coursesList .footer .credits {
-    padding-top: 4px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.coursesList .footer .credits a {
-    color: #fff;
-}
-
-.coursesList .topArrow {
-    position: fixed;
-    z-index: 1000;
-    bottom: 40px;
-    right: 40px;
-    /* background-color: bisque; */
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-
-
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1628,3 +1430,158 @@ footer a:hover {
 }
 
 /* nivetha howitworks ends about------------ */
+
+
+@media (max-width: 767px) {
+
+    .statusrow,
+    .statusrow::after {
+        display: none;
+    }
+
+    #navbar {
+        max-width: 65%;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        box-shadow: none;
+        position: relative;
+        color: var(--primary-color) !important;
+        transition: .3s;
+    }
+
+    .nav-link::before {
+        transition: .3s;
+        content: "";
+        width: 0px;
+        display: block;
+        height: 100%;
+        background: var(--primary-color);
+        position: absolute;
+    }
+
+    .nav-link.active::before,
+    .nav-link:hover::before {
+        width: 6px;
+    }
+
+    .canvas-bar {
+        border-bottom-left-radius: 25px;
+    }
+
+    .nav-drop {
+        position: unset;
+        height: 0;
+        opacity: 0;
+        border-radius: 0;
+    }
+
+    .nav-item:hover>.nav-drop,
+    .nav-item:target>.nav-drop {
+        height: auto;
+        opacity: 1;
+    }
+
+    .nav-drop .nav-link {
+        width: auto;
+    }
+
+    .nav-drop .nav-link:hover {
+        box-shadow: none;
+    }
+}
+
+@media(max-width:992px) {
+    .hero-split {
+        position: unset;
+        transform: unset;
+        margin: auto;
+    }
+
+
+    body>div {
+        overflow-x: hidden;
+    }
+
+    .hero-split-card {
+        transform: none;
+    }
+
+    .left-sec .left-go {
+        transform: none !important;
+    }
+
+    .right-sec .right-go {
+        transform: none !important;
+    }
+
+    .hero-banner,
+    .hero-split {
+        margin-bottom: 50px !important;
+    }
+
+    .hero-banner {
+        height: 600px;
+    }
+
+    .company-logos img {
+        width: 120px;
+        margin: auto;
+    }
+
+    .navbar-brand {
+        width: 120px;
+    }
+
+    #whatsapp {
+        width: 60px;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        animation: vibrate 0.5s ease infinite;
+        z-index: 21;
+    }
+
+}
+
+@media(min-width:992px) {
+    .overflow-lg-visible {
+        overflow: visible !important;
+    }
+
+}
+
+
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+   font-size: 50px;
+   padding: 20px;
+   margin: 10px;
+}
