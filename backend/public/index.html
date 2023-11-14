@@ -23,14 +23,17 @@
         <nav class="navbar navbar-expand-md py-0 col-lg-10 col-md-11  mx-auto">
             <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
                 data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
-                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="#">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
                     <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <button class="d-md-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                    <i class="fa-solid fa-bars fa-xl text-white"></i>
+                  </button>
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav shadow1 ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
                         <li class="nav-item">
@@ -59,8 +62,44 @@
             </div>
         </nav>
     </div>
+
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+        <div class="offcanvas-header p-0 px-2">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            </a>
+          <button type="button" class="btn-close m-2 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="navbar-nav ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <div><a class="nav-link cursor">Courses</a></div>
+                <div class="nav-drop">
+                    <a class="nav-link" href="#">Software Developement</a>
+                    <a class="nav-link" href="#">Software Testing</a>
+                    <a class="nav-link" href="Devops.html">Devops</a>
+                    <a class="nav-link" href="#">Machine Learning & AI</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>
+        </div>
+      </div>
+
     <div class="position-relative">
-        <section class="hero-banner header finisher-header text-white">
+        <section class="hero-banner header finisher-header text-center text-md-start text-white">
             <div class="hero-vector1 d-none">
                 <img src="assets/imagesandvectors/vectors/vec-1.png" alt="">
             </div>
@@ -73,13 +112,13 @@
                             Advanced <span class="primary-color">Tech</span>
                         </h1>
                         <h2 data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"
-                            class="secondary-header pb-1 mb-0" style="width: fit-content;">
+                            class="secondary-header pb-1 mb-0 mx-auto mx-md-0" style="width: fit-content;">
                             Innovative Training
                         </h2>
                         <button data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-sine"
                             class="btn primary-btn mt-2">Know more</button>
                     </div>
-                    <div class="col-md-6 bg-cloud mb-5" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="col-md-6 bg-cloud mb-5 d-none d-md-block" data-aos="zoom-in" data-aos-duration="600">
                         <div class="hero-vector2">
                             <img src="./assets//imagesandvectors/bg/globe.svg" alt="globe">
                         </div>
@@ -546,47 +585,9 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        new FinisherHeader({
-            "count": 13,
-            "size": {
-                "min": 2,
-                "max": 10,
-                "pulse": 0
-            },
-            "speed": {
-                "x": {
-                    "min": 0,
-                    "max": 0.8
-                },
-                "y": {
-                    "min": 0,
-                    "max": 0.2
-                }
-            },
-            "colors": {
-                "background": "#15182e",
-                "particles": [
-                    "#ff926b",
-                    "#87ddfe",
-                    "#acaaff",
-                    "#1bffc2",
-                    "#f9a5fe"
-                ]
-            },
-            "blending": "screen",
-            "opacity": {
-                "center": 1,
-                "edge": 1
-            },
-            "skew": -0.5,
-            "shapes": [
-                "c"
-            ]
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>
