@@ -180,6 +180,9 @@ img {
     animation: kenburns-top 5s linear infinite alternate forwards
 }
 
+#hero-banner{
+    background-image: url();
+}
 .hero-banner {
     /* background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%); */
     height: 96vh;
@@ -193,7 +196,10 @@ img {
     position: relative;
 }
 
-
+.aboutUs .hero-banner {
+    height: 85vh;
+    color: red;
+}
 
 .hero-vector2 {
     width: 350px;
@@ -439,7 +445,7 @@ img {
     right: 0;
     height: 200px;
     /* Adjust the curve height as needed */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* Set the background color to match the page background or any color you prefer */
     border-radius: 0 0 50% 50%;
     /* Create the curve effect */
@@ -455,7 +461,7 @@ img {
     right: 0;
     height: 200px;
     /* Adjust the curve height */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* Set the background color to match the page background */
     border-radius: 50%;
 }
@@ -897,8 +903,25 @@ vertical-align: middle;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%);
+   background-image:  url("../img/devopsBg.png");
+   background-position: cover;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+   background-size: cover;
+
+    /* background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%); */
+
 }
+/* .coursesList .hero-banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%);
+
+} */
 
 .coursesList .home-hero-banner {
     padding: 120px 0 100px;
@@ -1361,7 +1384,7 @@ vertical-align: middle;
     color: #bcbcbe;
 }
 
-a:hover {
+.footer-links a:hover {
     color: var(--primary-color);
 }
 
@@ -1452,7 +1475,7 @@ a:hover {
 }
 
 .atit-HowItWorks {
-    background: url(../img/aboutbg.jpg);
+    background: url(../img/howbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
