@@ -872,8 +872,6 @@ vertical-align: middle;
 
 /* =========================================================================================================
 *lava */
-/*devops*/
-*lava */
 
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
@@ -902,8 +900,6 @@ vertical-align: middle;
     transform: translate(-50%, 50%);
     width: 100%;
 }
-
-
 
 .coursesList .flyingvector {
     position: absolute;
@@ -935,32 +931,9 @@ vertical-align: middle;
     height: fit-content;
 }
 
-
-/* .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-    margin: 20px 0;
-    justify-content: center; 
-    align-items: center;
-}
-
-.feature {
-    padding: 20px;
-    padding-right: 33px !important;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-} */
 .coursesList .feature-grid {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; */
     text-align: center;
-    /* margin: 20px 0; */
     justify-content: center;
-    /* Center items horizontally */
     align-items: center;
 
 }
@@ -976,8 +949,6 @@ vertical-align: middle;
 .coursesList .feature i {
     font-size: 40px;
     color:#0c4b75;
-    ;
-    /* Change the icon color as desired */
     margin-bottom: 10px;
 }
 
@@ -988,7 +959,6 @@ vertical-align: middle;
 
 .coursesList .feature:hover i {
     color: green;
-    /* Change the color to your desired hover color */
 }
 
 .coursesList #cerimg {
@@ -997,134 +967,8 @@ vertical-align: middle;
     display: flex;
     justify-content: center;
     display: block;
-    /* Make the image a block-level element */
     margin: 10px auto;
-
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-.coursesList #footer {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none !important;
-    list-style: none;
-    transition: .3s;
-    overflow: hidden;
-}
-
-
-.coursesList .contact {
-    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/coworkers.jpg") fixed center center;
-    background-size: cover;
-    padding: 57px 0 !important;
-    display: flex;
-    justify-content: center;
-}
-
-.coursesList .footer {
-    font-size: 14px;
-    background-color: #1f1f24;
-    padding: 50px 0;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.coursesList .footer .icon {
-    margin-right: 15px;
-    font-size: 24px;
-    line-height: 0;
-}
-
-.coursesList .footer h4 {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 5px;
-    color: #fff;
-}
-
-.coursesList .footer .footer-links {
-    margin-bottom: 30px;
-}
-
-.coursesList .footer .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.coursesList .footer .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-.coursesList .footer .footer-links ul li:first-child {
-    padding-top: 0;
-}
-
-.coursesList .footer .footer-links ul a {
-    color: rgba(255, 255, 255, 0.6);
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-}
-
-.coursesList .footer .footer-links ul a:hover {
-    color: #fff;
-}
-
-.coursesList .footer .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 10px;
-    transition: 0.3s;
-}
-
-.coursesList .footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
-}
-
-.coursesList .footer .copyright {
-    text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.coursesList .footer .credits {
-    padding-top: 4px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.coursesList .footer .credits a {
-    color: #fff;
-}
-
-.coursesList .topArrow {
-    position: fixed;
-    z-index: 1000;
-    bottom: 40px;
-    right: 40px;
-    /* background-color: bisque; */
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-
-
-
 
 /*--------------------------------------------------------------
 # Testimonials
