@@ -28,13 +28,17 @@
         <nav class="navbar navbar-expand-md py-0 col-lg-10 col-md-11  mx-auto">
             <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
                 data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
-                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="#">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
                     <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="d-md-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                    <i class="fa-solid fa-bars fa-xl text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav shadow1 ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
@@ -64,8 +68,44 @@
             </div>
         </nav>
     </div>
-    
-    <div class="container-fluid" style=" background-color: #3929e56e;">
+
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+        <div class="offcanvas-header p-0 px-2">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            </a>
+            <button type="button" class="btn-close m-2 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="navbar-nav ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <div><a class="nav-link cursor">Courses</a></div>
+                    <div class="nav-drop">
+                        <a class="nav-link" href="#">Software Developement</a>
+                        <a class="nav-link" href="#">Software Testing</a>
+                        <a class="nav-link" href="Devops.html">Devops</a>
+                        <a class="nav-link" href="#">Machine Learning & AI</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <div class="container-fluid" style=" background-color: #3929e56e;">
         <div class="row pt-5">
             <div class="col-md-6 d-flex align-items-center justify-content-center pt-3">
                 <div>
@@ -81,8 +121,27 @@
                 <img src="./assets/img/hero-img.png" class="img-fluid" alt="">
             </div>
         </div>
+    </div> -->
+
+    <div class="hero-banner2 finisher-header position-relative text-light text-center">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center vh-60">
+                <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-right" data-aos-duration="700">We
+                    embrace everyone's journey, from novices launching careers to experts
+                    elevating skills.</p>
+                <h1 data-aos="fade-up" data-aos-duration="500" class="primary-header">
+                    About <span class="primary-color">Us</span>
+                </h1>
+                <nav  data-aos="fade-up" data-aos-duration="800"  style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
     </div>
-   
     <div class="container my-5">
         <section class="atit-box">
             <div class="container">
@@ -152,14 +211,15 @@
         <div class="cube"></div>
         <div class="cube"></div>
         <div class="cube"></div>
-        <div class="container">
-            <div class="row">
+        <div class="container position-relative z-3">
+            <div class="row ">
                 <div class="col-lg-5 d-flex align-items-center justify-content-center">
                     <div class="atit-HowItWorks-header">
                         <h3 data-aos="fade-right" data-aos-duration="500">How It Works</h3>
                         <p data-aos="fade-right" data-aos-duration="700">
                             We are dedicated to helping you achieve your goals and reach your highest potential
                         </p>
+                        <img src="./assets/imagesandvectors/bg/contact/steps.png" class="col-md-9 rounded img-fluid" alt="contact">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -176,7 +236,6 @@
                                         Empower your skills and unlock your potential with our cutting-edge software
                                         training programs.
                                     </p>
-                                  
                                 </div>
                             </div>
                             <div class="HowItWorks-content">
@@ -189,7 +248,6 @@
                                         Validate your expertise and boost your career with our industry-recognized
                                         certifications.
                                     </p>
-                               
                                 </div>
                             </div>
                         </div>
@@ -204,7 +262,7 @@
                                         Step into a world of opportunities with a guaranteed job offer upon completing
                                         our comprehensive training.
                                     </p>
-                                  
+
                                 </div>
                             </div>
                             <!-- <div class="HowItWorks-content">
@@ -229,9 +287,10 @@
 
 
     <!-- ================= hired by starts============== -->
-    <div class="container-fluid py-5">
+    <div class="container company-logos py-5">
         <p class="text-center text-capitalize  justify-content-center mt-4 display-6 linear-gradient-text fw-semibold"
             data-aos="fade-up" data-aos-duration="7000">
+
             Our Trained Students are
             Hired By</p>
         <div class="row">
