@@ -38,6 +38,10 @@ img {
     --fam2: 'Jost', sans-serif;
 }
 
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
 .primary-header {
     font-size: 50px;
     font-family: 'Jost', sans-serif;
@@ -338,48 +342,6 @@ img {
     }
 }
 
-@media(max-width:992px) {
-    .hero-split {
-        position: unset;
-        transform: unset;
-        margin: auto;
-    }
-
-    
-body > div {
-    overflow-x: hidden;
-}
-
-    .hero-split-card{
-        transform: none;
-    }
-
-    .left-sec .left-go {
-        transform: none !important;
-    }
-
-    .right-sec .right-go {
-        transform: none !important;
-    }
-
-    .hero-banner,
-    .hero-split {
-        margin-bottom: 50px !important;
-    }
-
-    .company-logos img {
-        width: 120px;
-        margin: auto;
-    }
-
-}
-
-@media(min-width:992px) {
-    .overflow-lg-visible {
-        overflow: visible !important;
-    }
-
-}
 
 /* ////dev/// */
 
@@ -505,13 +467,7 @@ body > div {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
 
-    .statusrow,
-    .statusrow::after {
-        display: none;
-    }
-}
 
 @keyframes statusRowFirst {
 
@@ -873,9 +829,7 @@ vertical-align: middle;
 /* =========================================================================================================
 *lava */
 /*devops*/
-*lava */
-
-.coursesList .vector-imgs,
+*lava */ .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
     width: 70px;
     display: inline-block;
@@ -975,7 +929,7 @@ vertical-align: middle;
 
 .coursesList .feature i {
     font-size: 40px;
-    color:#0c4b75;
+    color: #0c4b75;
     ;
     /* Change the icon color as desired */
     margin-bottom: 10px;
@@ -1550,3 +1504,129 @@ footer a:hover {
 }
 
 /* nivetha howitworks ends about------------ */
+
+
+@media (max-width: 767px) {
+
+    .statusrow,
+    .statusrow::after {
+        display: none;
+    }
+
+    #navbar {
+        max-width: 65%;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        box-shadow: none;
+        position: relative;
+        color: var(--primary-color) !important;
+        transition: .3s;
+    }
+
+    .nav-link::before {
+        transition: .3s;
+        content: "";
+        width: 0px;
+        display: block;
+        height: 100%;
+        background: var(--primary-color);
+        position: absolute;
+    }
+
+    .nav-link.active::before,
+    .nav-link:hover::before {
+        width: 6px;
+    }
+
+    .canvas-bar {
+        border-bottom-left-radius: 25px;
+    }
+
+    .nav-drop {
+        position: unset;
+        height: 0;
+        opacity: 0;
+        border-radius: 0;
+    }
+
+    .nav-item:hover>.nav-drop,
+    .nav-item:target>.nav-drop {
+        height: auto;
+        opacity: 1;
+    }
+
+    .nav-drop .nav-link {
+        width: auto;
+    }
+
+    .nav-drop .nav-link:hover {
+        box-shadow: none;
+    }
+}
+
+@media(max-width:992px) {
+    .hero-split {
+        position: unset;
+        transform: unset;
+        margin: auto;
+    }
+
+
+    body>div {
+        overflow-x: hidden;
+    }
+
+    .hero-split-card {
+        transform: none;
+    }
+
+    .left-sec .left-go {
+        transform: none !important;
+    }
+
+    .right-sec .right-go {
+        transform: none !important;
+    }
+
+    .hero-banner,
+    .hero-split {
+        margin-bottom: 50px !important;
+    }
+
+    .hero-banner {
+        height: 600px;
+    }
+
+    .company-logos img {
+        width: 120px;
+        margin: auto;
+    }
+
+    .navbar-brand {
+        width: 120px;
+    }
+
+    #whatsapp {
+        width: 60px;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        animation: vibrate 0.5s ease infinite;
+        z-index: 21;
+    }
+
+}
+
+@media(min-width:992px) {
+    .overflow-lg-visible {
+        overflow: visible !important;
+    }
+
+}
