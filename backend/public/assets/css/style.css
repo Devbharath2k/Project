@@ -206,6 +206,9 @@ img {
     animation: kenburns-top 5s linear infinite alternate forwards
 }
 
+#hero-banner{
+    background-image: url();
+}
 .hero-banner {
     /* background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%); */
     height: 96vh;
@@ -219,7 +222,10 @@ img {
     position: relative;
 }
 
-
+.aboutUs .hero-banner {
+    height: 85vh;
+    color: red;
+}
 
 .hero-vector2 {
     width: 350px;
@@ -861,9 +867,7 @@ vertical-align: middle;
 }
 
 /* =========================================================================================================
-*lava */
-*lava */ .coursesList .vector-imgs,
-
+*lava devops*/
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
     width: 70px;
@@ -880,6 +884,16 @@ vertical-align: middle;
     overflow: hidden;
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("../img/cloud.jpg") fixed center center;
 }
+/* .coursesList .hero-banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%);
+
+} */
 
 .coursesList .home-hero-banner {
     padding: 120px 0 100px;
@@ -1188,8 +1202,8 @@ vertical-align: middle;
 }
 
 .footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .footer .copyright {
@@ -1226,7 +1240,6 @@ vertical-align: middle;
 footer a:hover {
     color: var(--primary-color);
 }
-
 /* nivetha lines starts----------- */
 
 
@@ -1283,6 +1296,69 @@ footer a:hover {
     animation-delay: 2.5s;
     margin-left: 25%;
 }
+
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
+
+/* nivetha line ends------------- */
+/* nivetha cometlines starts----------- */
+
+.comet{
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -5rem;
+    left:0;
+
+}
+.cometlines {
+    position: relative;
+    top: -11vh;
+    left: 0;
+    right: 0;
+    height: 80vh;
+    margin: auto;
+}
+
+.cometline {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.cometline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.cometlines:nth-child(2) .cometline::after {
+    animation-delay: 2.5s; 
+  }
+  .cometlines:nth-child(3) .cometline::after {
+    animation-delay: 0.5s; 
+  }
+  .cometlines:nth-child(4) .cometline::after {
+    animation-delay:3s;
+  }
+
 
 @keyframes drop {
     0% {
