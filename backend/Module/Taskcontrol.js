@@ -22,10 +22,6 @@ const ATITPostmethod = async (req, res) => {
         message: "User already exists"
       });
     }
-    // const hashedPassword = await bcrypt.hash(password, 10);
-    // s;
-    // newUser.password = hashedPassword;
-
     await newUser.save();
 
     return res.status(201).json({

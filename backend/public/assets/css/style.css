@@ -27,6 +27,7 @@ body,
 img {
     display: block;
     width: 100%;
+    object-fit: contain;
 }
 
 
@@ -93,6 +94,22 @@ img {
 
 .cursor {
     cursor: pointer;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-60 {
+    height: 60vh;
+}
+
+.vh-70 {
+    height: 70vh;
+}
+
+.vh-80 {
+    height: 80vh;
 }
 
 .text-justify {
@@ -189,6 +206,9 @@ img {
     animation: kenburns-top 5s linear infinite alternate forwards
 }
 
+#hero-banner{
+    background-image: url();
+}
 .hero-banner {
     /* background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%); */
     height: 96vh;
@@ -202,7 +222,10 @@ img {
     position: relative;
 }
 
-
+.aboutUs .hero-banner {
+    height: 85vh;
+    color: red;
+}
 
 .hero-vector2 {
     width: 350px;
@@ -304,10 +327,15 @@ img {
 }
 
 #finisher-canvas {
-    background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%) !important;
+    background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%);
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.hero-banner2 #finisher-canvas {
+    background: url('../imagesandvectors/bg/contact/newcontact.png') fixed bottom;
+    background-size: cover;
 }
 
 .hero-banner::before {
@@ -726,6 +754,7 @@ vertical-align: middle;
 .atit-box .atit-card-1:hover .slide-service-item,
 .atit-box .search-modal {
     background-color: #ed1944;
+    background-color: var(--primary-color);
 }
 
 
@@ -754,6 +783,7 @@ vertical-align: middle;
     -webkit-transform: translateX(0) rotateZ(-11deg) scale(.95);
     -ms-transform: translateX(0) rotateZ(-11deg) scale(.95);
     transition: transform .4s ease-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
@@ -776,7 +806,8 @@ vertical-align: middle;
 }
 
 .atit-box .glyph i {
-    color: #ed1944
+    color: #ed1944;
+    color: var(--primary-color);
 }
 
 .atit-box .atit-card-1.active .slide-service-item .glyph .glyph-icon::before,
@@ -787,6 +818,15 @@ vertical-align: middle;
 }
 
 @media (max-width: 768px) {
+
+    .primary-header{
+        font-size: 30px;
+    }
+
+    .secondary-header{
+        font-size: 20px;
+    }
+
     .atit-box .atit-card {
         position: relative;
         bottom: auto;
@@ -827,9 +867,7 @@ vertical-align: middle;
 }
 
 /* =========================================================================================================
-*lava */
-*lava */ .coursesList .vector-imgs,
-
+*lava devops*/
 .coursesList .vector-imgs,
 .coursesList .vector-imgs img {
     width: 70px;
@@ -846,6 +884,16 @@ vertical-align: middle;
     overflow: hidden;
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("../img/cloud.jpg") fixed center center;
 }
+/* .coursesList .hero-banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%);
+
+} */
 
 .coursesList .home-hero-banner {
     padding: 120px 0 100px;
@@ -908,7 +956,7 @@ vertical-align: middle;
     color: #0c4b75;
     ;
     /* Change the icon color as desired */
-    color:#0c4b75;
+    color: #0c4b75;
     margin-bottom: 10px;
 }
 
@@ -1154,8 +1202,8 @@ vertical-align: middle;
 }
 
 .footer .social-links a:hover {
-    color: #fff;
-    border-color: #fff;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .footer .copyright {
@@ -1192,7 +1240,6 @@ vertical-align: middle;
 footer a:hover {
     color: var(--primary-color);
 }
-
 /* nivetha lines starts----------- */
 
 
@@ -1261,6 +1308,69 @@ footer a:hover {
 }
 
 /* nivetha line ends------------- */
+/* nivetha cometlines starts----------- */
+
+.comet{
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -5rem;
+    left:0;
+
+}
+.cometlines {
+    position: relative;
+    top: -11vh;
+    left: 0;
+    right: 0;
+    height: 80vh;
+    margin: auto;
+}
+
+.cometline {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.cometline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.cometlines:nth-child(2) .cometline::after {
+    animation-delay: 2.5s; 
+  }
+  .cometlines:nth-child(3) .cometline::after {
+    animation-delay: 0.5s; 
+  }
+  .cometlines:nth-child(4) .cometline::after {
+    animation-delay:3s;
+  }
+
+
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
+
+/* nivetha line ends------------- */
 
 
 /* nivetha howitworks starts about----------- */
@@ -1269,6 +1379,7 @@ footer a:hover {
     padding: 20px 20px;
     margin: 10px 0;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #atit-HowItWorks .icon {
@@ -1284,11 +1395,13 @@ footer a:hover {
 
 .atit-HowItWorks {
     background: url(../img/aboutbg.jpg);
+    background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
     padding: 50px 0;
+    color: white;
 }
 
 .atit-HowItWorks-header h3 {
@@ -1301,7 +1414,7 @@ footer a:hover {
     left: 45vw;
     width: 10px;
     height: 10px;
-    border: solid 1px #5485a5;
+    border: solid 1px #e9f6ff;
     transform-origin: top left;
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     animation: cube 12s ease-in forwards infinite;
@@ -1485,27 +1598,25 @@ footer a:hover {
 
 
 
-.animate-charcter
-{
-   text-transform: uppercase;
-   background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
-   color: #fff;
-   background-clip: text;
-   text-fill-color: transparent;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: textclip 2s linear infinite;
-   display: inline-block;
-   font-size: 50px;
-   padding: 20px;
-   margin: 10px;
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+    padding: 20px;
+    margin: 10px;
 }
+

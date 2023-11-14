@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
             console.log("name, email, phone, message",fname, email, phone, message)
-        fetch("http://localhost:4000/api/post", {
+        fetch("/api/post", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
