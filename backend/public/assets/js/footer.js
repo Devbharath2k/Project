@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
         
-        <div class="lines d-lg-none">
+        <div class="lines d-lg-none">   
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <br>
                         <a href="#" class="text-decoration-none"><strong>Devops</strong></a>
                         <br>
-                        <a href="#" class="text-decoration-none"><strong>Machine learning & AI</strong></a>
+                        <a href="#" class="text-decoration-none"><strong>Machine Learning & AI</strong></a>
                     </p>
                 </div>
             </div>
