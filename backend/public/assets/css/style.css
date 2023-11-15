@@ -180,6 +180,7 @@ img {
     transform: scaley(0);
     transition: 0.3s;
     overflow: hidden;
+    z-index: 23;
 }
 
 
@@ -192,6 +193,20 @@ img {
 .nav-item:target>.nav-drop {
     transform: none;
     top: calc(100% + 2px);
+}
+
+.nav-drop .nav-drop {
+    top: calc(0% + 2px);
+    position: absolute;
+    right: 90%;
+    z-index: -1;
+    opacity: 0;
+}
+.nav-item .nav-item:hover .nav-drop, .nav-item .nav-item:target .nav-drop {
+    transform: none;
+    top: 0;
+    right: 101%;
+    opacity: 1;
 }
 
 .nav-drop .nav-link {
@@ -350,6 +365,22 @@ img {
     background-size: contain;
     /* transform: rotate(359deg); */
     transform: scaleX(-1);
+}
+/* pap style */
+
+.pap-img {
+    width: 40px;
+}
+
+.pap-card {
+    border-radius: 0px 30px;
+    animation: border 4s linear infinite ;
+}
+
+@keyframes border{
+    0%{border-radius: 0px 30px;}
+    50%{border-radius: 30px 0px;}
+    100%{border-radius: 0px 30px;}
 }
 
 @keyframes hero-right {
@@ -533,6 +564,7 @@ img {
     animation-duration: 7.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    background-color: white;
 }
 
 @keyframes startFastScale {
@@ -1622,3 +1654,21 @@ footer a:hover {
     margin: 10px;
 }
 
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

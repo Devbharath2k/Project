@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-bars fa-xl text-white"></i>
                 </button>
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-                    <ul class="navbar-nav shadow1 ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
+                    <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -47,24 +47,54 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact2.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <div><a class="nav-link cursor">Courses</a></div>
-                            <div class="nav-drop">
-                                <a class="nav-link" href="#">Software Developement
-                                </a>
-                                <div class="nav-drop">
-                                    <a class="nav-link" href="#">Software Developement</a>
-                                    <a class="nav-link" href="#">Software Testing</a>
-                                    <a class="nav-link" href="Devops.html">Devops</a>
-                                    <a class="nav-link" href="#">Machine Learning & AI</a>
-                                </div>
-                                <a class="nav-link" href="#">Software Testing</a>
-                                <a class="nav-link" href="Devops.html">Devops</a>
-                                <a class="nav-link" href="#">Machine Learning & AI</a>
-                            </div>
+                            <a class="nav-link" href="courses.html">Courses</a>
                         </li>
+                        <!-- <div class="nav-item">
+                            <div><a class="nav-link cursor">Courses</a></div>
+                            <div class="nav-drop overflow-visible">
+                                <div class="nav-item">
+                                    <div><a class="nav-link cursor">Software Developement</a></div>
+                                    <div class="nav-drop">
+                                        <a class="nav-link" href="./courses/mern.html"> MERN Stack</a>
+                                        <a class="nav-link" href="./courses/mean.html">MEAN Stack</a>
+                                        <a class="nav-link" href="./courses/java.html">JAVA Fullstack</a>
+                                        <a class="nav-link" href="./courses/python.html">PYTHON Fullstack</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item">
+                                    <div><a class="nav-link cursor">Software Testing</a></div>
+                                    <div class="nav-drop">
+                                        <a class="nav-link" href="./courses/mern.html">Manual Testing</a>
+                                        <a class="nav-link" href="./courses/mean.html">Core Java</a>
+                                        <a class="nav-link" href="./courses/java.html">Advanced Java for Testing</a>
+                                        <a class="nav-link" href="./courses/python.html">Selenium</a>
+                                        <a class="nav-link" href="./courses/mern.html">Cucumber Framework</a>
+                                        <a class="nav-link" href="./courses/mean.html">Page Object Model</a>
+                                        <a class="nav-link" href="./courses/java.html">TestNG</a>
+                                        <a class="nav-link" href="./courses/mern.html">API - Postman</a>
+                                        <a class="nav-link" href="./courses/mean.html">API - Rest Assured</a>
+                                        <a class="nav-link" href="./courses/java.html">DB Testing</a>
+                                        <a class="nav-link" href="./courses/python.html">GIT</a>
+                                        <a class="nav-link" href="./courses/mern.html">Jenkins</a>
+                                        <a class="nav-link" href="./courses/mean.html">Maven</a>
+                                        <a class="nav-link" href="./courses/java.html">Docker</a>
+                                        <a class="nav-link" href="./courses/java.html">AWS Services</a>
+                                    </div>
+                                </div>
+                                <a class="nav-link" href="Devops.html">Devops</a>
+                                <div class="nav-item">
+                                    <div><a class="nav-link cursor">Data Science & AI</a></div>
+                                    <div class="nav-drop">
+                                        <a class="nav-link" href="./courses/mern.html">Artificial Intelligence</a>
+                                        <a class="nav-link" href="./courses/mean.html">Data Science</a>
+                                        <a class="nav-link" href="./courses/java.html">Deep Learning</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                         <li class="nav-item">
                             <a class="nav-link" href="Blog.html">Blog</a>
                         </li>
@@ -97,9 +127,49 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Courses</a>
+                </li>
+                <!-- <li class="nav-item">
                     <div><a class="nav-link cursor">Courses</a></div>
                     <div class="nav-drop">
-                        <a class="nav-link" href="#">Software Developement</a>
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">Software Developement</a>
+                        <a class="nav-link" href="#">Software Testing</a>
+                        <a class="nav-link" href="Devops.html">Devops</a>
+                        <a class="nav-link" href="#">Machine Learning & AI</a>
+                    </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- software Developement nav -->
+
+    <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Software Developement</h5>
+            <button type="button" class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#navbar"
+                aria-controls="navbar"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <ul class="navbar-nav ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <div><a class="nav-link cursor">Courses</a></div>
+                    <div class="nav-drop">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">Software Developement</a>
                         <a class="nav-link" href="#">Software Testing</a>
                         <a class="nav-link" href="Devops.html">Devops</a>
                         <a class="nav-link" href="#">Machine Learning & AI</a>
@@ -110,7 +180,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <div class="position-relative">
         <section class="hero-banner header finisher-header text-center text-md-start text-white">
@@ -321,10 +391,55 @@
         </section>
     </div>
 
-    <div class="primary-mb">
-        <h1 class="primary-header text-center mb-3" data-aos="fade-up" data-aos-duration="400">
+    <div class="primary-mb container-fluid">
+        <h1 class="primary-header col-lg-6 mx-auto text-center mb-5" data-aos="fade-up" data-aos-duration="400">
             Highlights of Pay after Placement Program
         </h1>
+
+        <div class="pap-holder mb-5">
+            <div class="row flex-wrap g-lg-0 g-3 justify-content-evenly">
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div
+                        class="border pap-card d-flex flex-column text-center align-items-center py-3 px-2 h-100  justify-content-center  bg-warning ">
+                        <img src="./assets/imagesandvectors/pap/debit-card.png" alt="debit-card"
+                            class="img-fluid pap-img mb-2">
+                        <p class="pap-text m-0 text-white"> Flexible Payment Options</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div
+                        class="border pap-card d-flex flex-column text-center align-items-center py-3 px-2 h-100  justify-content-center  bg-primary ">
+                        <img src="./assets/imagesandvectors/pap/profits.png" alt="debit-card"
+                            class="img-fluid pap-img mb-2">
+                        <p class="pap-text m-0 text-white"> Cost-Effective</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div
+                        class="border pap-card d-flex flex-column text-center align-items-center py-3 px-2 h-100  justify-content-center  bg-secondary ">
+                        <img src="./assets/imagesandvectors/pap/job.png" alt="debit-card"
+                            class="img-fluid pap-img mb-2">
+                        <p class="pap-text m-0 text-white"> 100% Job Security</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div
+                        class="border pap-card d-flex flex-column text-center align-items-center py-3 px-2 h-100  justify-content-center  bg-danger ">
+                        <img src="./assets/imagesandvectors/pap/attention.png" alt="debit-card"
+                            class="img-fluid pap-img mb-2">
+                        <p class="pap-text m-0 text-white"> 1 on 1 attention</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div
+                        class="border pap-card d-flex flex-column text-center align-items-center py-3 px-2 h-100  justify-content-center  bg-info ">
+                        <img src="./assets/imagesandvectors/pap/analysis.png" alt="debit-card"
+                            class="img-fluid pap-img mb-2">
+                        <p class="pap-text m-0 text-white"> Job-Oriented Training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div data-aos="fade-up" data-aos-duration="700">
             <button class="primary-btn mx-auto d-block mb-5">About PAP</button>
         </div>
@@ -467,7 +582,7 @@
     </section>
     <!-- =================dev============== -->
 
-    <div class="container company-logos py-5">
+    <div class="container company-logos py-5 overflow-hidden">
         <p class="text-center text-capitalize  justify-content-center mt-4 display-6 linear-gradient-text fw-semibold"
             data-aos="fade-up" data-aos-duration="7000">
 
