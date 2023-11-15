@@ -142,8 +142,8 @@ img {
     display: none;
 }
 
-.nav-link,
-.navbar-brand {
+.navbar .nav-link,
+.navbar .navbar-brand {
     color: var(--link-color);
     font-weight: 400;
     font-size: 15px;
@@ -155,7 +155,7 @@ img {
     transition: var(--transition1);
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
     font-family: 'Oleo Script';
     font-weight: 400;
     background-color: var(--primary-color);
@@ -166,13 +166,13 @@ img {
     background: transparent;
 }
 
-.nav-link.active,
-.nav-link:hover {
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
     box-shadow: inset 104px 0 0px 0 #f7851d;
     color: white !important;
 }
 
-.nav-drop {
+.navbar .nav-drop {
     top: calc(100% + 0px);
     position: absolute;
     background: white;
@@ -365,6 +365,22 @@ img {
     background-size: contain;
     /* transform: rotate(359deg); */
     transform: scaleX(-1);
+}
+/* pap style */
+
+.pap-img {
+    width: 40px;
+}
+
+.pap-card {
+    border-radius: 0px 30px;
+    animation: border 6s linear infinite ;
+}
+
+@keyframes border{
+    0%{border-radius: 0px 30px;}
+    50%{border-radius: 30px 0px;}
+    100%{border-radius: 0px 30px;}
 }
 
 @keyframes hero-right {
@@ -891,6 +907,15 @@ vertical-align: middle;
     width: 70px;
     display: inline-block;
 }
+#devopss {
+    background: linear-gradient(270deg, rgba(25, 152, 236, 0.354) 0%, #0000003f 100%),url("../img/newcontact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    color: white;
+}
 
 .coursesList .hero-banner {
     padding: 250px 0 100px;
@@ -900,7 +925,7 @@ vertical-align: middle;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("../img/cloud.jpg") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("") fixed center center;
 }
 /* .coursesList .hero-banner::after {
         content: "";
@@ -995,6 +1020,9 @@ vertical-align: middle;
     display: block;
     margin: 10px auto;
 }
+
+/* ---------------------------------------------------------------------- */
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1155,9 +1183,13 @@ vertical-align: middle;
 
 .footer {
     font-size: 14px;
-    background-color: #1f1f24;
+    background-color: #093756;
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
+    /* background: url("../img/footerBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .footer .icon {
@@ -1616,27 +1648,6 @@ footer a:hover {
 
 
 
-.animate-charcter {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 50px;
-    padding: 20px;
-    margin: 10px;
-}
 
 
 
