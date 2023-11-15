@@ -875,6 +875,15 @@ vertical-align: middle;
     width: 70px;
     display: inline-block;
 }
+#devopss {
+    background: linear-gradient(270deg, rgba(25, 152, 236, 0.354) 0%, #0000003f 100%),url("../img/newcontact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    color: white;
+}
 
 .coursesList .hero-banner {
     padding: 250px 0 100px;
@@ -884,7 +893,7 @@ vertical-align: middle;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("../img/cloud.jpg") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("") fixed center center;
 }
 /* .coursesList .hero-banner::after {
         content: "";
@@ -1603,25 +1612,4 @@ footer a:hover {
 
 
 
-.animate-charcter {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 50px;
-    padding: 20px;
-    margin: 10px;
-}
 
