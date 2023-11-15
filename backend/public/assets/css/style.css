@@ -1667,3 +1667,21 @@ footer a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/* ///sidePAP------------------- */
+@keyframes blink {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#sidePAP .linear-gradient-text {
+     /* background-image: linear-gradient(to right, #ff0000, #00ff00);
+    color: transparent; */
+    animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
+}
