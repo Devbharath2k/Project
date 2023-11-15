@@ -1171,9 +1171,13 @@ vertical-align: middle;
 
 .footer {
     font-size: 14px;
-    background-color: #1f1f24;
+    background-color: #093756;
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
+    /* background: url("../img/footerBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .footer .icon {
