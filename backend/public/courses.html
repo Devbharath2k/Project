@@ -56,7 +56,7 @@
                             <a class="nav-link" href="Blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a title="pay after Placement" class="nav-link" href="#">PAP</a>
+                            <a title="pay after Placement" class="nav-link" href="./placement.html">PAP</a>
                         </li>
                     </ul>
                 </div>
@@ -93,12 +93,36 @@
         </div>
     </div>
 
+    <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
+        <div class="hero-vector1 d-none">
+            <img src="assets/imagesandvectors/vectors/vec-1.png" alt="">
+        </div>
+        <div class="container z-3 text-center">
+            <div class="row d-flex justify-content-center align-items-center flex-row-reverse flex-lg-row">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="500" class="primary-header">
+                        Our <span class="primary-color">Courses</span>
+                    </h1>
+                    <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
+                        ATIT provides a clear step by step process through the Pay After Placement Program <br> to help you
+                        obtain your dream Job in IT sector.</p>
+                    <nav  data-aos="fade-up" data-aos-duration="800"  style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">cousres</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="hero-banner2 finisher-header position-relative text-light text-center">
+    <!-- <div class="hero-banner2 finisher-header position-relative text-light text-center">
         <div class="container">
             <div class="d-flex flex-column justify-content-center align-items-center vh-60">
                 <h1 data-aos="fade-up" data-aos-duration="500" class="primary-header">
-                    <span class="primary-color">Courses</span>
+                    Our <span class="primary-color">Courses</span>
                 </h1>
                 <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-right" data-aos-duration="700">
                     ATIT provides a clear step by step process through the Pay After Placement Program <br> to help you
@@ -114,7 +138,7 @@
                 </nav>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -144,7 +168,7 @@
                 <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8" data-aos="fade-right" data-aos-duration="600">
                             <ul class="nav justify-content-between align-items-center">
                                 <li class="nav-item col-xl-4 col-md-6">
                                     <a class="nav-link active" aria-current="page" href="./courses/Software Testing/manualtesting.html">Manual Testing</a>
@@ -190,7 +214,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-left" data-aos-duration="600">
                             <p class="secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
                                 fuga ratione,
                                 consequuntur
@@ -269,6 +293,18 @@
     <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script src="assets/js/script.js"></script>
     <script src="./assets/js/footer.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-link').on('click', function () {
+                // Remove the 'show' class from all tab contents
+                $('.tab-pane').removeClass('show');
+
+                // Add the 'show' class to the selected tab content
+                var targetId = $(this).data('bs-target').substring(1);
+                $(targetId).addClass('data-aos');
+            });
+        });
+    </script>
 </body>
 
 </html>
