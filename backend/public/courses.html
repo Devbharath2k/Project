@@ -144,7 +144,7 @@
                 <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-8" data-aos="fade-right" data-aos-duration="600">
                             <ul class="nav justify-content-between align-items-center">
                                 <li class="nav-item col-xl-4 col-md-6">
                                     <a class="nav-link active" aria-current="page" href="#">Manual Testing</a>
@@ -190,7 +190,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-left" data-aos-duration="600">
                             <p class="secondary-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
                                 fuga ratione,
                                 consequuntur
@@ -203,21 +203,24 @@
 
                 <div class="tab-pane fade" id="v-pills-dev" role="tabpanel" aria-labelledby="v-pills-dev-tab"
                     tabindex="0">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">MERN Stack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MEAN Stack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">JAVA Fullstack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PYTHON Fullstack</a>
-                        </li>
-
-                    </ul>
+                    <div class="row" data-aos="fade-right" data-aos-duration="600">
+                        <div class="col-md-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">MERN Stack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MEAN Stack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">JAVA Fullstack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PYTHON Fullstack</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-devops" role="tabpanel" aria-labelledby="v-pills-devops-tab"
                     tabindex="0">Devops</div>
@@ -258,6 +261,18 @@
     <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script src="assets/js/script.js"></script>
     <script src="./assets/js/footer.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-link').on('click', function () {
+                // Remove the 'show' class from all tab contents
+                $('.tab-pane').removeClass('show');
+
+                // Add the 'show' class to the selected tab content
+                var targetId = $(this).data('bs-target').substring(1);
+                $(targetId).addClass('data-aos');
+            });
+        });
+    </script>
 </body>
 
 </html>
