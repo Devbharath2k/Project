@@ -142,8 +142,8 @@ img {
     display: none;
 }
 
-.nav-link,
-.navbar-brand {
+.navbar .nav-link,
+.navbar .navbar-brand {
     color: var(--link-color);
     font-weight: 400;
     font-size: 15px;
@@ -155,7 +155,7 @@ img {
     transition: var(--transition1);
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
     font-family: 'Oleo Script';
     font-weight: 400;
     background-color: var(--primary-color);
@@ -166,13 +166,13 @@ img {
     background: transparent;
 }
 
-.nav-link.active,
-.nav-link:hover {
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
     box-shadow: inset 104px 0 0px 0 #f7851d;
     color: white !important;
 }
 
-.nav-drop {
+.navbar .nav-drop {
     top: calc(100% + 0px);
     position: absolute;
     background: white;
@@ -374,7 +374,7 @@ img {
 
 .pap-card {
     border-radius: 0px 30px;
-    animation: border 4s linear infinite ;
+    animation: border 6s linear infinite ;
 }
 
 @keyframes border{
