@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "react-scripts start --host 192.168.29.194"
   },
   "keywords": [],
   "author": "",
