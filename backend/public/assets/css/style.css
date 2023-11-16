@@ -112,6 +112,10 @@ img {
     height: 80vh;
 }
 
+.vh-500px{
+    height: 500px !important;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -237,6 +241,7 @@ img {
     background-position: center;
     background-attachment: fixed; */
     position: relative;
+    overflow: hidden;
 }
 
 .aboutUs .hero-banner {
@@ -345,7 +350,7 @@ img {
 
 #finisher-canvas {
     background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%);
-    height: 100%;
+    height: 102%;
     width: 100%;
     object-fit: contain;
 }
@@ -353,6 +358,10 @@ img {
 .hero-banner2 #finisher-canvas {
     background: url('../imagesandvectors/bg/contact/newcontact.png') fixed bottom;
     background-size: cover;
+}
+
+.vh-60{
+    height: 60vh;
 }
 
 .hero-banner::before {
@@ -365,6 +374,11 @@ img {
     background-size: contain;
     /* transform: rotate(359deg); */
     transform: scaleX(-1);
+}
+
+.new-hero::before{
+    background: url('https://www.thinq24.com/static/img/banner/img1.png');
+    opacity: .8;
 }
 /* pap style */
 
@@ -756,7 +770,8 @@ vertical-align: middle;
 
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item,
+.atit-box .atit-card-1:nth-child(1) .slide-service-item {
     padding: 30px 20px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -794,7 +809,8 @@ vertical-align: middle;
 
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item,
+.atit-box .atit-card-1:nth-child(1) .slide-service-item  {
     padding: 30px 20px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -803,7 +819,8 @@ vertical-align: middle;
 }
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item,
+.atit-box .atit-card-1:nth-child(1) .slide-service-item  {
     transform: translateX(0) rotateZ(0) scale(.9);
 }
 
@@ -1667,4 +1684,23 @@ footer a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+<<<<<<< HEAD
  /* ==================================================================================== */
+=======
+
+/* ///sidePAP------------------- */
+@keyframes blink {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#sidePAP .linear-gradient-text {
+     /* background-image: linear-gradient(to right, #ff0000, #00ff00);
+    color: transparent; */
+    animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
+}
+>>>>>>> 77371fc67ab4410be7622f325007595d6dbaf951
