@@ -1038,6 +1038,11 @@ vertical-align: middle;
     margin: 10px auto;
 }
 
+/* @media (min-width: 768px) {
+    .coursesList .classes-options .classes-content{
+        min-height: 270px;
+    }
+} */
 /* ---------------------------------------------------------------------- */
 
 
