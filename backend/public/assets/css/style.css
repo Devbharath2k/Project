@@ -1727,7 +1727,16 @@ footer a:hover {
 }
 
 #sidePAP .linear-gradient-text {
-<<<<<<< HEAD
+    font-size: 24px;
+    font-weight: bold;
+    /* color: #ff0000; */
+    /* background: linear-gradient(45deg, #ff0000); */
+    /* background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+    animation: pulse 3s linear infinite;
+    text-decoration: none;
      /* background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent; */
     animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
@@ -1748,16 +1757,3 @@ footer a:hover {
             min-height: 142px;
     }
 }
-=======
-    font-size: 24px;
-    font-weight: bold;
-    /* color: #ff0000; */
-    /* background: linear-gradient(45deg, #ff0000); */
-    /* background-size: 200% 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text; */
-    animation: pulse 3s linear infinite;
-    text-decoration: none;
-}
->>>>>>> 18509ec58d41086f8996c93f4cd12fb8f1e7e066
