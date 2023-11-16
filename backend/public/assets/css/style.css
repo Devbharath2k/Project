@@ -1684,9 +1684,6 @@ footer a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-<<<<<<< HEAD
- /* ==================================================================================== */
-=======
 
 /* ///sidePAP------------------- */
 @keyframes blink {
@@ -1703,4 +1700,19 @@ footer a:hover {
     color: transparent; */
     animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
 }
->>>>>>> 77371fc67ab4410be7622f325007595d6dbaf951
+
+@media screen and (min-width:768px){
+    .coursesList .class-content{
+            min-height: 242px;
+    }
+}
+@media screen and (min-width:992px){
+    .coursesList .class-content{
+            min-height: 170px;
+    }
+}
+@media screen and (min-width:1024px){
+    .coursesList .class-content{
+            min-height: 142px;
+    }
+}
