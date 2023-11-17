@@ -158,6 +158,12 @@ img {
     width: 120px;
 }
 
+.nav-holder.nav-fixed .navbar-brand {
+    transition: .3s;
+    width: auto;
+    padding: 5px 20px;
+}
+
 
 .nav-holder.nav-fixed .navbar-brand img {
     height: 100%;
@@ -240,6 +246,23 @@ img {
 .nav-drop .nav-link:hover {
     box-shadow: inset 200px 0 0px 0 #f7851d;
 }
+
+.nav-holder.nav-fixed .navbar-brand {
+    transition: .3s;
+    width: auto;
+    padding: 5px 20px;
+}
+
+.nav-holder.nav-fixed {
+    background-color: white;
+    box-shadow: var(--box-shadow1);
+}
+
+.nav-holder.nav-fixed .shadow1 {
+    box-shadow: unset;
+    border-radius: 0 !important;
+}
+
 
 .kenburns-top {
     -webkit-animation: kenburns-top 5s linear infinite alternate forwards;

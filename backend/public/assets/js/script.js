@@ -119,3 +119,24 @@ new FinisherHeader({
         "c"
     ]
 });
+
+
+// side bar script
+
+$(document).ready(function () {
+    function startAnimation() {
+        // Remove the animation class to reset the animation
+        $('.cloud').addClass('animated-element');
+
+        // Add the animation class after a delay of 5 seconds
+        setTimeout(function () {
+            $('.cloud').removeClass('animated-element');
+        }, 5000);
+    }
+
+    // Set up a loop to restart the animation every 30 seconds
+    setInterval(startAnimation, 30000);
+
+    setTimeout($('.cloud').addClass('animated-element'), 5000)
+    setTimeout($('.cloud').removeClass('animated-element'), 10000)
+});
