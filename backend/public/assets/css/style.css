@@ -358,10 +358,12 @@ img {
 }
 
 #finisher-canvas {
-    background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%);
+    background:url(../img/gradient-7258997_640.webp);
     height: 102%;
     width: 100%;
     object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-banner2 #finisher-canvas {
@@ -375,7 +377,7 @@ img {
 
 .hero-banner::before {
     content: '';
-    background: url(../imagesandvectors/bg/neone.png) 00% no-repeat;
+    /* background: url(../imagesandvectors/bg/neone.png) 00% no-repeat; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -386,7 +388,7 @@ img {
 }
 
 .new-hero::before {
-    background: url('https://www.thinq24.com/static/img/banner/img1.png');
+    /* background: url('https://www.thinq24.com/static/img/banner/img1.png'); */
     opacity: .8;
 }
 
