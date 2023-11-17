@@ -1614,19 +1614,19 @@ footer a:hover {
         max-width: 65%;
     }
 
-    .nav-link {
+    .nav-holder .nav-link {
         width: 100%;
     }
 
-    .nav-link.active,
-    .nav-link:hover {
+    .nav-holder .nav-link.active,
+    .nav-holder .nav-link:hover {
         box-shadow: none;
         position: relative;
         color: var(--primary-color) !important;
         transition: .3s;
     }
 
-    .nav-link::before {
+    .nav-holder .nav-link::before {
         transition: .3s;
         content: "";
         width: 0px;
