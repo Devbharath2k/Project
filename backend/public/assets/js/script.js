@@ -34,30 +34,47 @@ var mbnew = $('.card-img-overlay').height() + 100;
 
 $('.hero-banner').css("margin-bottom", mbnew, '+px')
 
+// $(document).ready(function () {
+//     var previousScroll = 0;
+
+//     $(window).scroll(function () {
+//         var currentScroll = $(this).scrollTop();
+
+//         if ($(this).scrollTop() > 200) {
+//             $('.nav-holder').addClass('nav-animate');
+//             if ($(this).scrollTop() > window.innerHeight && currentScroll < previousScroll) {
+//                 // Scrolling down
+//                 $('.nav-holder').addClass('nav-fixed');
+//             } else {
+//                 $('.nav-holder').removeClass('nav-fixed');
+//             }
+//         } else {
+//             // Scrolling up
+//             $('.nav-holder').removeClass('nav-animate');
+//         }
+
+//         previousScroll = currentScroll;
+//     });
+// });
+
 $(document).ready(function () {
-    var previousScroll = 0;
 
     $(window).scroll(function () {
-        var currentScroll = $(this).scrollTop();
 
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() >= 100) {
             $('.nav-holder').addClass('nav-animate');
-            if ($(this).scrollTop() > window.innerHeight && currentScroll < previousScroll) {
-                // Scrolling down
+            if($(this).scrollTop() > 500){
                 $('.nav-holder').addClass('nav-fixed');
-            } else {
-                $('.nav-holder').removeClass('nav-fixed');
             }
-        } else {
-            // Scrolling up
-            $('.nav-holder').removeClass('nav-animate');
         }
-
-        previousScroll = currentScroll;
+         else {
+            // Scrolling up
+            $('.nav-holder').removeClass('nav-animate nav-fixed');
+        }
     });
 });
 
-$('#rocket-container').click(function(){
+$('#rocket-container').click(function () {
     $('html').animate({ scrollTop: 0 }, 'fast');
 })
 
