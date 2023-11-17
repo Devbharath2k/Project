@@ -26,6 +26,10 @@ $(document).ready(function () {
 
         rocketContainer.css("bottom", `calc(${percentage}%)`);
         rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+
+        if ($(window).width() < 992) {
+            rocketContainer.css("transform", `translate(0, ${percentage + 50}%)`);
+        }
     });
 
 });
@@ -63,11 +67,11 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() >= 100) {
             $('.nav-holder').addClass('nav-animate');
-            if($(this).scrollTop() > 500){
+            if ($(this).scrollTop() > 500) {
                 $('.nav-holder').addClass('nav-fixed');
             }
         }
-         else {
+        else {
             // Scrolling up
             $('.nav-holder').removeClass('nav-animate nav-fixed');
         }
