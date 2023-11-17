@@ -18,14 +18,6 @@ body,
     cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
 }
 
-.text-1 {
-    font-size: 15px;
-    line-height: 2;
-    letter-spacing: 0.5px;
-    word-spacing: 0.5rem;
-    font-weight: 600;
-}
-
 .linear-gradient-text {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent;
@@ -366,12 +358,10 @@ img {
 }
 
 #finisher-canvas {
-    background:url(../img/gradient-7258997_640.webp);
+    background: linear-gradient(270deg, rgb(25 151 236) 0%, #000 100%);
     height: 102%;
     width: 100%;
     object-fit: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hero-banner2 #finisher-canvas {
@@ -385,7 +375,7 @@ img {
 
 .hero-banner::before {
     content: '';
-    /* background: url(../imagesandvectors/bg/neone.png) 00% no-repeat; */
+    background: url(../imagesandvectors/bg/neone.png) 00% no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -396,7 +386,7 @@ img {
 }
 
 .new-hero::before {
-    /* background: url('https://www.thinq24.com/static/img/banner/img1.png'); */
+    background: url('https://www.thinq24.com/static/img/banner/img1.png');
     opacity: .8;
 }
 
