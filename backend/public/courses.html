@@ -205,77 +205,86 @@
 
 <body>
 
-    <div class="nav-holder">
-        <nav class="navbar navbar-expand-md py-0 col-lg-10 col-md-11  mx-auto">
-            <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
-                data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
-                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+        <!-- nav starts -->
+
+        <div class="nav-holder">
+            <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
+                <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                    <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                        <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="d-lg-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                        <i class="fa-solid fa-bars fa-xl text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                        <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="courses.html">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Pay after Placement" class="nav-link" href="placement.html">PAP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Blog.html">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- offcanvas navbar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+            <div class="offcanvas-header p-0 px-2">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="index.html">
                     <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
                 </a>
-                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
                 </button>
-                <button class="d-md-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
-                    <i class="fa-solid fa-bars fa-xl text-white"></i>
-                </button>
-                <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-                    <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="courses.html">Courses</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a title="pay after Placement" class="nav-link" href="./placement.html">PAP</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </div>
-
-    <!-- offcanvas navbar -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
-        <div class="offcanvas-header p-0 px-2">
-            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
-                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
-            </a>
-            <button type="button" class="btn-close m-2 me-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-body px-0 py-5 text-center">
+                <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="placement.css">PAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body px-0 py-5 text-center">
-            <ul class="navbar-nav ms-auto overflow-hidden mb-0 bg-light rounded-bottom-3">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Blog.html">Blog</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    
+        <!-- nav ends -->
 
     <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
         <div class="hero-vector1 d-none">
@@ -493,675 +502,9 @@
 
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab"
-                    tabindex="0">
-                    <div class="">
-                        <div class="row g-5">
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card1 text-white">Core Java</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card2 text-white">API-Postman</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card3 text-white">Manual Testing</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card4 text-white">Page Object Model</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card5 text-white">Git</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card6 text-white">Jenkins</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card7 text-white">Mern Stack</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card8 text-white">Maven</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card9 text-white">Python</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card10 text-white">Data Science</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card11 text-white">Java</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card12 text-white">Mean Stack</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card13 text-white">Docker</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card14 text-white">AWS-Service</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card15 text-white">Cucumber</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card16 text-white">DB Testing</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card17 text-white">Advance Java</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card18 text-white">Deep Learning</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class=course-card19 text-white">API_Rest Assured</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card20 text-white">TestNG</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card21 text-white">Selenium</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="course/full-stack-developer-certification-training-course.html"
-                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
-                                    <div class="w-100 common-card-image">
-                                        <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
-                                    </div>
-                                    <div class="w-100 p-4 common-card-content">
-                                        <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
-                                        <h6 class="mb-4 text-black">800+ Successful Learners</h6>
-                                        <div class="w-100 d-flex align-items-center flex-wrap">
-                                            <div class="rating-block">
-                                                <div class="rating-star">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-                                                    <img src="https://assets.testleaf.com/assets/img/star.svg"
-                                                        alt="Rating Icon">
-
-                                                </div>
-                                                <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-            </div>
+                <!-- ALL SECTIONS -->
+               
+            <!-- TESTING SECTIONS -->
             <div class="tab-pane fade" id="pills-Testing" role="tabpanel" aria-labelledby="pills-Testing-tab"
                 tabindex="0">
                 <div class="container-fluid">
@@ -1170,7 +513,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card17 text-white">Advance Java</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1200,7 +543,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card2 text-white">API-Postman</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1230,7 +573,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card19 text-white">API-Rest Assured</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1260,7 +603,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card14 text-white">AWS-Service</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1290,7 +633,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card1 text-white">Core Java</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1320,7 +663,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card15 text-white">Cucumber</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1350,7 +693,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card16 text-white">DBTesting</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1380,7 +723,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card13 text-white">Docker</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1410,7 +753,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card5 text-white">Git</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1440,7 +783,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card6 text-white">Jenkins</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1470,7 +813,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card3 text-white">Manual Testing</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1500,7 +843,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card7 text-white">Maven</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1530,7 +873,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card4 text-white">Page Object Model</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1560,7 +903,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card21 text-white">Selenium</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1590,7 +933,7 @@
                             <a href="course/full-stack-developer-certification-training-course.html"
                                 class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
-                                    <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                    <h4 class="course-card20 text-white">Testing</h4>
                                 </div>
                                 <div class="w-100 p-4 common-card-content">
                                     <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1620,6 +963,7 @@
                     </div>
                 </div>
             </div>
+            <!-- DEVELOPMENT SECTIONS -->
             <div class="tab-pane fade" id="pills-Development" role="tabpanel" aria-labelledby="pills-Development-tab"
                 tabindex="0">
                 <div class="row g-5">
@@ -1627,7 +971,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card1 text-white">Core Java</h4>
+                                <h4 class="course-card11 text-white">Java</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1657,7 +1001,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card1 text-white">Core Java</h4>
+                                <h4 class="course-card12 text-white">Mean Stack</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1687,7 +1031,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card1 text-white">Core Java</h4>
+                                <h4 class="course-card7 text-white">Mern Stack</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1717,7 +1061,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card1 text-white">Core Java</h4>
+                                <h4 class="course-card9 text-white">Python</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1749,7 +1093,7 @@
                     </div>
 
                 </div>
-
+                <!-- DATASCIENCE SECTIONS -->
                 <div class="tab-pane fade" id="pills-science" role="tabpanel" aria-labelledby="pills-science-tab"
                 tabindex="0">
                 <div class="row g-5">
@@ -1787,7 +1131,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                <h4 class="course-card10 text-white">Data Science</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1817,7 +1161,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card22 text-white">Artificial-Intelligence</h4>
+                                <h4 class="course-card18 text-white">Deep Learning</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1850,7 +1194,7 @@
 
 
                 </div>
-          
+          <!-- DEVOPS SECTIONS -->
             <div class="tab-pane fade" id="pills-Devops" role="tabpanel" aria-labelledby="pills-Devops-tab"
                 tabindex="0">
                 <div class="row g-5">
@@ -1858,7 +1202,7 @@
                         <a href="course/full-stack-developer-certification-training-course.html"
                             class="card pap-card overflow-hidden border-0 shadow1 d-block">
                             <div class="w-100 common-card-image">
-                                <h4 class="course-card13 text-white">SOFTWARE TESTING</h4>
+                                <h4 class="course-card23 text-white">Devops</h4>
                             </div>
                             <div class="w-100 p-4 common-card-content">
                                 <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
@@ -1886,7 +1230,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                </div>
                         </div>
                     </div>
                 </div>
@@ -1917,11 +1261,7 @@
         <img src="./assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp">
     </a>
 
-    <div class="pap">
-        <a href="./placement.html" class="text-center text-capitalize primary-text fs-3 linear-gradient-text">
-            Pay After Placement
-        </a>
-    </div>
+   
 
 
 
