@@ -406,10 +406,10 @@ img {
     object-fit: contain;
 }
 
-.hero-banner2 #finisher-canvas {
+/* .hero-banner2 #finisher-canvas {
     background: url('../imagesandvectors/bg/contact/newcontact.png') fixed bottom;
     background-size: cover;
-}
+} */
 
 .vh-60 {
     height: 60vh;
@@ -1100,6 +1100,11 @@ vertical-align: middle;
     margin: 10px auto;
 }
 
+/* @media (min-width: 768px) {
+    .coursesList .classes-options .classes-content{
+        min-height: 270px;
+    }
+} */
 /* ---------------------------------------------------------------------- */
 
 
