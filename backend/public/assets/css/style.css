@@ -364,10 +364,10 @@ img {
     object-fit: contain;
 }
 
-.hero-banner2 #finisher-canvas {
+/* .hero-banner2 #finisher-canvas {
     background: url('../imagesandvectors/bg/contact/newcontact.png') fixed bottom;
     background-size: cover;
-}
+} */
 
 .vh-60 {
     height: 60vh;
@@ -1742,4 +1742,23 @@ footer a:hover {
     background-clip: text; */
     animation: pulse 3s linear infinite;
     text-decoration: none;
+     /* background-image: linear-gradient(to right, #ff0000, #00ff00);
+    color: transparent; */
+    animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
+}
+
+@media screen and (min-width:768px){
+    .coursesList .class-content{
+            min-height: 242px;
+    }
+}
+@media screen and (min-width:992px){
+    .coursesList .class-content{
+            min-height: 170px;
+    }
+}
+@media screen and (min-width:1024px){
+    .coursesList .class-content{
+            min-height: 142px;
+    }
 }
