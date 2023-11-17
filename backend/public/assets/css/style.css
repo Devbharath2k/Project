@@ -141,6 +141,7 @@ img {
 .nav-holder.nav-fixed {
     transform: translate(0%, 0%);
     position: fixed;
+    background-color: white;
 }
 
 .nav-fixed .navbar {
@@ -149,7 +150,15 @@ img {
 }
 
 .nav-holder.nav-fixed .navbar-brand {
-    display: none;
+    /* display: none; */
+    height: 60px;
+    transition: .3s;
+    width: 120px;
+}
+
+
+.nav-holder.nav-fixed .navbar-brand img{
+    height: 100%;
 }
 
 .navbar .nav-link,
