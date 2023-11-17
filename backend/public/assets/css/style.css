@@ -16,6 +16,7 @@
 body,
 * {
     cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
+    scroll-behavior: smooth;
 }
 
 .linear-gradient-text {
@@ -69,9 +70,10 @@ img {
     background: transparent;
 }
 
-.primary-btn:hover {
-    color: #ffffff;
-    background-color: var(--primary-color);
+.primary-btn:hover, .primary-btn:active {
+    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .primary-text {
@@ -112,7 +114,7 @@ img {
     height: 80vh;
 }
 
-.vh-500px{
+.vh-500px {
     height: 500px !important;
 }
 
@@ -140,10 +142,24 @@ img {
 .nav-holder.nav-fixed {
     transform: translate(0%, 0%);
     position: fixed;
+    background-color: white;
+}
+
+.nav-fixed .navbar {
+    /* background: white; */
+    border-radius: 0px 0px 10px 10px;
 }
 
 .nav-holder.nav-fixed .navbar-brand {
-    display: none;
+    /* display: none; */
+    height: 60px;
+    transition: .3s;
+    width: 120px;
+}
+
+
+.nav-holder.nav-fixed .navbar-brand img{
+    height: 100%;
 }
 
 .navbar .nav-link,
@@ -206,7 +222,9 @@ img {
     z-index: -1;
     opacity: 0;
 }
-.nav-item .nav-item:hover .nav-drop, .nav-item .nav-item:target .nav-drop {
+
+.nav-item .nav-item:hover .nav-drop,
+.nav-item .nav-item:target .nav-drop {
     transform: none;
     top: 0;
     right: 101%;
@@ -227,9 +245,10 @@ img {
     animation: kenburns-top 5s linear infinite alternate forwards
 }
 
-#hero-banner{
+#hero-banner {
     background-image: url();
 }
+
 .hero-banner {
     /* background: linear-gradient(129deg, rgba(215, 241, 240, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(226, 226, 250, 1) 100%); */
     height: 96vh;
@@ -360,7 +379,7 @@ img {
     background-size: cover;
 }
 
-.vh-60{
+.vh-60 {
     height: 60vh;
 }
 
@@ -376,10 +395,11 @@ img {
     transform: scaleX(-1);
 }
 
-.new-hero::before{
+.new-hero::before {
     background: url('https://www.thinq24.com/static/img/banner/img1.png');
     opacity: .8;
 }
+
 /* pap style */
 
 .pap-img {
@@ -388,13 +408,21 @@ img {
 
 .pap-card {
     border-radius: 0px 30px;
-    animation: border 6s linear infinite ;
+    animation: border 6s linear infinite;
 }
 
-@keyframes border{
-    0%{border-radius: 0px 30px;}
-    50%{border-radius: 30px 0px;}
-    100%{border-radius: 0px 30px;}
+@keyframes border {
+    0% {
+        border-radius: 0px 30px;
+    }
+
+    50% {
+        border-radius: 30px 0px;
+    }
+
+    100% {
+        border-radius: 0px 30px;
+    }
 }
 
 @keyframes hero-right {
@@ -810,7 +838,7 @@ vertical-align: middle;
 
 .atit-box .atit-card-1.active .slide-service-item,
 .atit-box .atit-card-1:hover .slide-service-item,
-.atit-box .atit-card-1:nth-child(1) .slide-service-item  {
+.atit-box .atit-card-1:nth-child(1) .slide-service-item {
     padding: 30px 20px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -820,7 +848,7 @@ vertical-align: middle;
 
 .atit-box .atit-card-1.active .slide-service-item,
 .atit-box .atit-card-1:hover .slide-service-item,
-.atit-box .atit-card-1:nth-child(1) .slide-service-item  {
+.atit-box .atit-card-1:nth-child(1) .slide-service-item {
     transform: translateX(0) rotateZ(0) scale(.9);
 }
 
@@ -870,11 +898,11 @@ vertical-align: middle;
 
 @media (max-width: 768px) {
 
-    .primary-header{
+    .primary-header {
         font-size: 30px;
     }
 
-    .secondary-header{
+    .secondary-header {
         font-size: 20px;
     }
 
@@ -924,8 +952,9 @@ vertical-align: middle;
     width: 70px;
     display: inline-block;
 }
+
 #devopss {
-    background: linear-gradient(270deg, rgba(25, 152, 236, 0.354) 0%, #0000003f 100%),url("../img/newcontact.png");
+    background: linear-gradient(270deg, rgba(25, 152, 236, 0.354) 0%, #0000003f 100%), url("../img/newcontact.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -944,6 +973,7 @@ vertical-align: middle;
     overflow: hidden;
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.267)), url("") fixed center center;
 }
+
 /* .coursesList .hero-banner::after {
         content: "";
         position: absolute;
@@ -1307,6 +1337,7 @@ vertical-align: middle;
 footer a:hover {
     color: var(--primary-color);
 }
+
 /* nivetha lines starts----------- */
 
 
@@ -1377,14 +1408,15 @@ footer a:hover {
 /* nivetha line ends------------- */
 /* nivetha cometlines starts----------- */
 
-.comet{
+.comet {
     position: absolute;
     width: 100%;
     height: 200%;
     top: -5rem;
-    left:0;
+    left: 0;
 
 }
+
 .cometlines {
     position: relative;
     top: -11vh;
@@ -1416,15 +1448,18 @@ footer a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
+
 .cometlines:nth-child(2) .cometline::after {
-    animation-delay: 2.5s; 
-  }
-  .cometlines:nth-child(3) .cometline::after {
-    animation-delay: 0.5s; 
-  }
-  .cometlines:nth-child(4) .cometline::after {
-    animation-delay:3s;
-  }
+    animation-delay: 2.5s;
+}
+
+.cometlines:nth-child(3) .cometline::after {
+    animation-delay: 0.5s;
+}
+
+.cometlines:nth-child(4) .cometline::after {
+    animation-delay: 3s;
+}
 
 
 @keyframes drop {
@@ -1685,18 +1720,50 @@ footer a:hover {
     display: block;
 }
 
-/* ///sidePAP------------------- */
-@keyframes blink {
-    0%,100% {
+
+@keyframes pulse {
+    0% {
+        background-position: 0% 50%;
         opacity: 1;
     }
     50% {
         opacity: 0;
+        background-position: 100% 50%;
+    }
+    100% {
+        opacity: 1;
+        background-position: 0% 50%;
     }
 }
 
 #sidePAP .linear-gradient-text {
+    font-size: 24px;
+    font-weight: bold;
+    /* color: #ff0000; */
+    /* background: linear-gradient(45deg, #ff0000); */
+    /* background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+    animation: pulse 3s linear infinite;
+    text-decoration: none;
      /* background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent; */
     animation: blink 1s ease-in-out infinite; /* Adjust the duration as needed */
+}
+
+@media screen and (min-width:768px){
+    .coursesList .class-content{
+            min-height: 242px;
+    }
+}
+@media screen and (min-width:992px){
+    .coursesList .class-content{
+            min-height: 170px;
+    }
+}
+@media screen and (min-width:1024px){
+    .coursesList .class-content{
+            min-height: 142px;
+    }
 }
