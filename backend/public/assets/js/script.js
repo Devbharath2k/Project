@@ -26,6 +26,10 @@ $(document).ready(function () {
 
         rocketContainer.css("bottom", `calc(${percentage}%)`);
         rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+
+        if ($(window).width() < 992) {
+            rocketContainer.css("transform", `translate(0, ${percentage + 50}%)`);
+        }
     });
 
 });
@@ -34,30 +38,47 @@ var mbnew = $('.card-img-overlay').height() + 100;
 
 $('.hero-banner').css("margin-bottom", mbnew, '+px')
 
+// $(document).ready(function () {
+//     var previousScroll = 0;
+
+//     $(window).scroll(function () {
+//         var currentScroll = $(this).scrollTop();
+
+//         if ($(this).scrollTop() > 200) {
+//             $('.nav-holder').addClass('nav-animate');
+//             if ($(this).scrollTop() > window.innerHeight && currentScroll < previousScroll) {
+//                 // Scrolling down
+//                 $('.nav-holder').addClass('nav-fixed');
+//             } else {
+//                 $('.nav-holder').removeClass('nav-fixed');
+//             }
+//         } else {
+//             // Scrolling up
+//             $('.nav-holder').removeClass('nav-animate');
+//         }
+
+//         previousScroll = currentScroll;
+//     });
+// });
+
 $(document).ready(function () {
-    var previousScroll = 0;
 
     $(window).scroll(function () {
-        var currentScroll = $(this).scrollTop();
 
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() >= 100) {
             $('.nav-holder').addClass('nav-animate');
-            if ($(this).scrollTop() > window.innerHeight && currentScroll < previousScroll) {
-                // Scrolling down
+            if ($(this).scrollTop() > 500) {
                 $('.nav-holder').addClass('nav-fixed');
-            } else {
-                $('.nav-holder').removeClass('nav-fixed');
             }
-        } else {
-            // Scrolling up
-            $('.nav-holder').removeClass('nav-animate');
         }
-
-        previousScroll = currentScroll;
+        else {
+            // Scrolling up
+            $('.nav-holder').removeClass('nav-animate nav-fixed');
+        }
     });
 });
 
-$('#rocket-container').click(function(){
+$('#rocket-container').click(function () {
     $('html').animate({ scrollTop: 0 }, 'fast');
 })
 
@@ -97,4 +118,25 @@ new FinisherHeader({
     "shapes": [
         "c"
     ]
+});
+
+
+// side bar script
+
+$(document).ready(function () {
+    function startAnimation() {
+        // Remove the animation class to reset the animation
+        $('.cloud').addClass('animated-element');
+
+        // Add the animation class after a delay of 5 seconds
+        setTimeout(function () {
+            $('.cloud').removeClass('animated-element');
+        }, 5000);
+    }
+
+    // Set up a loop to restart the animation every 30 seconds
+    setInterval(startAnimation, 30000);
+
+    setTimeout($('.cloud').addClass('animated-element'), 5000)
+    setTimeout($('.cloud').removeClass('animated-element'), 10000)
 });

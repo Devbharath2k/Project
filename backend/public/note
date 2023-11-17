@@ -1,0 +1,30 @@
+<div class="col-md-4 col-lg-3">
+    <a href="course/full-stack-developer-certification-training-course.html"
+        class="card pap-card overflow-hidden border-0 shadow1 d-block">
+        <div class="w-100 common-card-image">
+            <h4 class="primary-header24 text-white">SOFTWARE TESTING</h4>
+        </div>
+        <div class="w-100 p-4 common-card-content">
+            <h6 class="mb-1 green-text text-success">LIVE TRAINING</h6>
+            <h6 class="mb-4 text-black">800+ Successful Learners</h6>
+            <div class="w-100 d-flex align-items-center flex-wrap">
+                <div class="rating-block">
+                    <div class="rating-star">
+                        <img src="https://assets.testleaf.com/assets/img/star.svg"
+                            alt="Rating Icon">
+                        <img src="https://assets.testleaf.com/assets/img/star.svg"
+                            alt="Rating Icon">
+                        <img src="https://assets.testleaf.com/assets/img/star.svg"
+                            alt="Rating Icon">
+                        <img src="https://assets.testleaf.com/assets/img/star.svg"
+                            alt="Rating Icon">
+                        <img src="https://assets.testleaf.com/assets/img/star.svg"
+                            alt="Rating Icon">
+
+                    </div>
+                    <p class="m-0 mt-2 text-secondary">EARN UPTO 54 LAKHS</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
