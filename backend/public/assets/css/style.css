@@ -1746,6 +1746,9 @@ footer a:hover {
     .coursesList .class-content{
             min-height: 242px;
     }
+    .coursesList .card {
+        height: 100%;
+}
 }
 @media screen and (min-width:992px){
     .coursesList .class-content{
