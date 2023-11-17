@@ -16,6 +16,7 @@
 body,
 * {
     cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
+    scroll-behavior: smooth;
 }
 
 .linear-gradient-text {
