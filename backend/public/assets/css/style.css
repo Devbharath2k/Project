@@ -18,6 +18,14 @@ body,
     cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
 }
 
+.text-1 {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5rem;
+    font-weight: 600;
+}
+
 .linear-gradient-text {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent;
