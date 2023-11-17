@@ -14,6 +14,83 @@
 </head>
 
 <body>
+      <!-- nav starts -->
+
+      <div class="nav-holder">
+        <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
+            <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
+                data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+                    <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="d-lg-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
+                    <i class="fa-solid fa-bars fa-xl text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                    <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Pay after Placement" class="nav-link" href="placement.html">PAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Blog2.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- offcanvas navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+        <div class="offcanvas-header p-0 px-2">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="index.html">
+                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            </a>
+            <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                <i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body px-0 py-5 text-center">
+            <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- nav ends -->
     <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
         <div class="hero-vector1 d-none">
             <img src="assets/imagesandvectors/vectors/vec-1.png" alt="">
@@ -41,7 +118,7 @@
         </div>
     </section>
     <div class="text-center text-capitalize">
-        <p class="display-5 fw-semibold">ATIT Blog</p>
+        <p class="display-5 fw-semibold linear-gradient-text">ATIT Blog</p>
         <p class=" fw-medium mb-2 text-center mb-5">The classroom management tool designed to become student-driven
         </p>
     </div>
@@ -57,7 +134,7 @@
             </div>
             <div class="col-md-6">
                 <div class="box rounded-5 ">
-                    <img src="./assets/img/hero-bg.jpg">
+                    <img src="./assets/img/coworkers.jpg">
                     <div class="box-content">
                         <h4 class=" text-center mt-4 fw-medium title">welcome to the code</h4>
                     </div>
@@ -66,97 +143,774 @@
         </div>
     </div>
     <div class="container-fluid">
-        <section class="d-flex justify-content-center mt-4">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <div class="d-flex justify-content-center mt-5">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active mx-2" id="pills-categories-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories"
+                    <button class="nav-link active rounded-pill" id="pills-all-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
                         aria-selected="true">All Categories</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link mx-2" id="pills-college-tab" data-bs-toggle="pill"
+                    <button class="nav-link rounded-pill" id="pills-college-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-college" type="button" role="tab" aria-controls="pills-college"
                         aria-selected="false">College</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link mx-2" id="pills-School-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-school" type="button" role="tab" aria-controls="pills-school"
-                        aria-selected="false">High School</button>
+                    <button class="nav-link rounded-pill" id="pills-highschool-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-highschool" type="button" role="tab" aria-controls="pills-highschool"
+                        aria-selected="false">High school</button>
                 </li>
             </ul>
-        </section>
+
+        </div>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-categories" role="tabpanel"
-                aria-labelledby="pills-categories-tab" tabindex="0">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="box rounded-5 position-relative ">
-                                <div class="outer pt-3 ps-3 pe-3 pb-3" style="background-color: #078b7e;">
-                                    <div class="inner bg-dark rounded-2 pb-5">
-                                        <h2 class="text-light">card content</h2>
-                                        <p class="text-light">card content</p>
-                                        <p class="text-light">card content</p>
-                                        <!-- <p class="text-light">card content</p> -->
-                                    </div>  
-                                    <div class="position-absolute bottom-0 start-0 w-100">
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00aa9c" fill-opacity="1" d="M0,288L40,240C80,192,160,96,240,96C320,96,400,192,480,240C560,288,640,288,720,261.3C800,235,880,181,960,181.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> -->
-                                        <svg viewBox="0 0 500 200">
-                                            <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#06d1c1" opacity="0.5"></path>
-                                            <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#06d1c1" opacity="0.8"></path>
-                                            <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#078b7e"></path>
-                                        </svg>
-                                        
-                                   
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                tabindex="0">
+                <div id="blogList" class="row align-items-center justify-content-center">
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                               
-                                
-                            </div>
-                            
-                            <p class="text-center">December 16,2022</p>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="box rounded-5 ">
-                                <img
-                                    src="https://cdn.feather.blog/?src=https%3A%2F%2Fusenotioncms.com%2Fproxy%2Fblock%2Fc44e7afa-ed9f-4ce7-a115-28962dafa2a5%252Fd6de524e-d2f1-498e-9098-38b0c7c3ebb2%252FHow_to_track_student_progress_(2).png&optimizer=image">
-                                <div class="box-content">
-                                    <a href="" class="text-decoration-none text-center text-dark">
-                                        <p class="text-primary">EDUCATION</p>
-                                        <p class=" text-center mt-4 fw-medium title">
-                                            Engendering a culture of professional development
-                                        </p>
-                                    </a>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="text-center">December 16,2022</p>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="box rounded-5 ">
-                                <img src="./assets/img/Blog/education.png">
-                                <div class="box-content">
-                                    <a href="" class="text-decoration-none text-center text-dark">
-                                        <p class="text-primary">EDUCATION</p>
-                                        <p class=" text-center mt-4 fw-medium title">
-                                            Increasing engagement with Instagram
-                                        </p>
-                                    </a>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="text-center">December 16,2022</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded-5">
+                        <div class="border-0">
+                            <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                <div class="face face1 col-lg-4">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <a href="#" class="text-decoration-none ">
+                                            <h3 class="text-center
+                                                  text-primary">
+                                                EDUCATION
+                                            </h3>
+                                            <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                simple, yet unique
+                                                and memorable brand
+                                                identity</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-college" role="tabpanel" aria-labelledby="pills-college-tab"
                 tabindex="0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet placeat voluptatem iure! Explicabo
-                    at unde aut minus temporibus provident nulla praesentium ducimus.</p>
+                <div class="container">
+                    <div id="blogList" class="row align-items-center justify-content-center">
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="pills-school" role="tabpanel" aria-labelledby="pills-School-tab"
+            <div class="tab-pane fade" id="pills-highschool" role="tabpanel" aria-labelledby="pills-highschool-tab"
                 tabindex="0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet placeat voluptatem iure! Explicabo
-                    at unde aut minus temporibus provident nulla praesentium ducimus.</p>
+                <div class="container">
+                    <div id="blogList" class="row align-items-center justify-content-center">
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rounded-5">
+                            <div class="border-0">
+                                <div class="blogCards row align-items-center justify-content-center rounded-5">
+                                    <div class="face face1 col-lg-4">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <img src="./assets/img/Blog/college1.PNG" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <a href="#" class="text-decoration-none ">
+                                                <h3 class="text-center
+                                                      text-primary">
+                                                    EDUCATION
+                                                </h3>
+                                                <a href="./Blog-page.html" class="fw-normal text-dark text-decoration-none text-center">How to design a
+                                                    simple, yet unique
+                                                    and memorable brand
+                                                    identity</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -164,6 +918,42 @@
 
 
 
+
+    <!-- =================dev============== -->
+
+    <div class="container company-logos py-5 overflow-hidden">
+        <p class="text-center text-capitalize  justify-content-center mt-4 display-6 linear-gradient-text fw-semibold"
+            data-aos="fade-up" data-aos-duration="7000">
+
+            Our Trained Students are
+            Hired By</p>
+        <div class="row">
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/2.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/3.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/4.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/5.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/6.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ======= Footer from  dev ======= -->
+
+    <div id="footerElement"></div>
+
+
+    <!-- End Footer -->
 
 
 
