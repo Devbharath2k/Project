@@ -76,6 +76,7 @@
 
 #placement-accordion {
   .accordion-button:not(.collapsed) {
-    background-color: #f7851d;
+    background-color: rgba(154, 47, 168, 0.74);
+    color: whitesmoke;
   }
 }
