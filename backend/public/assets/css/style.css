@@ -1819,3 +1819,16 @@ footer a:hover {
         min-height: 142px;
     }
 }
+
+/* form------nivi starts */
+
+form .contact-form .form-control{
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+
+
+
+/* form------nivi ends */
