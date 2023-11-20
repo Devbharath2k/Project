@@ -46,8 +46,8 @@
   position: absolute;
   bottom: -3px;
   right: -3px;
-  border-bottom: 3px solid #ed1944;
-  border-right: 3px solid #ed1944;
+  border-bottom: 3px solid #f7851d;
+  border-right: 3px solid #f7851d;
   transition: all 0.5s ease 0s;
 }
 .pap-cards-lin:after {
@@ -58,8 +58,8 @@
   position: absolute;
   top: -3px;
   left: -3px;
-  border-top: 3px solid #ed1944;
-  border-left: 3px solid #ed1944;
+  border-top: 3px solid #f7851d;
+  border-left: 3px solid #f7851d;
   transition: all 0.5s ease 0s;
 }
 
@@ -78,10 +78,23 @@
 }
 
 #placement-accordion .accordion-button:not(.collapsed) {
-  background-color: rgba(238, 38, 211, 0.74);
+  background-color: #f7851d;
   color: whitesmoke;
 }
 
-.acc-bg{
-background-color: rgb(68, 129, 221);
-}
+/* .acc-bg{
+  background: linear-gradient(90deg, rgb(94, 161, 238) 0%, rgb(143, 190, 244) 100%);
+ 
+} */
+.primary-btn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  line-height: 1.5;
+  transition: .3s;
+  background: transparent;
+  }
+  .accordion-button {
+    box-shadow: 7px 5px 30px 0px rgba(0, 0, 0, 0.12);
+  }
