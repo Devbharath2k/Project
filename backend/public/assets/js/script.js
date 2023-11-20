@@ -1,38 +1,65 @@
 AOS.init();
 
-$(document).ready(function () {
-    resizeFullHeightSection();
+// $(document).ready(function () {
+//     resizeFullHeightSection();
 
-    // Handle window resize events to update the section height
-    $(window).resize(function () {
-        resizeFullHeightSection();
+//     // Handle window resize events to update the section height
+//     $(window).resize(function () {
+//         resizeFullHeightSection();
+//     });
+// });
+
+// function resizeFullHeightSection() {
+//     var windowHeight = $('.scroll section').height();
+//     $(".scroll-next").css("margin-top", `calc( 100vh + ${windowHeight / 2 + 'px'} )`);
+// }
+// $(document).ready(function () {
+//     var rocketContainer = $("#rocket-container");
+//     var rocket = $("#rocket").height();
+
+//     $(window).scroll(function () {
+//         var scrollPos = $(window).scrollTop();
+//         var windowHeight = $(window).height();
+//         var websiteHeight = $("body").height();
+
+//         var percentage = (scrollPos / (websiteHeight - windowHeight)) * 100;
+
+//         rocketContainer.css("bottom", `calc(${percentage}%)`);
+//         rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+
+//         if ($(window).width() < 992) {
+//             rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+//         }
+//     });
+
+// });
+
+$(document).ready(function () {
+    $('#rocket-container').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+            var rocket = $('#rocket-container');
+            rocket.animate({
+                'bottom': `${$(window).height()}px`, // Move the rocket to the top of the screen
+            }, {
+                duration: 1200,
+                step: function (now, fx) {
+                    if (fx.prop === 'bottom' && now > $(window).height()) {
+                        rocket.show();
+                    }
+                },
+                complete: function () {
+                    // Reset the rocket to its default position
+                    rocket.css({
+                        'bottom': '10px',
+                        'transform': 'translate(0)',
+                    });
+                }
+            });
+        });
     });
 });
 
-function resizeFullHeightSection() {
-    var windowHeight = $('.scroll section').height();
-    $(".scroll-next").css("margin-top", `calc( 100vh + ${windowHeight / 2 + 'px'} )`);
-}
-$(document).ready(function () {
-    var rocketContainer = $("#rocket-container");
-    var rocket = $("#rocket").height();
 
-    $(window).scroll(function () {
-        var scrollPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        var websiteHeight = $("body").height();
-
-        var percentage = (scrollPos / (websiteHeight - windowHeight)) * 100;
-
-        rocketContainer.css("bottom", `calc(${percentage}%)`);
-        rocketContainer.css("transform", `translate(0, ${percentage}%)`);
-
-        if ($(window).width() < 992) {
-            rocketContainer.css("transform", `translate(0, ${percentage + 50}%)`);
-        }
-    });
-
-});
 
 var mbnew = $('.card-img-overlay').height() + 100;
 
@@ -77,10 +104,6 @@ $(document).ready(function () {
         }
     });
 });
-
-$('#rocket-container').click(function () {
-    $('html').animate({ scrollTop: 0 }, 'fast');
-})
 
 new FinisherHeader({
     "count": 13,
