@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="face face1 col-lg-4">
                     <div class="content">
                         <div class="icon">
-                            <img src="./assets/img/Blog/primary.png" class="" alt="">
+                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="face face1 col-lg-4">
                     <div class="content">
                         <div class="icon">
-                            <img src="./assets/img/Blog/gym.png" class="" alt="">
+                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="face face1 col-lg-4">
                     <div class="content">
                         <div class="icon">
-                            <img src="./assets/img/Blog/gym 1.png" class="" alt="">
+                            <img src="./assets/img/Blog/college1.PNG" class="" alt="">
                         </div>
                     </div>
                 </div>

@@ -1836,116 +1836,62 @@ footer a:hover {
     .coursesList .class-content {
         min-height: 142px;
     }
+
 }
 
-.popup {
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    background-color: #ffa928;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    color: white;
+/* form------nivi starts */
+
+form .form-floating{
+    margin: 10px;
+}
+form  .text{
+    color: red;
+}
+.form-floating input{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    background-color: #fff !important;
+}
+.form-floating textarea{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    resize: none;
+
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #0e5483;
+    outline: 0;
+    box-shadow: none;
+    border-radius: none;
+
 }
 
-.popup span {
-    display: inline-block;
-    opacity: 0;
-    transform: scale(0);
-    animation: letterAnimation 1s forwards infinite;
-    font-weight: 600;
+.form-floating>.form-control:focus~label{
+    color: #0e5483;
 }
-
-@keyframes letterAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.5);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+#contactForm button{
+        background-color: var(--primary-color);
+        border-color:var(--primary-color) ;
 }
-
-.popup span:nth-child(1) {
-    animation-delay: 0.1s;
+#contactForm button:hover{
+    background-color: white;
+    border-color:var(--primary-color) ;
+    color: var(--primary-color);
 }
-
-.popup span:nth-child(2) {
-    animation-delay: 0.2s;
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color: #0e5483;
 }
-
-.popup span:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.popup span:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.popup span:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-.popup span:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
-.popup span:nth-child(7) {
-    animation-delay: 0.7s;
-}
-
-.popup span:nth-child(8) {
-    animation-delay: 0.8s;
-}
-
-.popup span:nth-child(9) {
-    animation-delay: 0.9s;
-}
-
-.popup span:nth-child(10) {
-    animation-delay: 1s;
-}
-
-.popup span:nth-child(11) {
-    animation-delay: 1.1s;
-}
-
-.popup span:nth-child(12) {
-    animation-delay: 1.2s;
-}
-
-.popup span:nth-child(13) {
-    animation-delay: 1.3s;
-}
-
-.popup span:nth-child(14) {
-    animation-delay: 1.4s;
-}
-
-.popup span:nth-child(15) {
-    animation-delay: 1.5s;
-}
-
-.popup span:nth-child(16) {
-    animation-delay: 1.6s;
-}
-
-.popup span:nth-child(17) {
-    animation-delay: 1.7s;
-}
-
-.popup span:nth-child(18) {
-    animation-delay: 1.8s;
-}
-
-.popup span:nth-child(19) {
-    animation-delay: 1.9s;
-}
+input:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  input:-webkit-autofill:focus { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  
+/* form------nivi ends */

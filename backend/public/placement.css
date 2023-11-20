@@ -1,17 +1,17 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .card {
-      margin-bottom: 20px; /* Adjust spacing between cards for smaller screens */
+      margin-bottom: 20px; 
     }
   }
   
   /* Padding and line height adjustments */
   #placements {
-    padding: 60px 0; /* Adjust top and bottom padding for the entire section */
+    padding: 60px 0; 
   }
   
   .card-body {
-    padding: 20px; /* Adjust padding within each card body */
+    padding: 20px;
   }
 
   .card-title{
@@ -19,12 +19,11 @@
   }
   
   h3 {
-    margin-bottom: 20px; /* Adjust spacing between h3 and the following content */
-
+    margin-bottom: 20px; 
   }
   
   p {
-    line-height: 1.6; /* Adjust line height for better readability */
+    line-height: 1.6;
   }
 
   /* #pap-cards {
@@ -74,9 +73,15 @@
   margin: auto;
 }
 
-#placement-accordion {
-  .accordion-button:not(.collapsed) {
-    background-color: rgba(154, 47, 168, 0.74);
-    color: whitesmoke;
-  }
+#text-colors{
+  color: white;
+}
+
+#placement-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(238, 38, 211, 0.74);
+  color: whitesmoke;
+}
+
+.acc-bg{
+background-color: rgb(68, 129, 221);
 }

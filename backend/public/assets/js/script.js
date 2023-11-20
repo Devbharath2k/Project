@@ -176,3 +176,28 @@ $(document).ready(function () {
     setTimeout($('.cloud').addClass('animated-element'), 5000)
     setTimeout($('.cloud').removeClass('animated-element'), 10000)
 });
+
+
+// new animi
+
+$(document).ready(function () {
+    // Show the popup when the document is ready
+    $('.popup').addClass('pop-ani');
+
+    // Set a timeout to hide the popup after a certain time (e.g., 5 seconds)
+    setTimeout(function () {
+        $('.popup').removeClass('pop-ani');
+    }, 5000);
+
+    // Set an interval to run the animation every 20 seconds
+    setInterval(function () {
+        // Add the animation class to the element you want to animate
+        // For example, if you have an element with the class "animated-element":
+        $('.popup').addClass('pop-ani');
+ 
+        // Remove the animation class after a certain time (e.g., 2 seconds)
+        setTimeout(function () {
+            $('.popup').removeClass('pop-ani');
+        }, 5000);
+    }, 20000);
+});
