@@ -1,38 +1,78 @@
 AOS.init();
 
+// $(document).ready(function () {
+//     resizeFullHeightSection();
+
+//     // Handle window resize events to update the section height
+//     $(window).resize(function () {
+//         resizeFullHeightSection();
+//     });
+// });
+
+// function resizeFullHeightSection() {
+//     var windowHeight = $('.scroll section').height();
+//     $(".scroll-next").css("margin-top", `calc( 100vh + ${windowHeight / 2 + 'px'} )`);
+// }
+// $(document).ready(function () {
+//     var rocketContainer = $("#rocket-container");
+//     var rocket = $("#rocket").height();
+
+//     $(window).scroll(function () {
+//         var scrollPos = $(window).scrollTop();
+//         var windowHeight = $(window).height();
+//         var websiteHeight = $("body").height();
+
+//         var percentage = (scrollPos / (websiteHeight - windowHeight)) * 100;
+
+//         rocketContainer.css("bottom", `calc(${percentage}%)`);
+//         rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+
+//         if ($(window).width() < 992) {
+//             rocketContainer.css("transform", `translate(0, ${percentage}%)`);
+//         }
+//     });
+
+// });
+
 $(document).ready(function () {
-    resizeFullHeightSection();
+    var rocketClicked = false;
 
-    // Handle window resize events to update the section height
-    $(window).resize(function () {
-        resizeFullHeightSection();
-    });
-});
-
-function resizeFullHeightSection() {
-    var windowHeight = $('.scroll section').height();
-    $(".scroll-next").css("margin-top", `calc( 100vh + ${windowHeight / 2 + 'px'} )`);
-}
-$(document).ready(function () {
-    var rocketContainer = $("#rocket-container");
-    var rocket = $("#rocket").height();
-
-    $(window).scroll(function () {
-        var scrollPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        var websiteHeight = $("body").height();
-
-        var percentage = (scrollPos / (websiteHeight - windowHeight)) * 100;
-
-        rocketContainer.css("bottom", `calc(${percentage}%)`);
-        rocketContainer.css("transform", `translate(0, ${percentage}%)`);
-
-        if ($(window).width() < 992) {
-            rocketContainer.css("transform", `translate(0, ${percentage + 50}%)`);
+    $('#rocket-container').click(function () {
+        if (rocketClicked) {
+            return; // Ignore clicks while the animation is running
         }
-    });
 
+        rocketClicked = true; // Set the flag to true to prevent additional clicks
+
+        $('html, body').stop().animate({ scrollTop: 0 }, 'fast', function () {
+            var rocket = $('#rocket-container');
+            rocket.stop().animate({
+                'bottom': `${$(window).height()}px`, // Move the rocket to the top of the screen
+            }, {
+                duration: 1200,
+                step: function (now, fx) {
+                    if (fx.prop === 'bottom' && now > $(window).height()) {
+                        rocket.show();
+                    }
+                },
+                complete: function () {
+                    // Reset the rocket to its default position
+                    rocket.css({
+                        'bottom': '10px',
+                        'transform': 'translate(0)',
+                    });
+
+                    // Re-enable the click event
+                    rocketClicked = false;
+                }
+            });
+        });
+    });
 });
+
+
+
+
 
 var mbnew = $('.card-img-overlay').height() + 100;
 
@@ -77,10 +117,6 @@ $(document).ready(function () {
         }
     });
 });
-
-$('#rocket-container').click(function () {
-    $('html').animate({ scrollTop: 0 }, 'fast');
-})
 
 new FinisherHeader({
     "count": 13,
