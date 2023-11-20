@@ -311,7 +311,7 @@
     transition: .5s;
 }
 
-.pop-ani{
+.pop-ani, .popup:hover{
     transform: translate(0%, 0px) scale(1);
 }
 
