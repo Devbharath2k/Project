@@ -201,3 +201,9 @@ $(document).ready(function () {
         }, 5000);
     }, 20000);
 });
+
+
+$('.course .tab-pane .card').attr({
+    'data-aos': 'fade-up',
+    'data-aos-duration': '600'
+});
