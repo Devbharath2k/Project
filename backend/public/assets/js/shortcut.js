@@ -6,7 +6,7 @@
 var htmlCode = `
     
     <div id="rocket-container" class="cursor" data-aos="zoom-in">
-        <!-- <img src="./assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket"> -->
+        <!-- <img src="../../assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket"> -->
         <dotlottie-player src="https://lottie.host/a3930b1d-eaf8-4fc4-a6b4-7ba7c5654523/tqWYmbEE3y.json"
             background="transparent" speed="1" id="rocket" loop autoplay></dotlottie-player>
 
@@ -64,7 +64,7 @@ var htmlCode = `
 
         <a href="https://api.whatsapp.com/send/?phone=%2B917845721438&text&app_absent=0" target="_blank" id="wa"
             class="cursor" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="../..//assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp" class="img-fluid"
+            <img src="../../assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp" class="img-fluid"
                 style="width:70px">
         </a>
     </div>
@@ -115,7 +115,8 @@ var htmlCode = `
 console.log("help")
 // Get a reference to the existing div
 var existingDiv = document.getElementById('footerElement');
-
-$(htmlCode).insertAfter(existingDiv)
+existingDiv.insertAdjacentHTML('afterend', htmlCode);
+// $(htmlCode).insertAfter(existingDiv)
 // Insert the HTML code after the existing div
 // existingDiv.insertAdjacentElement('afterend', htmlCode);
+AOS.Refesh();
