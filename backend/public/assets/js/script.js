@@ -35,10 +35,18 @@ AOS.init();
 // });
 
 $(document).ready(function () {
+    var rocketClicked = false;
+
     $('#rocket-container').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+        if (rocketClicked) {
+            return; // Ignore clicks while the animation is running
+        }
+
+        rocketClicked = true; // Set the flag to true to prevent additional clicks
+
+        $('html, body').stop().animate({ scrollTop: 0 }, 'fast', function () {
             var rocket = $('#rocket-container');
-            rocket.animate({
+            rocket.stop().animate({
                 'bottom': `${$(window).height()}px`, // Move the rocket to the top of the screen
             }, {
                 duration: 1200,
@@ -53,11 +61,16 @@ $(document).ready(function () {
                         'bottom': '10px',
                         'transform': 'translate(0)',
                     });
+
+                    // Re-enable the click event
+                    rocketClicked = false;
                 }
             });
         });
     });
 });
+
+
 
 
 
