@@ -18,6 +18,16 @@
     .hidden {
       display: none;
     }
+    .primary-btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 3rem;
+    border-radius: 2rem;
+    line-height: 1.5;
+    transition: .3s;
+    background: transparent;
+    }
+  
     
         </style>
 </head>
@@ -340,8 +350,12 @@
                     <div class="container" id="loadMoreSection">
                        
                     </div>
-                    <button id="loadMoreBtn" style="width: fit-content; background-color: rgb(39, 39, 245); color: white; font-weight: bold;">Load More</button>
+                    <!-- <button id="loadMoreBtn" style="width: fit-content; background-color: rgb(39, 39, 245); color: white; font-weight: bold;">Load More</button> -->
                    
+
+                    <div data-aos="fade-up" data-aos-duration="700" class="d-flex">
+                        <button id="loadMoreBtn" class="btn primary-btn mb-5 mx-auto">Load More</button>  
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-college" role="tabpanel" aria-labelledby="pills-college-tab"
