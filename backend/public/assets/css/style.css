@@ -1825,13 +1825,57 @@ footer a:hover {
 
 /* form------nivi starts */
 
-form .contact-form .form-control{
+form .form-floating{
+    margin: 10px;
+}
+form  .text{
+    color: red;
+}
+.form-floating input{
     border: none;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    background-color: #fff !important;
+}
+.form-floating textarea{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    resize: none;
+
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #0e5483;
+    outline: 0;
+    box-shadow: none;
+    border-radius: none;
+
 }
 
-
-
-
-
+.form-floating>.form-control:focus~label{
+    color: #0e5483;
+}
+#contactForm button{
+        background-color: var(--primary-color);
+        border-color:var(--primary-color) ;
+}
+#contactForm button:hover{
+    background-color: white;
+    border-color:var(--primary-color) ;
+    color: var(--primary-color);
+}
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color: #0e5483;
+}
+input:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  input:-webkit-autofill:focus { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  
 /* form------nivi ends */
