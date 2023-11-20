@@ -17,224 +17,221 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- sangu---- -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <style>
-            .pap-card {
+    <!-- sangu---- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+
+    <style>
+        .pap-card {
+            border-radius: 0px 30px;
+            animation: border 6s linear infinite;
+        }
+
+        .pap-card img {
+            width: auto;
+            display: unset;
+        }
+
+        @keyframes border {
+            0% {
                 border-radius: 0px 30px;
-                animation: border 6s linear infinite;
             }
-            .pap-card img{
-                width: auto;
-                display: unset;
+
+            50% {
+                border-radius: 30px 0px;
             }
-            @keyframes border {
-                0% {
-                    border-radius: 0px 30px;
-                }
-    
-                50% {
-                    border-radius: 30px 0px;
-                }
-    
-                100% {
-                    border-radius: 0px 30px;
-                }
+
+            100% {
+                border-radius: 0px 30px;
             }
-    
-            .card {
-                background: #fff;
-                border-radius: 2px;
-                margin: 1rem;
-                position: relative;
-            }
-    
-            .card-1 {
-                box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
-                transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-                border: 0;
-            }
-    
-            .p-4 {
-                padding: 1.5rem !important;
-            }
-    
-            .primary-header {
-                background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgba(182, 216, 214, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            a {
-                text-decoration: none;
-            }
-    
-            .primary-header2 {
-                padding: 50px 10px;
-                background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
-            }
-    
-            .primary-header3 {
-    
-                padding: 50px 10px;
-                background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
-    
-            }
-    
-            .primary-header4 {
-    
-                background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header5 {
-    
-    
-                background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgba(249, 211, 217, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header6 {
-    
-    
-                background: linear-gradient(90deg, rgb(4, 228, 127) 0%, rgb(248, 248, 248) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header7 {
-    
-    
-                background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgba(204, 204, 204, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header8 {
-    
-                background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header9 {
-    
-    
-                background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgba(255, 183, 147, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header10 {
-    
-                padding: 50px 10px;
-    
-                background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgba(252, 205, 219, 1) 100%);
-            }
-    
-            .primary-header11 {
-    
-    
-                padding: 50px 10px;
-    
-                background: linear-gradient(90deg, rgba(206, 104, 216, 1) 0%, rgba(252, 205, 219, 1) 100%);
-            }
-    
-            .primary-header12 {
-    
-    
-                background: linear-gradient(90deg, rgba(205, 220, 57, 1) 0%, rgba(221, 223, 205, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-    
-    
-            .primary-header13 {
-    
-    
-                background: linear-gradient(90deg, rgb(175, 153, 12) 0%, rgb(20, 81, 150) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header14 {
-    
-    
-                background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header16 {
-    
-    
-                background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgba(249, 242, 246, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header15 {
-    
-    
-                background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header17 {
-    
-    
-                background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgba(251, 246, 249, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header18 {
-    
-    
-                background: linear-gradient(90deg, rgba(111, 125, 250, 1) 0%, rgba(225, 197, 140, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header19 {
-    
-                background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header20 {
-    
-    
-                background: linear-gradient(0deg, rgba(248, 123, 126, 1) 0%, rgba(245, 218, 139, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header21 {
-    
-                background: linear-gradient(0deg, rgba(6, 206, 174, 1) 0%, rgba(248, 123, 126, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header22 {
-    
-                background: linear-gradient(90deg, rgba(45, 162, 108, 1) 0%, rgba(221, 240, 231, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header23 {
-    
-                background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header24 {
-    
-                background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-                padding: 50px 10px;
-            }
-    
-            .primary-header25 {
-    
-                background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
-                padding: 50px 10px;
-            }
-        </style>
-</head>
-<style>
+        }
+
+       
+
+        .card-1 {
+            box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            border: 0;
+        }
+
+        
+
+        .primary-header {
+            background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgba(182, 216, 214, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .primary-header2 {
+            padding: 50px 10px;
+            background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
+        }
+
+        .primary-header3 {
+
+            padding: 50px 10px;
+            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+
+        }
+
+        .primary-header4 {
+
+            background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header5 {
+
+
+            background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgba(249, 211, 217, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header6 {
+
+
+            background: linear-gradient(90deg, rgb(4, 228, 127) 0%, rgb(248, 248, 248) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header7 {
+
+
+            background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgba(204, 204, 204, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header8 {
+
+            background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header9 {
+
+
+            background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgba(255, 183, 147, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header10 {
+
+            padding: 50px 10px;
+
+            background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgba(252, 205, 219, 1) 100%);
+        }
+
+        .primary-header11 {
+
+
+            padding: 50px 10px;
+
+            background: linear-gradient(90deg, rgba(206, 104, 216, 1) 0%, rgba(252, 205, 219, 1) 100%);
+        }
+
+        .primary-header12 {
+
+
+            background: linear-gradient(90deg, rgba(205, 220, 57, 1) 0%, rgba(221, 223, 205, 1) 100%);
+            padding: 50px 10px;
+        }
+
+
+
+        .primary-header13 {
+
+
+            background: linear-gradient(90deg, rgb(175, 153, 12) 0%, rgb(20, 81, 150) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header14 {
+
+
+            background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header16 {
+
+
+            background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgba(249, 242, 246, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header15 {
+
+
+            background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header17 {
+
+
+            background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgba(251, 246, 249, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header18 {
+
+
+            background: linear-gradient(90deg, rgba(111, 125, 250, 1) 0%, rgba(225, 197, 140, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header19 {
+
+            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header20 {
+
+
+            background: linear-gradient(0deg, rgba(248, 123, 126, 1) 0%, rgba(245, 218, 139, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header21 {
+
+            background: linear-gradient(0deg, rgba(6, 206, 174, 1) 0%, rgba(248, 123, 126, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header22 {
+
+            background: linear-gradient(90deg, rgba(45, 162, 108, 1) 0%, rgba(221, 240, 231, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header23 {
+
+            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header24 {
+
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            padding: 50px 10px;
+        }
+
+        .primary-header25 {
+
+            background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
+            padding: 50px 10px;
+        }
+
+       
+        
+ 
     .rating-star img {
         width: 15px;
         display: inline-block;
@@ -417,6 +414,11 @@
         background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
         padding: 50px 10px;
     }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color) !important;
+    background-color: var(--bs-nav-pills-link-active-bg) !important;
+}
+   
 </style>
 
 <body>
@@ -491,7 +493,7 @@
                     <a class="nav-link active" href="courses.html">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="placement.css">PAP</a>
+                    <a class="nav-link" href="placement.html">PAP</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Blog.html">Blog</a>
@@ -513,7 +515,8 @@
                         Our <span class="primary-color">Courses</span>
                     </h1>
                     <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
-                        ATIT provides a clear step by step process through the Pay After Placement Program <br class="d-none d-lg-block"> to help
+                        ATIT provides a clear step by step process through the Pay After Placement Program <br
+                            class="d-none d-lg-block"> to help
                         you
                         obtain your dream Job in IT sector.</p>
                     <nav data-aos="fade-up" data-aos-duration="800"
@@ -529,7 +532,7 @@
         </div>
     </section>
 
- 
+
 
 
 
@@ -537,43 +540,59 @@
     <!-- courses start  -->
 
     <div class="container">
-        <section class="pap-card ">
-            <ul class="nav nav-pills mb-5 text-center justify-content-evenly my-5 text-capitalize " id="pills-tab"
-                role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button
-                        class="nav-link active border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly"
-                        id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab"
-                        aria-controls="pills-All" aria-selected="true">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button
-                        class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly"
-                        id="pills-Testing-tab" data-bs-toggle="pill" data-bs-target="#pills-Testing" type="button"
-                        role="tab" aria-controls="pills-Testing" aria-selected="false">Software Testing</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button
-                        class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly"
-                        id="pills-Development-tab" data-bs-toggle="pill" data-bs-target="#pills-Development"
-                        type="button" role="tab" aria-controls="pills-Development" aria-selected="false">Software
-                        Development</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button
-                        class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly"
-                        id="pills-Devops-tab" data-bs-toggle="pill" data-bs-target="#pills-Devops" type="button"
-                        role="tab" aria-controls="pills-Devops" aria-selected="false">Devops</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button
-                        class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly"
-                        id="pills-science-tab" data-bs-toggle="pill" data-bs-target="#pills-science" type="button"
-                        role="tab" aria-controls="pills-science" aria-selected="false">Data science & AI</button>
-                </li>
+        <section class="pap-card">
+            <ul class="nav nav-pills mb-5 text-center justify-content-md-evenly justify-content-center my-5 text-capitalize p-10 m-0 w-100"
+                id="pills-tab" role="tablist ">
 
+                <div class="col-12 col-md d-flex justify-content-center">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link active border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly animate__animated animate__fadeIn bg-primary text-white"
+                            id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button"
+                            role="tab" aria-controls="pills-All" aria-selected="true">All</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item" data-aos="fade-up" data-aos-duration="700" role="presentation">
+                        <button
+                            class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly custom-testing-style bg-primary text-white " 
+                            id="pills-Testing-tab" data-bs-toggle="pill" data-bs-target="#pills-Testing" type="button"
+                            role="tab" aria-controls="pills-Testing" aria-selected="false">Testing</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                        <button
+                            class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly custom-development-style bg-primary text-white"
+                            id="pills-Development-tab" data-bs-toggle="pill" data-bs-target="#pills-Development"
+                            type="button" role="tab" aria-controls="pills-Development"
+                            aria-selected="false">Development</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                        <button
+                            class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly custom-devops-style bg-primary text-white"
+                            id="pills-Devops-tab" data-bs-toggle="pill" data-bs-target="#pills-Devops" type="button"
+                            role="tab" aria-controls="pills-Devops" aria-selected="false">Devops</button>
+                    </li>
+                </div>
+
+                <div class="col-6 col-md justify-content-center">
+                    <li class="nav-item" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                        <button
+                            class="nav-link border pap-card d-flex flex-column text-center align-items-center py-2 px-5 h-100 justify-content-evenly custom-data-science-style bg-primary text-white"
+                            id="pills-science-tab" data-bs-toggle="pill" data-bs-target="#pills-science" type="button"
+                            role="tab" aria-controls="pills-science" aria-selected="false">AI</button>
+                    </li>
+                </div>
 
             </ul>
+
+
             <div class="tab-content" id="pills-tabContent ">
 
                 <!-- ALL SECTIONS -->
@@ -1876,7 +1895,8 @@
                     tabindex="0">
                     <div class="row g-5">
                         <div class="col-md-6 col-lg-4">
-                            <a href="./courses/Devops/Devops.html" class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                            <a href="./courses/Devops/Devops.html"
+                                class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                 <div class="w-100 common-card-image">
                                     <h4 class="course-card23 text-white text-center">Devops</h4>
                                 </div>
