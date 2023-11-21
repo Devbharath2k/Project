@@ -119,4 +119,4 @@ existingDiv.insertAdjacentHTML('afterend', htmlCode);
 // $(htmlCode).insertAfter(existingDiv)
 // Insert the HTML code after the existing div
 // existingDiv.insertAdjacentElement('afterend', htmlCode);
-AOS.Refesh();
+AOS.init();

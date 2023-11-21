@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             else {
                 alert("Internal server error")
                 output.classList.add("text-danger");
-            output.textContent = "Internal server error" 
+                output.textContent = "Internal server error" 
         }
 
            
