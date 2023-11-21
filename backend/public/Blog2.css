@@ -20,7 +20,7 @@
     z-index: 1;
     transition: all .7s;
 }
-.box:hover:before{
+.box:hover:before, .box.active::before{
     transform: rotate(55deg);
     right: -60%;
 }
@@ -41,7 +41,7 @@
     /* transition: all .7s; */
     
 }
-.box:hover .box-content{
+.box:hover .box-content, .box.active .box-content{
     opacity: 1;
 }
 
