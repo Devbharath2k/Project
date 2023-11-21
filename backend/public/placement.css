@@ -1,109 +1,100 @@
-#placements .testimotionals {
-    display: inline-block; 
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px; 
+    }
+  }
+  
+  /* Padding and line height adjustments */
+  #placements {
+    padding: 60px 0; 
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
 
-
-#placements .testimotionals .card {
-
-    position: relative;
-
-    overflow: hidden;   
-
-    margin: 0 auto;
-
-    background: cadetblue;
-
-    padding: 36px;
-
-    box-sizing: border-box;
-
+  .card-title{
     text-align: center;
+  }
+  
+  h3 {
+    margin-bottom: 20px; 
+  }
+  
+  p {
+    line-height: 1.6;
+  }
 
+  /* #pap-cards {
+    border-radius: 0px 30px;
+    animation: border 6s linear infinite ;
+    
 }
 
-#placements .testimotionals .card .layer {
-    z-index: 1;
-    position: absolute;
-    top: calc(100% - 2px);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background: linear-gradient(to left, orange, tomato);
-    transition: 0.5s;
+@keyframes border{
+    0%{border-radius: 0px 30px;}
+    50%{border-radius: 30px 0px;}
+    100%{border-radius: 0px 30px;}
+} */
+  
+.pap-cards-lin:before {
+  display: block;
+  content: "";
+  width: 9%;
+  height: 17%;
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  border-bottom: 3px solid #f7851d;
+  border-right: 3px solid #f7851d;
+  transition: all 0.5s ease 0s;
+}
+.pap-cards-lin:after {
+  display: block;
+  content: "";
+  width: 9%;
+  height: 17%;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid #f7851d;
+  border-left: 3px solid #f7851d;
+  transition: all 0.5s ease 0s;
 }
 
-#placements .testimotionals .card .content {
-    z-index: 2;
-    position: relative;
+.pap-cards-lin:hover:before , .pap-cards-lin:hover:after {
+  width: 50%;
+  height: 50%;
 }
 
-#placements.testimotionals .card:hover .layer {
-    top: 0;
+.flexi{
+  width: 100px;
+  margin: auto;
 }
 
-#placements .testimotionals .card .content p {
-    font-size: 14px;
-    line-height: 24px;
-    color: black;
+#text-colors{
+  color: white;
 }
 
-#placements .testimotionals .card .content .image {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid white;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-
+#placement-accordion .accordion-button:not(.collapsed) {
+  background-color: #f7851d;
+  color: whitesmoke;
 }
 
-#placements .testimotionals .heading {
-    color: white;
-
-}
-
-#placements .testimotionals .card .content .details h2 {
-    font-size: 18px;
-    color: white;
-}
-
-#placements .testimotionals .card .content .details h2 span {
-    font-size: 18px;
-    color: purple;
-    transition: 0.5s;
-}
-
-#placements .testimotionals .card:hover .content .details h2 span {
-    color: white;
-    position: relative
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
-}
-
-
-
-@media (min-width: 992px) {
-    .atit-card-container .col-lg-4 {
-        flex: 0 0 auto;
-        width: 33.33333%;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .atit-card-container .col-md-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    .testimotionals .card .content p {
-        min-height: 185px;
-    }
-    .testimotionals .heading {
-        min-height: 70px;
-    }
-}
+/* .acc-bg{
+  background: linear-gradient(90deg, rgb(94, 161, 238) 0%, rgb(143, 190, 244) 100%);
+ 
+} */
+.primary-btn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  line-height: 1.5;
+  transition: .3s;
+  background: transparent;
+  }
+  .accordion-button {
+    box-shadow: 7px 5px 30px 0px rgba(0, 0, 0, 0.12);
+  }

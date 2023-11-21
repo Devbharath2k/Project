@@ -21,20 +21,17 @@
 
 </head>
 <style>
-    .contact-form .contact-form {
+    /* .contact-form .contact-form {
         max-width: 1000px;
         background-color: #ffffff;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        /* height: 10px; */
-    }
+      
+    } */
 
-    .contact-form .form-control {
+    /* .contact-form .form-control {
         display: block;
-        width: 100%;
-        padding: 3px 3px 7px;
-        margin: 10px;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -47,15 +44,14 @@
         border: var(--bs-border-width) solid var(--bs-border-color);
         border-radius: var(--bs-border-radius);
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    }
-   .contact-form .text{
-        color: red;
-    }
+    } */
 </style>
 
 <body>
+    <!-- nav starts -->
+
     <div class="nav-holder">
-        <nav class="navbar navbar-expand-md py-0 col-lg-10 col-md-11  mx-auto">
+        <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
             <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
                 data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
                 <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
@@ -66,7 +62,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="d-md-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
+                <button class="d-lg-none ms-auto ms-md-0 canvas-bar bg-primary border-0 p-3" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#navbar" aria-controls="navbar">
                     <i class="fa-solid fa-bars fa-xl text-white"></i>
                 </button>
@@ -79,59 +75,16 @@
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  active" href="contact.html">Contact</a>
+                            <a class="nav-link active" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="courses.html">Course</a>
                         </li>
-                        <!-- <div class="nav-item">
-                            <div><a class="nav-link cursor">Courses</a></div>
-                            <div class="nav-drop overflow-visible">
-                                <div class="nav-item">
-                                    <div><a class="nav-link cursor">Software Developement</a></div>
-                                    <div class="nav-drop">
-                                        <a class="nav-link" href="./courses/mern.html"> MERN Stack</a>
-                                        <a class="nav-link" href="./courses/mean.html">MEAN Stack</a>
-                                        <a class="nav-link" href="./courses/java.html">JAVA Fullstack</a>
-                                        <a class="nav-link" href="./courses/python.html">PYTHON Fullstack</a>
-                                    </div>
-                                </div>
-                                <div class="nav-item">
-                                    <div><a class="nav-link cursor">Software Testing</a></div>
-                                    <div class="nav-drop">
-                                        <a class="nav-link" href="./courses/mern.html">Manual Testing</a>
-                                        <a class="nav-link" href="./courses/mean.html">Core Java</a>
-                                        <a class="nav-link" href="./courses/java.html">Advanced Java for Testing</a>
-                                        <a class="nav-link" href="./courses/python.html">Selenium</a>
-                                        <a class="nav-link" href="./courses/mern.html">Cucumber Framework</a>
-                                        <a class="nav-link" href="./courses/mean.html">Page Object Model</a>
-                                        <a class="nav-link" href="./courses/java.html">TestNG</a>
-                                        <a class="nav-link" href="./courses/mern.html">API - Postman</a>
-                                        <a class="nav-link" href="./courses/mean.html">API - Rest Assured</a>
-                                        <a class="nav-link" href="./courses/java.html">DB Testing</a>
-                                        <a class="nav-link" href="./courses/python.html">GIT</a>
-                                        <a class="nav-link" href="./courses/mern.html">Jenkins</a>
-                                        <a class="nav-link" href="./courses/mean.html">Maven</a>
-                                        <a class="nav-link" href="./courses/java.html">Docker</a>
-                                        <a class="nav-link" href="./courses/java.html">AWS Services</a>
-                                    </div>
-                                </div>
-                                <a class="nav-link" href="Devops.html">Devops</a>
-                                <div class="nav-item">
-                                    <div><a class="nav-link cursor">Data Science & AI</a></div>
-                                    <div class="nav-drop">
-                                        <a class="nav-link" href="./courses/mern.html">Artificial Intelligence</a>
-                                        <a class="nav-link" href="./courses/mean.html">Data Science</a>
-                                        <a class="nav-link" href="./courses/java.html">Deep Learning</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="Blog.html">Blog</a>
-                        </li>
                         <li class="nav-item">
                             <a title="Pay after Placement" class="nav-link" href="placement.html">PAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog2.html">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -142,10 +95,11 @@
     <!-- offcanvas navbar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
         <div class="offcanvas-header p-0 px-2">
-            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="index.html">
                 <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
             </a>
-            <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas" aria-label="Close">
+            <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
+                aria-label="Close">
                 <i class="fa-solid fa-xmark fa-xl"></i>
             </button>
         </div>
@@ -158,23 +112,22 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  active" href="contact.html">About</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <div><a class="nav-link cursor">Courses</a></div>
-                    <div class="nav-drop">
-                        <a class="nav-link" href="#">Software Developement</a>
-                        <a class="nav-link" href="#">Software Testing</a>
-                        <a class="nav-link" href="Devops.html">Devops</a>
-                        <a class="nav-link" href="#">Machine Learning & AI</a>
-                    </div>
+                    <a class="nav-link" href="courses.html">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="placement.html">PAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog2.html">Blog</a>
                 </li>
             </ul>
         </div>
     </div>
+
+    <!-- nav ends -->
 
     <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
         <div class="hero-vector1 d-none">
@@ -190,7 +143,8 @@
                         Put
                         yourself in the driver's seat, we will fuel up
                         your strong online presence today.</p>
-                    <nav  data-aos="fade-up" data-aos-duration="800"  style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    <nav data-aos="fade-up" data-aos-duration="800"
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -205,40 +159,43 @@
     <section class="contact-form mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="contact-form">
-                        <h2 class="text-center mb-4" >Contact Us</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Fname</label>
-                                <span class="text"> *</span>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="col-md-5">
+                    <div class="contact-form mb-2" data-aos="fade-up" data-aos-duration="700">
+                        <h2 class="text-center mb-4 linear-gradient-text">Contact Us</h2>
+                        <form id="contactForm">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter your name"
+                                    required>
+                                <label for="fname">Name <span class="text"> *</span></label>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <span class="text"> *</span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                                <label for="email">Email <span class="text"> *</span></label>
                             </div>
-                            <div class="form-group">
-                                <label for="Phone">Phone</label>
-                                <span class="text"> *</span>
-                                <input type="number" class="form-control" id="Phone" placeholder="Enter your Phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="phone"
+                                    placeholder="Enter your phone number"
+                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                    maxlength="10" required>
+                                <label for="phone">Phone Number <span class="text"> *</span></label>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <span>(optional)</span>
-                                <textarea class="form-control" id="message" rows="3"
-                                    placeholder="Enter your message"></textarea>
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                    style="height: 80px"></textarea>
+                                <label for="message">Message <span>(Optional)</span></label>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <div id="output" class="text-center"></div>
+                            <div class="text-center pt-2"> <button type="submit"
+                                    class="btn btn-primary btn-block">Submit</button></div>
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7" data-aos="zoom-in" data-aos-duration="700">
                     <div id="map" class="h-100">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3804037012246!2d80.13504807467314!3d12.947492915407189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f64a235f2ef%3A0x299b582eb0851d17!2sAxess%20Technology!5e0!3m2!1sen!2sin!4v1699969414526!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="h-100"></iframe>
                     </div>
                 </div>
@@ -246,27 +203,149 @@
         </div>
     </section>
 
+    <div class="container company-logos mb-5 overflow-hidden">
+        <p class="text-center text-capitalize  justify-content-center mt-4 display-6 linear-gradient-text fw-semibold"
+            data-aos="fade-up" data-aos-duration="7000">
+
+            Our Trained Students are
+            Hired By</p>
+        <div class="row">
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/2.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./assets/img/3.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/4.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/5.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/6.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
     <div id="footerElement"></div>
 
 
     <!-- End Footer -->
 
-
-
     <div id="rocket-container" class="cursor" data-aos="zoom-in">
-        <img src="./assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket">
+        <!-- <img src="./assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket"> -->
+        <dotlottie-player src="https://lottie.host/a3930b1d-eaf8-4fc4-a6b4-7ba7c5654523/tqWYmbEE3y.json"
+            background="transparent" speed="1" id="rocket" loop autoplay></dotlottie-player>
+
     </div>
 
-    <a href="https://api.whatsapp.com/send/?phone=%2B917845721438&text&app_absent=0" target="_blank" id="whatsapp"
-        href="" class="cursor">
-        <img src="./assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp">
-    </a>
+    <div
+        class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
 
-    <div class="pap">
-        <a href="#" class="text-center text-capitalize primary-text fs-3 linear-gradient-text">
-            Pay After Placement
+        <div class="vh-40">
+            <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
+                <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
+                    background="transparent" speed="1" style="width: 90px;" loop autoplay></dotlottie-player>
+                <span class="position-absolute top-0 start-50 d-none translate-middle badge rounded-pill bg-danger">
+                    New
+                </span>
+                <div class="cloud">
+                    <a href="placement.html"
+                        class="shadow1 cloud-text primary-text py-3 py-1 rounded-3 text-decoration-none d-block text-light">
+                        Pay After Placement
+                        <i class="fa-solid fa-caret-left"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="placement.html " class="popup text-decoration-none">
+                <span>P</span>
+                <span>a</span>
+                <span>y</span>
+                <span> </span>
+                <span>a</span>
+                <span>f</span>
+                <span>t</span>
+                <span>e</span>
+                <span>r</span>
+                <span> </span>
+                <span>p</span>
+                <span>l</span>
+                <span>a</span>
+                <span>c</span>
+                <span>e</span>
+                <span>m</span>
+                <span>e</span>
+                <span>n</span>
+                <span>t</span>
+            </a>
+            <div class="overflow-visible" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
+                data-bs-target="#contact">
+                <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
+                    background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
+
+                <dotlottie-player title="contact"
+                    src="https://lottie.host/a335969b-c315-4035-be6b-d18bed4b5831/l73y30ZFSl.json"
+                    background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
+
+        <a href="https://api.whatsapp.com/send/?phone=%2B917845721438&text&app_absent=0" target="_blank" id="wa"
+            class="cursor" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp" class="img-fluid"
+                style="width:70px">
         </a>
     </div>
+
+    <!-- course Modal -->
+    <div class="modal fade" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-5">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel">Contact Form
+                    </h1>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3">
+                    <form id="contactForm">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>
+                            <label for="fname">Name <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <label for="email">Email <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="10" required>
+                            <label for="phone">Phone Number <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                style="height: 80px"></textarea>
+                            <label for="message">Message <span>(Optional)</span></label>
+                        </div>
+                        <div id="output" class="text-center"></div>
+                        <div class="text-center"> <button type="submit"
+                                class="btn btn-primary btn-block">Submit</button></div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
+
 
 
 
@@ -279,6 +358,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="./assets/js/footer.js"></script>
 
 </body>

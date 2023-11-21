@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contactForm");
     const output = document.getElementById("output");
 
+
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
@@ -10,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const phone = document.getElementById("phone").value;
         const message = document.getElementById("message").value;
 
-      
-        if (fname === "" || email === "" || phone === "" || message === "") {
+        console.log("name, email, phone, message",fname, email, phone, message)
+        if (fname === "" || email === "" || phone === "") {
             output.textContent = "All fields are required!";
             return;
         }
@@ -27,10 +28,25 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(apiData => {
             
             console.log(apiData);
-            alert("Form submitted successfully!")
-            output.textContent = "Form submitted successfully!";
-            // You can also reset the form here if needed
-            form.reset();
+            if(apiData.message == "User already exists"){
+                alert("User already exists")
+                output.classList.add("text-danger");
+                output.textContent = "User already exists";              
+            }
+            else if(apiData.message == "User created successfully"){
+                alert("Form submitted successfully!")
+                output.classList.add("text-success");
+                output.textContent = "Form submitted successfully!";      
+                 // You can also reset the form here if needed
+            form.reset();        
+            }
+            else {
+                alert("Internal server error")
+                output.classList.add("text-danger");
+            output.textContent = "Internal server error" 
+        }
+
+           
 
         })
         .catch(error => {

@@ -99,3 +99,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+//   $('.bg-primary').attr("id", "bg-primary");
