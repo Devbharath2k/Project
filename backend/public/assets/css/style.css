@@ -135,6 +135,10 @@ img {
     height: 500px !important;
 }
 
+.h-250px{
+    height: 250px;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -313,6 +317,7 @@ img {
     /* margin: auto; */
     animation: rotate 90s linear infinite;
 }
+
 
 @keyframes rotate {
     from {
@@ -806,6 +811,11 @@ vertical-align: middle;
 /* saga-start from about page */
 
 
+#placement-accordion .accordion-button:not(.collapsed) {
+    background-color: #f7851d;
+    color: whitesmoke;
+
+  }
 .atit-box .atit-card-1 {
     border: none;
     background: 0 0;
@@ -838,8 +848,7 @@ vertical-align: middle;
 
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item,
-.atit-box .atit-card-1:nth-child(1) .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item {
     padding: 30px 20px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -877,8 +886,7 @@ vertical-align: middle;
 
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item,
-.atit-box .atit-card-1:nth-child(1) .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item {
     padding: 30px 20px;
     transition: .4s;
     -webkit-transition: .4s;
@@ -887,8 +895,7 @@ vertical-align: middle;
 }
 
 .atit-box .atit-card-1.active .slide-service-item,
-.atit-box .atit-card-1:hover .slide-service-item,
-.atit-box .atit-card-1:nth-child(1) .slide-service-item {
+.atit-box .atit-card-1:hover .slide-service-item {
     transform: translateX(0) rotateZ(0) scale(.9);
 }
 
@@ -1131,9 +1138,9 @@ vertical-align: middle;
 --------------------------------------------------------------*/
 .testimonials {
     padding: 80px 0;
-    background: url("../img/testimonials-bg.jpg") no-repeat;
+    /* background: url("../img/testimonials-bg.jpg") no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
 }
 
@@ -1387,6 +1394,7 @@ vertical-align: middle;
 
 .footer-links a {
     color: #bcbcbe;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -1896,3 +1904,5 @@ input:-webkit-autofill {
   }
   
 /* form------nivi ends */
+
+

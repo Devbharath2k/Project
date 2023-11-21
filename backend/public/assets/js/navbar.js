@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
        <div class="offcanvas-body px-0 py-5 text-center">
            <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
                <li class="nav-item">
-                   <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                   <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="../../about.html">About</a>
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                    <a class="nav-link" href="../../contact.html">Contact</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" href="../../courses.html">Courses</a>
+                   <a class="nav-link active" href="../../courses.html">Courses</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="../../Blog2.html">Blog</a>
@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
    <!-- nav ends -->
     `;
-console.log("hek")
-
 
 // Get a reference to the body element
 var body = document.body;

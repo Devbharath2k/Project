@@ -138,7 +138,7 @@
                 <div class="col-md-6 col-lg-3" class="h-100">
                     <div data-aos="fade-up" data-aos-duration="400" data-aos-anchor-placement="bottom"
                         data-aos-easing="ease-in-sine">
-                        <a href="courses.html"
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '1')"
                             class="hero-split-card active card text-bg-dark rounded-3 overflow-hidden border-0">
                             <img src="https://img.freepik.com/free-vector/flat-computer-engineering-concept_23-2148156679.jpg?size=626&ext=jpg&uid=R88793194&ga=GA1.1.1133761637.1698651682&semt=ais"
                                 class="card-img h-100" alt="...">
@@ -151,7 +151,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom"
                         data-aos-easing="ease-in-sine" class="h-100">
-                        <a href="courses.html"
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '2')"
                             class="hero-split-card card text-bg-dark rounded-3 overflow-hidden border-0">
                             <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?size=626&ext=jpg&uid=R88793194&ga=GA1.1.1133761637.1698651682&semt=ais"
                                 class="card-img h-100" alt="...">
@@ -164,7 +164,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="bottom"
                         data-aos-easing="ease-in-sine" class="h-100">
-                        <a href="courses.html"
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '4')"
                             class="hero-split-card card text-bg-dark rounded-3 overflow-hidden border-0">
                             <img src="https://img.freepik.com/free-vector/artificial-intelligence-background-abstract-style_23-2147879547.jpg?size=626&ext=jpg&uid=R88793194&ga=GA1.1.1133761637.1698651682&semt=ais"
                                 class="card-img h-100" alt="...">
@@ -177,7 +177,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="bottom"
                         data-aos-easing="ease-in-sine" class="h-100">
-                        <a href="courses.html"
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '3')"
                             class="hero-split-card card text-bg-dark rounded-3 overflow-hidden border-0">
                             <img src="https://img.freepik.com/free-vector/isometric-devops-illustration_52683-84175.jpg?size=626&ext=jpg&uid=R88793194&ga=GA1.1.1133761637.1698651682&semt=ais"
                                 class="card-img h-100" alt="...">
@@ -197,7 +197,7 @@
                 <div class="position-relative">
                     <h1 class="primary-header text-center mb-3 linear-gradient-text" data-aos="fade-up"
                         data-aos-duration="400">
-                        Pay after Placement Program
+                        Pay After Placement Program
                     </h1>
                     <p data-aos="fade-up" data-aos-duration="600" class="primary-text col-md-6 mx-auto text-center">
                         ATIT provides a clear step by step process through the Pay After Placement Program to help you
@@ -365,7 +365,7 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="700" class="d-flex">
+        <div data-aos="fade-up" data-aos-duration="700" class="d-flex pt-4">
             <a href="placement.html" class="btn primary-btn mb-5 mx-auto">About PAP</a>
         </div>
     </div>
@@ -557,7 +557,7 @@
     <div
         class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
 
-        <div class="vh-40">
+        <div class="h-250px">
             <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
                 <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
                     background="transparent" speed="1" style="width: 90px;" loop autoplay></dotlottie-player>
@@ -572,18 +572,18 @@
                     </a>
                 </div>
             </div>
-            <div class="popup">
+            <a href="placement.html" class="popup pop-ani text-decoration-none">
                 <span>P</span>
                 <span>a</span>
                 <span>y</span>
                 <span> </span>
-                <span>a</span>
+                <span>A</span>
                 <span>f</span>
                 <span>t</span>
                 <span>e</span>
                 <span>r</span>
                 <span> </span>
-                <span>p</span>
+                <span>P</span>
                 <span>l</span>
                 <span>a</span>
                 <span>c</span>
@@ -592,8 +592,8 @@
                 <span>e</span>
                 <span>n</span>
                 <span>t</span>
-            </div>
-            <div class="overflow-visible" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
+            </a>
+            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
                 data-bs-target="#contact">
                 <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
                     background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
@@ -617,32 +617,36 @@
         <div class="modal-dialog modal-dialog-centered p-5">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel" >Contact Form</h1>
+                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel">Contact Form
+                    </h1>
                     <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-3">
                     <form id="contactForm">
-                        <div class="form-floating">        
-                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>                           
-                            <label for="fname">Name  <span class="text"> *</span></label>   
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>
+                            <label for="fname">Name <span class="text"> *</span></label>
                         </div>
                         <div class="form-floating">
-                             <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                             <label for="email">Email <span class="text"> *</span></label>
-                            </div>
-                        <div class="form-floating">             
-                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>                               
-                            <label for="phone">Phone Number <span class="text"> *</span></label> 
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <label for="email">Email <span class="text"> *</span></label>
                         </div>
-                        <div class="form-floating">                                
-                            <textarea class="form-control" id="message" rows="3"
-                                placeholder="Enter your message" style="height: 80px"></textarea>
-                                <label for="message">Message <span>(Optional)</span></label>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="10" required>
+                            <label for="phone">Phone Number <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                style="height: 80px"></textarea>
+                            <label for="message">Message <span>(Optional)</span></label>
                         </div>
                         <div id="output" class="text-center"></div>
-                      <div class="text-center"> <button type="submit" class="btn btn-primary btn-block">Submit</button></div> 
-                    </form> 
+                        <div class="text-center"> <button type="submit"
+                                class="btn btn-primary btn-block">Submit</button></div>
+                    </form>
 
                 </div>
             </div>
