@@ -87,7 +87,10 @@ p {
   background-color: #f7851d;
   color: whitesmoke;
 }
-
+/* #placement-accordion .accordion-item:not(.collapsed) .accordion-button {
+  background-color: #f7851d;
+  color: whitesmoke;
+} */
 
 
 /* .acc-bg{
