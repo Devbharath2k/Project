@@ -48,7 +48,7 @@ img {
     --fam2: 'Jost', sans-serif;
 }
 
-.bg-primary {
+.bg-primary, #bg-primary {
     background-color: var(--primary-color) !important;
 }
 
@@ -105,6 +105,14 @@ img {
 
 .cursor {
     cursor: pointer;
+}
+
+.vh-30 {
+    height: 30vh;
+}
+
+.vh-40 {
+    height: 40vh;
 }
 
 .vh-50 {
@@ -924,7 +932,8 @@ vertical-align: middle;
 .atit-box .atit-card-1.active .slide-service-item .glyph .glyph-icon::before,
 .atit-box .atit-card-1.active .slide-service-item h3,
 .atit-box .atit-card-1:hover .slide-service-item .glyph .glyph-icon::before,
-.atit-box .atit-card-1:hover .slide-service-item i {
+.atit-box .atit-card-1:hover .slide-service-item i,
+.atit-box .atit-card-1.active .glyph i {
     color: #fff;
 }
 
@@ -962,6 +971,15 @@ vertical-align: middle;
     .atit-box .slide-service-item i {
         font-size: 24px;
         margin-bottom: 15px;
+    }
+
+    .hero-banner::before {
+        top: 0;
+    }
+
+    .whatwedo .card,
+    .slidernew .card {
+        align-items: start;
     }
 }
 
@@ -1623,15 +1641,15 @@ footer a:hover {
         width: 100%;
     }
 
-    .nav-holder .nav-link.active,
-    .nav-holder .nav-link:hover {
+    .offcanvas .navbar-nav .nav-link.active,
+    .offcanvas .navbar-nav .nav-link:hover {
         box-shadow: none;
         position: relative;
         color: var(--primary-color) !important;
         transition: .3s;
     }
 
-    .nav-holder .nav-link::before {
+    .offcanvas .navbar-nav .nav-link::before {
         transition: .3s;
         content: "";
         width: 0px;
@@ -1643,7 +1661,7 @@ footer a:hover {
 
     .nav-link.active::before,
     .nav-link:hover::before {
-        width: 6px;
+        width: 6px !important;
     }
 
     .nav-drop {
@@ -1677,7 +1695,7 @@ footer a:hover {
 
 
     body>div {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .hero-split-card {
@@ -1726,7 +1744,7 @@ footer a:hover {
         bottom: -50%;
     }
 
-    
+
     .canvas-bar {
         border-bottom-left-radius: 25px;
     }
@@ -1803,9 +1821,10 @@ footer a:hover {
     .coursesList .class-content {
         min-height: 242px;
     }
+
     .coursesList .card {
         height: 100%;
-}
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -1818,4 +1837,62 @@ footer a:hover {
     .coursesList .class-content {
         min-height: 142px;
     }
+
 }
+
+/* form------nivi starts */
+
+form .form-floating{
+    margin: 10px;
+}
+form  .text{
+    color: red;
+}
+.form-floating input{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    background-color: #fff !important;
+}
+.form-floating textarea{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius:0px;
+    resize: none;
+
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #0e5483;
+    outline: 0;
+    box-shadow: none;
+    border-radius: none;
+
+}
+
+.form-floating>.form-control:focus~label{
+    color: #0e5483;
+}
+#contactForm button{
+        background-color: var(--primary-color);
+        border-color:var(--primary-color) ;
+}
+#contactForm button:hover{
+    background-color: white;
+    border-color:var(--primary-color) ;
+    color: var(--primary-color);
+}
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color: #0e5483;
+}
+input:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  input:-webkit-autofill:focus { 
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    /* -webkit-text-fill-color: green; */
+  }
+  
+/* form------nivi ends */
