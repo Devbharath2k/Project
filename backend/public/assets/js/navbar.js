@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                    <a class="nav-link" href="../../courses.html">Courses</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" href="../../Blog.html">Blog</a>
+                   <a class="nav-link" href="../../Blog2.html">Blog</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="../../placement.html">PAP</a>
@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
    <!-- nav ends -->
     `;
-console.log("hek")
-
 
 // Get a reference to the body element
 var body = document.body;
@@ -92,8 +90,16 @@ var body = document.body;
 body.innerHTML = navCode + body.innerHTML;
   });
 
-var link = ` <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
-`
-$("head").append(link)
+// var link = ` <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+// integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+// crossorigin="anonymous" referrerpolicy="no-referrer" />
+// `
+// $("head").append(link)
+var linkElement = document.createElement('link');
+linkElement.rel = 'stylesheet';
+linkElement.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css';
+linkElement.integrity = 'sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==';
+linkElement.crossOrigin = 'anonymous';
+linkElement.referrerPolicy = 'no-referrer';
+
+document.head.appendChild(linkElement);

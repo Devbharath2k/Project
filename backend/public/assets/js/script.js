@@ -194,7 +194,7 @@ $(document).ready(function () {
         // Add the animation class to the element you want to animate
         // For example, if you have an element with the class "animated-element":
         $('.popup').addClass('pop-ani');
- 
+
         // Remove the animation class after a certain time (e.g., 2 seconds)
         setTimeout(function () {
             $('.popup').removeClass('pop-ani');
@@ -207,3 +207,39 @@ $('.course .tab-pane .card').attr({
     'data-aos': 'fade-up',
     'data-aos-duration': '600'
 });
+
+
+$(".atit-card-1").hover(function () {
+    // Mouseenter event
+    $(".atit-card-1").removeClass('active');
+    $(this).addClass('active');
+});
+
+
+let getCourseList = sessionStorage.getItem('cousrelist');
+if (getCourseList == 1) {
+    $('.course #pills-tab  button.nav-link').removeClass('active')
+    $('.course #pills-tab > div:nth-child(2) button.nav-link').addClass('active')
+    $('.course .tab-content .tab-pane').removeClass('active')
+    $('.course .tab-content #pills-Testing').addClass('active')
+} else if (getCourseList == 2) {
+    $('.course #pills-tab  button.nav-link').removeClass('active')
+    $('.course #pills-tab > div:nth-child(3) button.nav-link').addClass('active')
+    $('.course .tab-content .tab-pane').removeClass('active')
+    $('.course .tab-content #pills-Development').addClass('active')
+} else if (getCourseList == 3) {
+    $('.course #pills-tab  button.nav-link').removeClass('active')
+    $('.course #pills-tab > div:nth-child(4) button.nav-link').addClass('active')
+    $('.course .tab-content .tab-pane').removeClass('active')
+    $('.course .tab-content #pills-Devops').addClass('active')
+} else if (getCourseList == 4) {
+    $('.course #pills-tab  button.nav-link').removeClass('active')
+    $('.course #pills-tab > div:nth-child(5) button.nav-link').addClass('active')
+    $('.course .tab-content .tab-pane').removeClass('active')
+    $('.course .tab-content #pills-science').addClass('active')
+}else{
+    $('.course #pills-tab  button.nav-link').removeClass('active')
+    $('.course #pills-tab > div:nth-child(1) button.nav-link').addClass('active')
+    $('.course .tab-content .tab-pane').removeClass('active')
+    $('.course .tab-content .tab-pane:nth-child(1)').addClass('active')
+}
