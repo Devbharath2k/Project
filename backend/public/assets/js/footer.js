@@ -55,15 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 <i class="bi bi-clock icon"></i>
                 <div class="text-decoration-none">
                     <h4>Skills</h4>
-                    <p class="text-decoration-none">
-                        <a href="#" class="text-decoration-none"><strong>Software Developement</strong></a>
+                    <div class="text-decoration-none courses-links">
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '2')" class="text-decoration-none"><strong>Software Developement</strong></a>
                         <br>
-                        <a href="#" class="text-decoration-none"><strong>Software Testing</strong></a>
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '1')" class="text-decoration-none"><strong>Software Testing</strong></a>
                         <br>
-                        <a href="#" class="text-decoration-none"><strong>Devops</strong></a>
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '3')" class="text-decoration-none"><strong>Devops</strong></a>
                         <br>
-                        <a href="#" class="text-decoration-none"><strong>Machine Learning & AI</strong></a>
-                    </p>
+                        <a href="courses.html" onclick="sessionStorage.setItem('cousrelist', '4')" class="text-decoration-none"><strong>Machine Learning & AI</strong></a>
+                    </div>
                 </div>
             </div>
 
@@ -91,11 +91,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </footer>
     `;
-  
+
     var footerElement = document.getElementById("footerElement");
     if (footerElement) {
-      footerElement.innerHTML = footerCode;
-      AOS.init();
+        footerElement.innerHTML = footerCode;
+        AOS.init();
     }
-  });
-  
+});
+
+
+$(document).ready(function () {
+    // Change the href to a new value
+    // $("footer .courses-links a").attr("href", "one");
+    if ($('.coursesList').length > 0) {
+        // If yes, change the href attribute value for the anchor tags in the footer element
+        $('footer .courses-links a').attr('href', '../../courses.html');
+    }
+});
