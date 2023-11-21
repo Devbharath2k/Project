@@ -557,7 +557,7 @@
     <div
         class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
 
-        <div class="vh-40">
+        <div class="h-250px">
             <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
                 <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
                     background="transparent" speed="1" style="width: 90px;" loop autoplay></dotlottie-player>
@@ -572,7 +572,7 @@
                     </a>
                 </div>
             </div>
-            <div class="popup">
+            <a href="placement.html" class="popup pop-ani text-decoration-none">
                 <span>P</span>
                 <span>a</span>
                 <span>y</span>
@@ -592,8 +592,8 @@
                 <span>e</span>
                 <span>n</span>
                 <span>t</span>
-            </div>
-            <div class="overflow-visible" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
+            </a>
+            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
                 data-bs-target="#contact">
                 <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
                     background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
@@ -617,32 +617,36 @@
         <div class="modal-dialog modal-dialog-centered p-5">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel" >Contact Form</h1>
+                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel">Contact Form
+                    </h1>
                     <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-3">
                     <form id="contactForm">
-                        <div class="form-floating">        
-                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>                           
-                            <label for="fname">Name  <span class="text"> *</span></label>   
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>
+                            <label for="fname">Name <span class="text"> *</span></label>
                         </div>
                         <div class="form-floating">
-                             <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                             <label for="email">Email <span class="text"> *</span></label>
-                            </div>
-                        <div class="form-floating">             
-                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>                               
-                            <label for="phone">Phone Number <span class="text"> *</span></label> 
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <label for="email">Email <span class="text"> *</span></label>
                         </div>
-                        <div class="form-floating">                                
-                            <textarea class="form-control" id="message" rows="3"
-                                placeholder="Enter your message" style="height: 80px"></textarea>
-                                <label for="message">Message <span>(Optional)</span></label>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="10" required>
+                            <label for="phone">Phone Number <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                style="height: 80px"></textarea>
+                            <label for="message">Message <span>(Optional)</span></label>
                         </div>
                         <div id="output" class="text-center"></div>
-                      <div class="text-center"> <button type="submit" class="btn btn-primary btn-block">Submit</button></div> 
-                    </form> 
+                        <div class="text-center"> <button type="submit"
+                                class="btn btn-primary btn-block">Submit</button></div>
+                    </form>
 
                 </div>
             </div>
