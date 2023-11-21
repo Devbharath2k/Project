@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
    <!-- nav ends -->
     `;
-console.log("hek")
-
 
 // Get a reference to the body element
 var body = document.body;
