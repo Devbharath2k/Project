@@ -145,10 +145,10 @@
                     Docker, Docker Swarm, Jenkins, Nagios, etc.</p>
             </div>
         </div>
-        <div class="container-fluid mt-3" id="placement-accordion">
+        <div class="container mt-3" id="placement-accordion">
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion" id="accordion1">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
@@ -157,7 +157,7 @@
                                     Basics of Linux
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Introduction to Operating Systems</li>
@@ -187,7 +187,7 @@
                                     Learn AWS Cloud
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion1">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Terminology and concepts related to the AWS platform</li>
@@ -225,7 +225,7 @@
                                     Infra as Code - Terraform
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"  data-bs-parent="#accordion1">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Introduction to Terraform</li>
@@ -242,7 +242,7 @@
                     </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="600" data-aos-duration="600">
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accordion2">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
@@ -250,7 +250,7 @@
                                     Docker
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse">
+                            <div id="collapseFour" class="accordion-collapse collapse"  data-bs-parent="#accordion2">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Introduction to Docker</li>
@@ -269,7 +269,7 @@
                                     DevOps (GIT | ANSIBLE | JENKINS)
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse">
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion2">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Introduction to CI/CD (what is DevOps ??)</li>
@@ -296,7 +296,7 @@
                                     Prometheus &amp; Grafana
                                 </button>
                             </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse">
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion2">
                                 <div class="accordion-body">
                                     <ul>
                                         <li>Introduction to Prometheus</li>
