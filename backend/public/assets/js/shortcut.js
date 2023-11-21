@@ -35,13 +35,13 @@ var htmlCode = `
                 <span>a</span>
                 <span>y</span>
                 <span> </span>
-                <span>a</span>
+                <span>A</span>
                 <span>f</span>
                 <span>t</span>
                 <span>e</span>
                 <span>r</span>
                 <span> </span>
-                <span>p</span>
+                <span>P</span>
                 <span>l</span>
                 <span>a</span>
                 <span>c</span>
