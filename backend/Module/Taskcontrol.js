@@ -19,15 +19,19 @@ const ATITPostmethod = async (req, res) => {
 
     if (existingUser) {
       return res.status(200).json({
+        status: 200,
         message: "User already exists"
       });
     }
+    
     await newUser.save();
-
+    
     return res.status(201).json({
+      status: 201,
       message: "User created successfully",
       data: newUser
     });
+    
   } catch (error) {
     console.error(error);
     return res.status(500).json({
