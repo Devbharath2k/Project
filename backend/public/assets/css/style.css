@@ -135,6 +135,10 @@ img {
     height: 500px !important;
 }
 
+.h-250px{
+    height: 250px;
+}
+
 .text-justify {
     text-align: justify;
 }
