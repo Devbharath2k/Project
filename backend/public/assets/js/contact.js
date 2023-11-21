@@ -17,42 +17,40 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
             console.log("name, email, phone, message",fname, email, phone, message)
-        fetch("/api/post", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ fname, email, phone, message })
-        })
-        .then(response => response.json())
-        .then(apiData => {
+            fetch("/api/post", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ fname, email, phone, message })
+            })
+            .then(response => response.json())
+            .then(apiData => {        
+                console.log(apiData);
+                if(apiData.status === 200){
+                    alert("User already exists");
+                    output.classList.add("text-danger");
+                    output.textContent = "User already exists";              
+                }
+                else if(apiData.status === 201){
+                    alert("Form submitted successfully!");
+                    output.classList.add("text-success");
+                    output.textContent = "Form submitted successfully!";
+                    form.reset();
+                    setTimeout(function () {
+                        output.textContent = "";
+                    }, 2000); 
+                }
+                else {
+                    alert("Internal server error");
+                    output.classList.add("text-danger");
+                    output.textContent = "Internal server error" ;
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert("Error in request");
+            });
             
-            console.log(apiData);
-            if(apiData.message == "User already exists"){
-                alert("User already exists")
-                output.classList.add("text-danger");
-                output.textContent = "User already exists";              
-            }
-            else if(apiData.message == "User created successfully"){
-                alert("Form submitted successfully!")
-                output.classList.add("text-success");
-                output.textContent = "Form submitted successfully!";      
-                 // You can also reset the form here if needed
-            form.reset();        
-            }
-            else {
-                alert("Internal server error")
-                output.classList.add("text-danger");
-                output.textContent = "Internal server error" 
-        }
-
-           
-
-        })
-        .catch(error => {
-            // Handle errors
-            console.error("Error:", error);
-            output.textContent = "Error occurred while submitting the form.";
-        });
     });
 });
