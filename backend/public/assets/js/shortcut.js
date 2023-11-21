@@ -15,7 +15,7 @@ var htmlCode = `
     <div
         class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
 
-        <div class="vh-40">
+        <div class="h-250px">
             <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
                 <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
                     background="transparent" speed="1" style="width: 90px;" loop autoplay></dotlottie-player>
@@ -51,7 +51,7 @@ var htmlCode = `
                 <span>n</span>
                 <span>t</span>
             </a>
-            <div class="overflow-visible" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
+            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
                 data-bs-target="#contact">
                 <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
                     background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
@@ -119,4 +119,4 @@ existingDiv.insertAdjacentHTML('afterend', htmlCode);
 // $(htmlCode).insertAfter(existingDiv)
 // Insert the HTML code after the existing div
 // existingDiv.insertAdjacentElement('afterend', htmlCode);
-AOS.Refesh();
+AOS.init();
