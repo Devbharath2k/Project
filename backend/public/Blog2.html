@@ -33,6 +33,11 @@
             transition: .3s;
             background: transparent;
         }
+        .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: var(--bs-nav-pills-link-active-color) !important;
+        background-color: var(--bs-nav-pills-link-active-bg) !important;
+    }
     </style>
 </head>
 
@@ -168,33 +173,95 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="d-flex justify-content-center my-5">
-            <ul class="nav nav-pills d-flex justify-content-evenly" id="pills-tab" role="tablist">
+        <div class="d-flex justify-content-center my-5 pap-card">
+            <ul class="nav nav-pills mb-5 text-center justify-content-md-evenly justify-content-center my-5 text-capitalize p-10 m-0 w-100"
+            id="pills-tab" role="tablist ">
+
+            <div class="col-12 col-md d-flex justify-content-center">
+                <li class="nav-item py-1 w-100 d-flex align-items-center justify-content-center" data-aos="fade-up"
+                    data-aos-duration="700" role="presentation">
+                    <button
+                        class="nav-link col-4 col-md-12 active border pap-card  py-2 px-5  bg-primary text-white"
+                        id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button"
+                        role="tab" aria-controls="pills-All" aria-selected="true">All
+                    </button>
+                </li>
+            </div>
+
+
+            <div class="col-6 col-md justify-content-center">
+                <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                    data-aos-duration="700" role="presentation">
+                    <button
+                        class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly custom-testing-style bg-primary text-white "
+                        id="pills-IT-tab" data-bs-toggle="pill" data-bs-target="#pills-IT" type="button"
+                        role="tab" aria-controls="pills-IT" aria-selected="false">IT Jobs</button>
+                </li>
+            </div>
+
+            <div class="col-6 col-md justify-content-center">
+                <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                    data-aos-duration="1000" role="presentation">
+                    <button
+                        class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                        id="pills-Interviews-tab" data-bs-toggle="pill" data-bs-target="#pills-Interviews"
+                        type="button" role="tab" aria-controls="pills-Interviews"
+                        aria-selected="false">Interviews</button>
+                </li>
+            </div>
+
+            <div class="col-6 col-md justify-content-center">
+                <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                    data-aos-duration="1000" role="presentation">
+                    <button
+                        class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                        id="pills-Technical-tab" data-bs-toggle="pill" data-bs-target="#pills-Technical" type="button"
+                        role="tab" aria-controls="pills-Technical" aria-selected="false">Technical Skills</button>
+                </li>
+            </div>
+
+            <div class="col-6 col-md">
+                <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                    data-aos-duration="1000" role="presentation">
+                    <button
+                        class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
+                        id="pills-Others-tab" data-bs-toggle="pill" data-bs-target="#pills-Others" type="button"
+                        role="tab" aria-controls="pills-Others" aria-selected="false">Others</button>
+                </li>
+            </div>
+
+        </ul>
+            <!-- <ul class="nav nav-pills d-flex justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item p-3" role="presentation ">
                     <button class="nav-link active rounded-pill btn primary-btn mx-auto " id="pills-all-tab"
                         data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab"
-                        aria-controls="pills-all" aria-selected="true">IT Jobs</button>
+                        aria-controls="pills-all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item p-3" role="presentation ">
+                    <button class="nav-link rounded-pill btn primary-btn mx-auto " id="pills-IT-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-IT" type="button" role="tab"
+                        aria-controls="pills-IT" aria-selected="true">IT Jobs</button>
                 </li>
                 <li class="nav-item p-3" role="presentation">
-                    <button class="nav-link rounded-pill btn primary-btn mx-auto" id="pills-college-tab"
-                        data-bs-toggle="pill" data-bs-target="#pills-college" type="button" role="tab"
-                        aria-controls="pills-college" aria-selected="false">Interviews</button>
+                    <button class="nav-link rounded-pill btn primary-btn mx-auto" id="pills-Interviews-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-Interviews" type="button" role="tab"
+                        aria-controls="pills-Interviews" aria-selected="false">Interviews</button>
                 </li>
                 <li class="nav-item p-3" role="presentation">
-                    <button class="nav-link rounded-pill btn primary-btn mx-auto" id="pills-highschool-tab"
-                        data-bs-toggle="pill" data-bs-target="#pills-highschool" type="button" role="tab"
-                        aria-controls="pills-highschool" aria-selected="false">Technical Skills</button>
+                    <button class="nav-link rounded-pill btn primary-btn mx-auto" id="pills-Technical-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-Technical" type="button" role="tab"
+                        aria-controls="pills-Technical" aria-selected="false">Technical Skills</button>
                 </li>
                 <li class="nav-item p-3" role="presentation">
                     <button class="nav-link rounded-pill btn primary-btn mx-auto" id="pills-others-tab"
                         data-bs-toggle="pill" data-bs-target="#pills-others" type="button" role="tab"
                         aria-controls="pills-others" aria-selected="false">Others</button>
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
     <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+        <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab"
             tabindex="0">
             <div class="container">
                 <div class="row">
@@ -203,7 +270,7 @@
                         <div class="box rounded-5 ">
                             <img src="./assets/img/Blog/blogimg.jpg">
                             <div class="box-content">                           
-                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Technical-Skills</h2>                   
                             </div>
                         </div>
                         </a>
@@ -216,7 +283,7 @@
                         <div class="box rounded-5 ">
                             <img src="./assets/img/Blog/blogimg.jpg">
                             <div class="box-content">                           
-                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Others</h2>                   
                             </div>
                         </div>
                         </a>
@@ -229,7 +296,7 @@
                         <div class="box rounded-5 ">
                             <img src="./assets/img/Blog/blogimg.jpg">
                             <div class="box-content">                           
-                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">IT-Job</h2>                   
                             </div>
                         </div>
                         </a>
@@ -244,7 +311,7 @@
                         <div class="box rounded-5 ">
                             <img src="./assets/img/Blog/blogimg.jpg">
                             <div class="box-content">                           
-                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
                             </div>
                         </div>
                         </a>
@@ -257,7 +324,7 @@
                         <div class="box rounded-5 ">
                             <img src="./assets/img/Blog/blogimg.jpg">
                             <div class="box-content">                           
-                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Tech</h2>                   
                             </div>
                         </div>
                         </a>
@@ -286,7 +353,7 @@
                 </div> -->
             </div>
         </div>
-        <div class="tab-pane fade" id="pills-college" role="tabpanel" aria-labelledby="pills-college-tab" tabindex="0">
+        <div class="tab-pane fade" id="pills-IT" role="tabpanel" aria-labelledby="pills-IT-tab" tabindex="0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
@@ -305,8 +372,27 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="pills-highschool" role="tabpanel" aria-labelledby="pills-highschool-tab"
+        <div class="tab-pane fade" id="pills-Interviews" role="tabpanel" aria-labelledby="pills-Interviews-tab"
             tabindex="0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
+                        <a href="./Blog-page/Mastering Interviews.html" class="">
+                        <div class="box rounded-5 ">
+                            <img src="./assets/img/Blog/blogimg.jpg">
+                            <div class="box-content">                           
+                               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Education</h2>                   
+                            </div>
+                        </div>
+                        </a>
+                        <a href="./Blog-page/Mastering Interviews.html" class="text-decoration-none blog-title blog-title">
+                            Eco-Education in Our Lives: We Can Change the Future
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-Technical" role="tabpanel" aria-labelledby="pills-Technical-tab" tabindex="0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
