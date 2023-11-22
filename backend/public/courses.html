@@ -22,220 +22,220 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        </head>
+</head>
 
-    <style>
-        .pap-card {
+<style>
+    .pap-card {
+        border-radius: 0px 30px;
+        animation: border 6s linear infinite;
+    }
+
+    .pap-card img {
+        width: auto;
+        display: unset;
+    }
+
+    .tab-content>.active {
+        opacity: 1 !important;
+    }
+
+    @keyframes border {
+        0% {
             border-radius: 0px 30px;
-            animation: border 6s linear infinite;
         }
 
-        .pap-card img {
-            width: auto;
-            display: unset;
+        50% {
+            border-radius: 30px 0px;
         }
 
-        .tab-content>.active{
-            opacity: 1 !important;
+        100% {
+            border-radius: 0px 30px;
         }
+    }
 
-        @keyframes border {
-            0% {
-                border-radius: 0px 30px;
-            }
 
-            50% {
-                border-radius: 30px 0px;
-            }
 
-            100% {
-                border-radius: 0px 30px;
-            }
-        }
+    .card-1 {
+        box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        border: 0;
+    }
 
-       
 
-        .card-1 {
-            box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
-            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-            border: 0;
-        }
 
-        
+    .primary-header {
+        background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgba(182, 216, 214, 1) 100%);
+        padding: 50px 10px;
+    }
 
-        .primary-header {
-            background: linear-gradient(90deg, rgba(5, 56, 51, 1) 0%, rgba(182, 216, 214, 1) 100%);
-            padding: 50px 10px;
-        }
+    a {
+        text-decoration: none;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    .primary-header2 {
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
+    }
 
-        .primary-header2 {
-            padding: 50px 10px;
-            background: linear-gradient(90deg, rgba(60, 118, 214, 1) 0%, rgba(184, 206, 240, 1) 100%);
-        }
+    .primary-header3 {
 
-        .primary-header3 {
+        padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
 
-            padding: 50px 10px;
-            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+    }
 
-        }
+    .primary-header4 {
 
-        .primary-header4 {
+        background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(55, 78, 142, 1) 0%, rgba(165, 182, 215, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header5 {
 
-        .primary-header5 {
 
+        background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgba(249, 211, 217, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(252, 45, 61, 1) 0%, rgba(249, 211, 217, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header6 {
 
-        .primary-header6 {
 
+        background: linear-gradient(90deg, rgb(4, 228, 127) 0%, rgb(248, 248, 248) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(4, 228, 127) 0%, rgb(248, 248, 248) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header7 {
 
-        .primary-header7 {
 
+        background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgba(204, 204, 204, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(120, 30, 30) 0%, rgba(204, 204, 204, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header8 {
 
-        .primary-header8 {
+        background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(148, 32, 101, 1) 0%, rgba(234, 210, 224, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header9 {
 
-        .primary-header9 {
 
+        background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgba(255, 183, 147, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(255, 88, 2, 1) 0%, rgba(255, 183, 147, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header10 {
 
-        .primary-header10 {
+        padding: 50px 10px;
 
-            padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgba(252, 205, 219, 1) 100%);
+    }
 
-            background: linear-gradient(90deg, rgba(237, 12, 78, 1) 0%, rgba(252, 205, 219, 1) 100%);
-        }
+    .primary-header11 {
 
-        .primary-header11 {
 
+        padding: 50px 10px;
 
-            padding: 50px 10px;
+        background: linear-gradient(90deg, rgba(206, 104, 216, 1) 0%, rgba(252, 205, 219, 1) 100%);
+    }
 
-            background: linear-gradient(90deg, rgba(206, 104, 216, 1) 0%, rgba(252, 205, 219, 1) 100%);
-        }
+    .primary-header12 {
 
-        .primary-header12 {
 
+        background: linear-gradient(90deg, rgba(205, 220, 57, 1) 0%, rgba(221, 223, 205, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(205, 220, 57, 1) 0%, rgba(221, 223, 205, 1) 100%);
-            padding: 50px 10px;
-        }
 
 
+    .primary-header13 {
 
-        .primary-header13 {
 
+        background: linear-gradient(90deg, rgb(175, 153, 12) 0%, rgb(20, 81, 150) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(175, 153, 12) 0%, rgb(20, 81, 150) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header14 {
 
-        .primary-header14 {
 
+        background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(82, 11, 215) 0%, rgba(148, 187, 233, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header16 {
 
-        .primary-header16 {
 
+        background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgba(249, 242, 246, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(60, 188, 254, 1) 0%, rgba(249, 242, 246, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header15 {
 
-        .primary-header15 {
 
+        background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header17 {
 
-        .primary-header17 {
 
+        background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgba(251, 246, 249, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(212, 8, 15) 0%, rgba(251, 246, 249, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header18 {
 
-        .primary-header18 {
 
+        background: linear-gradient(90deg, rgba(111, 125, 250, 1) 0%, rgba(225, 197, 140, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(111, 125, 250, 1) 0%, rgba(225, 197, 140, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header19 {
 
-        .primary-header19 {
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header20 {
 
-        .primary-header20 {
 
+        background: linear-gradient(0deg, rgba(248, 123, 126, 1) 0%, rgba(245, 218, 139, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(0deg, rgba(248, 123, 126, 1) 0%, rgba(245, 218, 139, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header21 {
 
-        .primary-header21 {
+        background: linear-gradient(0deg, rgba(6, 206, 174, 1) 0%, rgba(248, 123, 126, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(0deg, rgba(6, 206, 174, 1) 0%, rgba(248, 123, 126, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header22 {
 
-        .primary-header22 {
+        background: linear-gradient(90deg, rgba(45, 162, 108, 1) 0%, rgba(221, 240, 231, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(45, 162, 108, 1) 0%, rgba(221, 240, 231, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header23 {
 
-        .primary-header23 {
+        background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(253, 158, 41, 1) 0%, rgba(254, 224, 186, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header24 {
 
-        .primary-header24 {
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-            padding: 50px 10px;
-        }
+    .primary-header25 {
 
-        .primary-header25 {
+        background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
+        padding: 50px 10px;
+    }
 
-            background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
-            padding: 50px 10px;
-        }
 
-       
-        
- 
+
+
     .rating-star img {
         width: 15px;
         display: inline-block;
@@ -418,11 +418,12 @@
         background: linear-gradient(90deg, rgb(225, 7, 7) 0%, rgba(223, 202, 202, 1) 100%);
         padding: 50px 10px;
     }
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: var(--bs-nav-pills-link-active-color) !important;
-    background-color: var(--bs-nav-pills-link-active-bg) !important;
-}
-   
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: var(--bs-nav-pills-link-active-color) !important;
+        background-color: var(--bs-nav-pills-link-active-bg) !important;
+    }
 </style>
 
 <body>
@@ -519,8 +520,9 @@
                         Our <span class="primary-color">Courses</span>
                     </h1>
                     <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
-                        ATIT provides a clear step by step process through the Pay After Placement Program <br
-                            class="d-none d-lg-block"> to help
+                        Navigate your career path with precision through our comprehensive IT courses, paving the way
+                        for
+                        success in the dynamic world of technology.<br class="d-none d-lg-block"> to help
                         you
                         obtain your dream Job in IT sector.</p>
                     <nav data-aos="fade-up" data-aos-duration="800"
@@ -549,7 +551,8 @@
                 id="pills-tab" role="tablist ">
 
                 <div class="col-12 col-md d-flex justify-content-center">
-                    <li class="nav-item py-1 w-100 d-flex align-items-center justify-content-center"  data-aos="fade-up" data-aos-duration="700" role="presentation">                     
+                    <li class="nav-item py-1 w-100 d-flex align-items-center justify-content-center" data-aos="fade-up"
+                        data-aos-duration="700" role="presentation">
                         <button
                             class="nav-link col-4 col-md-12  active border pap-card  py-2 px-5  bg-primary text-white"
                             id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button"
@@ -560,16 +563,18 @@
 
 
                 <div class="col-6 col-md justify-content-center">
-                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up" data-aos-duration="700" role="presentation">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                        data-aos-duration="700" role="presentation">
                         <button
-                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly custom-testing-style bg-primary text-white " 
+                            class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly custom-testing-style bg-primary text-white "
                             id="pills-Testing-tab" data-bs-toggle="pill" data-bs-target="#pills-Testing" type="button"
                             role="tab" aria-controls="pills-Testing" aria-selected="false">Testing</button>
                     </li>
                 </div>
 
                 <div class="col-6 col-md justify-content-center">
-                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                        data-aos-duration="1000" role="presentation">
                         <button
                             class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
                             id="pills-Development-tab" data-bs-toggle="pill" data-bs-target="#pills-Development"
@@ -579,7 +584,8 @@
                 </div>
 
                 <div class="col-6 col-md justify-content-center">
-                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                        data-aos-duration="1000" role="presentation">
                         <button
                             class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
                             id="pills-Devops-tab" data-bs-toggle="pill" data-bs-target="#pills-Devops" type="button"
@@ -588,7 +594,8 @@
                 </div>
 
                 <div class="col-6 col-md">
-                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up" data-aos-duration="1000" role="presentation">
+                    <li class="nav-item py-1 d-flex align-items-center justify-content-center px-2" data-aos="fade-up"
+                        data-aos-duration="1000" role="presentation">
                         <button
                             class="nav-link w-100 border pap-card d-flex flex-column text-center align-items-center py-2 h-100 justify-content-evenly bg-primary text-white"
                             id="pills-science-tab" data-bs-toggle="pill" data-bs-target="#pills-science" type="button"
@@ -1179,7 +1186,8 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <a href="courses/Devops/Devops.html" class="card pap-card overflow-hidden border-0 shadow1 d-block">
+                                <a href="courses/Devops/Devops.html"
+                                    class="card pap-card overflow-hidden border-0 shadow1 d-block">
                                     <div class="w-100 common-card-image">
                                         <h4 class="course-card23 text-white text-center">DevOps</h4>
                                     </div>
@@ -1985,13 +1993,13 @@
     <div id="rocket-container" class="cursor" data-aos="zoom-in">
         <!-- <img src="./assets/imagesandvectors/vectors/newww.gif" alt="Rocket" id="rocket"> -->
         <dotlottie-player src="https://lottie.host/a3930b1d-eaf8-4fc4-a6b4-7ba7c5654523/tqWYmbEE3y.json"
-          background="transparent" speed="1" id="rocket" loop autoplay></dotlottie-player>
-    
-      </div>
-    
+            background="transparent" speed="1" id="rocket" loop autoplay></dotlottie-player>
+
+    </div>
+
     <div
         class="position-fixed z-3 bottom-0 d-flex align-items-center flex-column justify-content-center overflow-visible">
-    
+
         <div class="h-250px">
             <div class=" bell d-none overflow-visible position-relative" data-aos="fade-right" data-aos-duration="1000">
                 <dotlottie-player src="https://lottie.host/7eea6db9-f536-4f25-9f36-55e284faf207/afUTIVqW70.json"
@@ -2028,57 +2036,61 @@
                 <span>n</span>
                 <span>t</span>
             </a>
-            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000" data-bs-toggle="modal"
-                data-bs-target="#contact">
+            <div class="overflow-visible class-ico" data-aos="fade-right" data-aos-duration="1000"
+                data-bs-toggle="modal" data-bs-target="#contact">
                 <!-- <dotlottie-player src="https://lottie.host/c5554bef-2ea2-439f-ba03-150ec726c96e/0TSDow76Wl.json"
                     background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>  -->
-    
+
                 <dotlottie-player title="contact"
                     src="https://lottie.host/a335969b-c315-4035-be6b-d18bed4b5831/l73y30ZFSl.json"
                     background="transparent" speed="1" style="width: 80px;" loop autoplay></dotlottie-player>
             </div>
         </div>
-    
+
         <a href="https://api.whatsapp.com/send/?phone=%2B917845721438&text&app_absent=0" target="_blank" id="wa"
             class="cursor" data-aos="zoom-in" data-aos-duration="1000">
             <img src="./assets/imagesandvectors/vectors/whatsapp.png" alt="whatsapp" class="img-fluid"
                 style="width:70px">
         </a>
     </div>
-    
+
     <!-- course Modal -->
     <div class="modal fade" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered p-5">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel" >Contact Form</h1>
+                    <h1 class="modal-title fs-5 linear-gradient-text text-center" id="exampleModalLabel">Contact Form
+                    </h1>
                     <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-3">
                     <form id="contactForm">
-                        <div class="form-floating">        
-                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>                           
-                            <label for="fname">Name  <span class="text"> *</span></label>   
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your name" required>
+                            <label for="fname">Name <span class="text"> *</span></label>
                         </div>
                         <div class="form-floating">
-                             <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                             <label for="email">Email <span class="text"> *</span></label>
-                            </div>
-                        <div class="form-floating">             
-                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" required>                               
-                            <label for="phone">Phone Number <span class="text"> *</span></label> 
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <label for="email">Email <span class="text"> *</span></label>
                         </div>
-                        <div class="form-floating">                                
-                            <textarea class="form-control" id="message" rows="3"
-                                placeholder="Enter your message" style="height: 80px"></textarea>
-                                <label for="message">Message <span>(Optional)</span></label>
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone number"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="10" required>
+                            <label for="phone">Phone Number <span class="text"> *</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                                style="height: 80px"></textarea>
+                            <label for="message">Message <span>(Optional)</span></label>
                         </div>
                         <div id="output" class="text-center"></div>
-                      <div class="text-center"> <button type="submit" class="btn btn-primary btn-block">Submit</button></div> 
-                    </form> 
-    
+                        <div class="text-center"> <button type="submit"
+                                class="btn btn-primary btn-block">Submit</button></div>
+                    </form>
+
                 </div>
             </div>
         </div>

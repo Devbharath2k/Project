@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Jost', sans-serif; */
+    letter-spacing: .1em;
+    text-transform: capitalize;
+}
+
+body,
+* {
+    cursor: url('../imagesandvectors/vectors/arrow-new.png'), auto !important;
+    scroll-behavior: smooth;
+}
+
+.text-1 {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5rem;
+    font-weight: 600;
+}
+
+.linear-gradient-text {
+    background-image: linear-gradient(to right, #ff0000, #00ff00);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+:root {
+    --primary-color: #f7851d;
+    --link-color: #535353;
+    --box-shadow1: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --transition1: .3s cubic-bezier(0.02, 0.02, 0, 1.06);
+    --fam2: 'Jost', sans-serif;
+}
+
+.bg-primary, #bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.primary-header {
+    font-size: 50px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+
+.secondary-header {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.primary-btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+    line-height: 1.5;
+    transition: .3s;
+    background: transparent;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.primary-text {
+    color: #343434;
+    /* font-family: var(--fam2); */
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+.primary-mb {
+    margin-bottom: 100px;
+}
 .box{
     text-align: center;
     overflow: hidden;
@@ -159,8 +258,21 @@
     color: #414141;
     
 } 
-
-
-
-
-
+.blog-title{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-align: center;
+    color: #0b3f62;
+}
+.blog-sharelinks a{
+        color: var(--link-color);
+        font-size: 20px;
+}
+.blog-sharelinks a:hover{
+    color: var(--primary-color);
+}
+.blog-category{
+    font-size: 26px;
+}
