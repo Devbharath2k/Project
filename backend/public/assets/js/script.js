@@ -204,6 +204,11 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+    setTimeout(function () {
+        $('.popup').removeClass('pop-ani');
+    }, 2000);
+
+
     setInterval(function () {
         $('.popup').addClass('pop-ani');
     }, 5000);
