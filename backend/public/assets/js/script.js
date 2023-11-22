@@ -180,26 +180,38 @@ $(document).ready(function () {
 
 // new animi
 
-$(document).ready(function () {
-    // Show the popup when the document is ready
-    $('.popup').addClass('pop-ani');
+// $(document).ready(function () {
+//     // Show the popup when the document is ready
+//     $('.popup').addClass('pop-ani');
 
-    // Set a timeout to hide the popup after a certain time (e.g., 5 seconds)
-    setTimeout(function () {
-        $('.popup').removeClass('pop-ani');
+//     // Set a timeout to hide the popup after a certain time (e.g., 5 seconds)
+//     setTimeout(function () {
+//         $('.popup').removeClass('pop-ani');
+//     }, 5000);
+
+//     // Set an interval to run the animation every 20 seconds
+//     setInterval(function () {
+//         // Add the animation class to the element you want to animate
+//         // For example, if you have an element with the class "animated-element":
+//         $('.popup').addClass('pop-ani');
+
+//         // Remove the animation class after a certain time (e.g., 2 seconds)
+//         setTimeout(function () {
+//             $('.popup').removeClass('pop-ani');
+//         }, 5000);
+//     }, 20000);
+// });
+
+$(document).ready(function () {
+
+    setInterval(function () {
+        $('.popup').addClass('pop-ani');
     }, 5000);
 
-    // Set an interval to run the animation every 20 seconds
     setInterval(function () {
-        // Add the animation class to the element you want to animate
-        // For example, if you have an element with the class "animated-element":
-        $('.popup').addClass('pop-ani');
+        $('.popup').removeClass('pop-ani');
+    }, 10000);
 
-        // Remove the animation class after a certain time (e.g., 2 seconds)
-        setTimeout(function () {
-            $('.popup').removeClass('pop-ani');
-        }, 5000);
-    }, 20000);
 });
 
 
@@ -237,7 +249,7 @@ if (getCourseList == 1) {
     $('.course #pills-tab > div:nth-child(5) button.nav-link').addClass('active')
     $('.course .tab-content .tab-pane').removeClass('active')
     $('.course .tab-content #pills-science').addClass('active')
-}else{
+} else {
     $('.course #pills-tab  button.nav-link').removeClass('active')
     $('.course #pills-tab > div:nth-child(1) button.nav-link').addClass('active')
     $('.course .tab-content .tab-pane').removeClass('active')
