@@ -276,7 +276,7 @@
     }
 
     50% {
-        transform: translate(0%, -70px);
+        transform: translate(0%, -40px);
     }
 
     100% {
@@ -297,7 +297,7 @@
 .popup {
     position: absolute;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 9px 10px;
     background-color: #ffa928;
     background-color: var(--primary-color);
     border-radius: 8px;
@@ -306,13 +306,25 @@
     color: white;
     left: 10px;
     text-align: center;
-    width: 325px;
+    width: 290px;
     top: 0px;
     transform: translate(-110%, 0px) scale(0);
     transition: .5s;
-    /* font-size: 12px; */
+    font-size: 12px;
 }
 
+.popup::before {
+    content: "";
+    background: #ffa928;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 0 10px 0px 0px;
+    left: -5px;
+    bottom: 40%;
+    transform: translate(0px, -50%) rotate(50deg);
+}
 .pop-ani, .popup:hover{
     transform: translate(0%, 0px) scale(1);
 }
@@ -434,19 +446,6 @@
 .popup span:nth-child(19) {
     animation-delay: 1.9s;
 } */
-
-.popup::before {
-    content: "";
-    background: #ffa928;
-    background-color: var(--primary-color);
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 0 10px 0px 0px;
-    left: -5px;
-    bottom: 50%;
-    transform: translate(0px, -50%) rotate(50deg);
-}
 
 .class-ico {
     position: absolute;

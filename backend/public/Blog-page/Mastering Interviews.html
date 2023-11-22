@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IT Chandrayaan</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Blog-Page</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <style>
         .d-block {
@@ -29,8 +37,8 @@
         <nav class="navbar navbar-expand-lg py-0 col-lg-10  mx-auto">
             <div class="container-fluid p-0 d-flex align-items-start" data-aos="fade-down"
                 data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
-                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="index.html">
-                    <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+                <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white shadow1" href="../index.html">
+                    <img src="../assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler d-none shadow-none ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -44,22 +52,22 @@
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
                     <ul class="navbar-nav shadow1 ms-auto mb-0 bg-light overflow-hidden rounded-bottom-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="../about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="../contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Course</a>
+                            <a class="nav-link" href="../courses.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a title="Pay after Placement" class="nav-link" href="placement.html">PAP</a>
+                            <a title="Pay after Placement" class="nav-link" href="../placement.html">PAP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Blog2.html">Blog</a>
+                            <a class="nav-link active" href="../Blog2.html">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -69,8 +77,8 @@
     <!-- offcanvas navbar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
         <div class="offcanvas-header p-0 px-2">
-            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="index.html">
-                <img src="assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
+            <a class="navbar-brand fw-semibold fs-4 rounded-bottom-3 text-white" href="../index.html">
+                <img src="../assets/imagesandvectors/vectors/atit_logo.png" alt="logo">
             </a>
             <button type="button" class="m-2 p-0 btn shadow-none border-0 text-danger me-0" data-bs-dismiss="offcanvas"
                 aria-label="Close">
@@ -80,53 +88,52 @@
         <div class="offcanvas-body px-0 py-5 text-center">
             <ul class="navbar-nav ms-auto overflow-hidden mb-0 rounded-bottom-3">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="../about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="../contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Courses</a>
+                    <a class="nav-link" href="../courses.html">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="Blog2.html">Blog</a>
+                    <a class="nav-link active" href="../Blog2.html">Blog</a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- nav ends -->
+
     <section class="hero-banner new-hero vh-500px header finisher-header text-center text-md-start text-white mb-5">
         <div class="hero-vector1 d-none">
-            <img src="assets/imagesandvectors/vectors/vec-1.png" alt="">
+            <img src="../assets/imagesandvectors/vectors/vec-1.png" alt="">
         </div>
         <div class="container z-3 text-center">
             <div class="row d-flex justify-content-center align-items-center flex-row-reverse flex-lg-row">
                 <div>
                     <h1 data-aos="fade-up" data-aos-duration="500" class="primary-header">
-                        <span class="primary-color text-capitalize">Mastering <span class="text-white">
-                                Interviews </span></span>
+                        <span class="primary-color">Future of IT</span>
                     </h1>
                     <p class="text-light fs-6 text-capitalize fw-light" data-aos="fade-up" data-aos-duration="700">
-                        The Ultimate Guide to 10 Power Words and Phrases That Will Elevate Your Performance
+                        The Future of IT: Top High-Paying Skills to Master in 2024
                     </p>
                     <nav data-aos="fade-up" data-aos-duration="800"
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active text-white" aria-current="page">Mastering</li>
+                            <li class="breadcrumb-item"><a href="../Blog2.html"></a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
     </section>
-
     <div class="container">
-        <p class="linear-gradient-text fw-semibold display-6 text-center">Introduction</p>
+        <p class="linear-gradient-text py-5 fw-semibold display-6 text-center">Introduction</p>
         <p class="text-1" data-aos="fade-up" data-aos-duration="600">In today's competitive job market, interviews play
             a crucial role in determining one's career success. It is
             not only about showcasing your skills and qualifications but also about effective communication and using
@@ -135,7 +142,7 @@
     </div>
 
     <div class="container">
-        <p class="linear-gradient-text fw-semibold display-6" data-aos="fade-up" data-aos-duration="700">Common Pitfalls
+        <p class="linear-gradient-text py-5 fw-semibold display-6" data-aos="fade-up" data-aos-duration="700">Common Pitfalls
             in Interviews</p>
         <p class="fw-medium" data-aos="fade-up" data-aos-duration="600">Understanding the Impact of Poor Word Choice</p>
     </div>
@@ -144,7 +151,7 @@
             how interviewers perceive you. Opting for weak or uncertain
             language can undermine your credibility and make you appear less confident. It is essential to understand
             the potential pitfalls of poor word choice to avoid jeopardizing your interview performance.</p>
-        <p class="linear-gradient-text fw-medium text-center display-6" data-aos="fade-up">Unveiling 10 Words and Phrases
+        <p class="linear-gradient-text py-5 fw-medium text-center display-6" data-aos="fade-up">Unveiling 10 Words and Phrases
             to Avoid</p>
         <p class="text-1">To help you navigate through your interview with confidence, here are ten words and phrases
             that you should steer clear of:</p>
@@ -164,7 +171,7 @@
         </ul>
     </div>
     <div class="container">
-        <p class="linear-gradient-text fw-medium text-center display-6" data-aos="flip-up" data-aos-duration="700">Phrase
+        <p class="linear-gradient-text py-5 fw-medium text-center display-6" data-aos="flip-up" data-aos-duration="700">Phrase
             Category 1: Self-Doubt and Weak Communication</p>
     </div>
     <div class="container">
@@ -189,7 +196,7 @@
         </p>
     </div>
     <section>
-        <p class="linear-gradient-text display-6 fw-semibold text-center">Phrase Category 2: Discrediting Your Skills
+        <p class="linear-gradient-text py-5 display-6 fw-semibold text-center">Phrase Category 2: Discrediting Your Skills
         </p>
     </section>
     <div class="container">
@@ -213,7 +220,7 @@
             showcase your past achievements and explain how they have prepared you for future challenges.
     </div>
     <section>
-        <p class="linear-gradient-text fw-semibold text-center display-6">Phrase Category 3: Lack of Confidence and
+        <p class="linear-gradient-text py-5 fw-semibold text-center display-6">Phrase Category 3: Lack of Confidence and
             Initiative</p>
     </section>
     <div class="container">
@@ -250,7 +257,7 @@
             experiences.</p>
     </div>
     <div>
-        <p class="linear-gradient-text fw-semibold display-6 text-center">Alternative Approaches: Power Words and
+        <p class="linear-gradient-text py-5 fw-semibold display-6 text-center">Alternative Approaches: Power Words and
             Phrases</p>
     </div>
     <div class="container">
@@ -275,7 +282,7 @@
         </p>
     </div>
     <div class="container">
-        <p class="linear-gradient-text text-center text-capitalize display-6 fw-semibold" data-aos="flip-left"
+        <p class="linear-gradient-text py-5 text-center text-capitalize display-6 fw-semibold" data-aos="flip-left"
             data-aos-duration="700">Gaining Confidence and Assertiveness</p>
         <p class="text-1" data-aos="fade-up" data-aos-duration="670">To leave a lasting impression during an interview,
             it is essential to exude confidence, assertiveness, and
@@ -293,7 +300,7 @@
         </p>
     </div>
     <section>
-        <p class="linear-gradient-text fw-semibold display-6 text-center" data-aos="fade-up" data-aos-duration="500">
+        <p class="linear-gradient-text py-5 fw-semibold display-6 text-center" data-aos="fade-up" data-aos-duration="500">
             Practicing
             Effective Communication</p>
     </section>
@@ -318,7 +325,7 @@
             skills.</p>
     </div>
     <div class="container">
-        <p class="linear-gradient-text text-center text-capitalize fw-semibold display-6" data-aos="flip-left"
+        <p class="linear-gradient-text py-5 text-center text-capitalize fw-semibold display-6" data-aos="flip-left"
             data-aos-duration="600">Handling Difficult Questions with Grace</p>
         <p class="text-1" data-aos="fade-up" data-aos-duration="800">Interviewers often ask challenging questions to
             assess your ability to handle adversity. Here's how you can address specific types of difficult questions:
@@ -335,7 +342,7 @@
         </p>
     </div>
     <section>
-        <p class="linear-gradient-text text-center text-capitalize fw-semibold display-6" data-aos="flip-left"
+        <p class="linear-gradient-text py-5 text-center text-capitalize fw-semibold display-6" data-aos="flip-left"
             data-aos-duration="600">Summary - Crafting an Impactful
             Interview</p>
     </section>
@@ -346,7 +353,7 @@
             problem-solving skills will leave a lasting impression on potential employers.</p>
     </div>
     <div class="container">
-        <p class="linear-gradient-text text-center fw-semibold display-6" data-aos="flip-right" data-aos-duration="600">
+        <p class="linear-gradient-text py-5 text-center fw-semibold display-6" data-aos="flip-right" data-aos-duration="600">
             FAQs - Cracking the Interview Code</p>
         <p class="fw-medium">How should I deal with difficult interviewers?</p>
         <p class="text-1">Handling difficult interviewers requires patience and adaptability. Maintain professionalism,
@@ -369,14 +376,24 @@
             interview endeavors!
         </p>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="./assets/js/footer.js"></script>
+  <!-- footer starts------------ -->
+ 
+  <div id="share-blog" class="" ></div>
+  <div id="footerElement"></div>
+ </div>
+<!-- End Footer -->
+<!-- Scripts -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./../swiper/swiper-bundle.min.js"></script>
+<script src="../assets/js/navbar.js"></script>
+<script src="../assets/js/shortcut.js"></script>
+<script src="../assets/js/finisher-header.es5.min.js" type="text/javascript"></script>
+<script src="../assets/js/contact.js"></script>
+<script src="./../assets/js/footer.js"></script>
+<script src="./../assets/js/script.js"></script>
 </body>
+
 </html>
