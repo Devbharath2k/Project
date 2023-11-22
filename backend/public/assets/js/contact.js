@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if(apiData.status === 201){
                     alert("Form submitted successfully!");
+                    output.classList.remove("text-danger");
                     output.classList.add("text-success");
                     output.textContent = "Form submitted successfully!";
                     form.reset();
