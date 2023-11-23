@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="col-lg-3 col-md-6 footer-links d-flex" data-aos="fade-up" data-aos-duration="800">
                 <i class="bi bi-telephone icon"></i>
                 <div>
-                    <h4>calls</h4>
+                    <h4>Connect</h4>
                     <p>
                         <strong>Phone:</strong> 78457 21438
                         <br>
@@ -106,5 +106,9 @@ $(document).ready(function () {
     if ($('.coursesList').length > 0) {
         // If yes, change the href attribute value for the anchor tags in the footer element
         $('footer .courses-links a').attr('href', '../../courses.html');
+    }
+    else if ($('.individualBlogs').length > 0) {
+        // If yes, change the href attribute value for the anchor tags in the footer element
+        $('footer .courses-links a').attr('href', '../courses.html');
     }
 });
