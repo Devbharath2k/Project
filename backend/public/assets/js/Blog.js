@@ -114,28 +114,25 @@
     </div>`,
             // Add more content here
         ];
-
         let currentContentIndex = 0;
         const itemsToShow = 2;
-
+    
         const showMoreContent = () => {
             for (let i = 0; i < itemsToShow; i++) {
                 if (currentContentIndex < additionalContent.length) {
                     const content = additionalContent[currentContentIndex];
-                    const contentElement = document.createElement("div");
-                    contentElement.innerHTML = content;
-                    loadMoreSection.appendChild(additionalContent);
+                    loadMoreSection.insertAdjacentHTML('beforeend', content); // Insert content at the end of loadMoreSection
                     currentContentIndex++;
                 } else {
                     loadMoreBtn.style.display = "none"; // Hide button when all content is loaded
                     break;
                 }
             }
+            AOS.refresh();
+    
         };
-        // const showMoreContent = () => {
-        //     loadMoreSection.innerHTML = additionalContent
-        // };
-
+    
         loadMoreBtn.addEventListener("click", showMoreContent);
     });
-
+    
+    
