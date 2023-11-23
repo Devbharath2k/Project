@@ -112,7 +112,7 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 `
-    ;
+     ;
 
 var existingDiv = document.getElementById('footerElement');
 existingDiv.insertAdjacentHTML('afterend', htmlCode);
@@ -125,6 +125,7 @@ $(document).ready(function () {
         console.log("run")
         // If yes, change the href attribute value for the anchor tags in the footer element
         $('.popup').attr('href', '../placement.html');
+        $('.copyright a').attr('href', '../privacyPolicy.html');
     }
 
 });

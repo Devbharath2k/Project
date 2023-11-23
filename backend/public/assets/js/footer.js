@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://www.instagram.com/atitchennai/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
                     <a href=" https://www.youtube.com/@ATITchennai" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
                     <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-                   
                 </div>
             </div>
 
@@ -83,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>ATIT</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>ATIT</span></strong>. All Rights Reserved. <a href="./privacyPolicy.html" class = "position-relative">Privacy policy</a>
         </div>
 
     </div>
@@ -106,9 +105,11 @@ $(document).ready(function () {
     if ($('.coursesList').length > 0) {
         // If yes, change the href attribute value for the anchor tags in the footer element
         $('footer .courses-links a').attr('href', '../../courses.html');
+        $('.copyright a').attr('href', '../../privacyPolicy.html');
     }
     else if ($('.individualBlogs').length > 0) {
         // If yes, change the href attribute value for the anchor tags in the footer element
         $('footer .courses-links a').attr('href', '../courses.html');
+        $('.copyright a').attr('href', '../privacyPolicy.html');
     }
 });
