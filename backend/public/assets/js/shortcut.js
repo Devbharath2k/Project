@@ -112,15 +112,24 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 `
-    ;
+     ;
 
-console.log("help")
-// Get a reference to the existing div
 var existingDiv = document.getElementById('footerElement');
 existingDiv.insertAdjacentHTML('afterend', htmlCode);
-// $(htmlCode).insertAfter(existingDiv)
-// Insert the HTML code after the existing div
-// existingDiv.insertAdjacentElement('afterend', htmlCode);
+
+
+$(document).ready(function () {
+    // Change the href to a new value
+    // $("footer .courses-links a").attr("href", "one");
+    if ($('.individualBlogs').length > 0) {
+        console.log("run")
+        // If yes, change the href attribute value for the anchor tags in the footer element
+        $('.popup').attr('href', '../placement.html');
+        $('.copyright a').attr('href', '../privacyPolicy.html');
+    }
+
+});
+
 AOS.init();
 
 

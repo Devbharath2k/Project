@@ -331,9 +331,7 @@
 
 .popup span {
     display: inline-block;
-    opacity: 0;
-    transform: scale(0);
-    animation: letterAnimation 4s forwards infinite;
+    animation: letterAnimation 2s  forwards infinite;
     font-weight: 600;
 }
 
@@ -356,22 +354,28 @@
 
 @keyframes letterAnimation {
     0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-    30% {
         opacity: 1;
         transform: scale(1.2);
     }
 
-    50% {
+    40% {
         opacity: 1;
-        transform: scale(1.2);
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1);
     }
 
     100% {
         opacity: 1;
-        transform: scale(0);
+        transform: scale(1.2);
     }
 }
 
