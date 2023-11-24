@@ -15,7 +15,7 @@ app.use(cors());
 
 
 mongoose
-  .connect(`mongodb://127.0.0.1:27017/deva`, {
+  .connect(`mongodb+srv://admin:${process.env.password}@atlascluster.lllsis7.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })

@@ -520,7 +520,7 @@ Jegan Cordinate dev */
     cursor: pointer;
     height: 100px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -1313,10 +1313,12 @@ vertical-align: middle;
     color: #fff;
 }
 
-.footer .footer-links {
+/* .footer .footer-links {
     margin-bottom: 30px;
+} */
+.footer .address a{
+    color: #ffffffb3;
 }
-
 .footer .footer-links ul {
     list-style: none;
     padding: 0;
@@ -1358,7 +1360,7 @@ vertical-align: middle;
     transition: 0.3s;
 }
 
-.footer .social-links a:hover {
+.footer a:hover {
     color: var(--primary-color);
     border-color: var(--primary-color);
 }

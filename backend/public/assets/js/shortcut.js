@@ -122,10 +122,11 @@ $(document).ready(function () {
     // Change the href to a new value
     // $("footer .courses-links a").attr("href", "one");
     if ($('.individualBlogs').length > 0) {
-        console.log("run")
-        // If yes, change the href attribute value for the anchor tags in the footer element
         $('.popup').attr('href', '../placement.html');
         $('.copyright a').attr('href', '../privacyPolicy.html');
+    }else if ($('.coursesList').length > 0) {
+        $('.popup').attr('href', '../../placement.html');
+        $('.copyright a').attr('href', '../../privacyPolicy.html');
     }
 
 });
