@@ -38,10 +38,10 @@ $(document).ready(function () {
     var rocketClicked = false;
 
     $('#rocket-container').click(function () {
+        
         if (rocketClicked) {
             return; // Ignore clicks while the animation is running
         }
-
         rocketClicked = true; // Set the flag to true to prevent additional clicks
 
         $('html, body').stop().animate({ scrollTop: 0 }, 'fast', function () {
@@ -60,6 +60,7 @@ $(document).ready(function () {
                     rocket.css({
                         'bottom': '10px',
                         'transform': 'translate(0)',
+                        'display':'none'
                     });
 
                     // Re-enable the click event
@@ -68,6 +69,12 @@ $(document).ready(function () {
             });
         });
     });
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > $(window).height()/2) {
+        $('#rocket-container').css('display', 'block');
+    }
 });
 
 
