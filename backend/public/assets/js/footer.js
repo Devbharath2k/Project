@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links d-flex" data-aos="fade-up" data-aos-duration="900">
-                <i class="bi bi-clock icon"></i>
+                <i class="bi bi-book-half"></i>
                 <div class="text-decoration-none">
                     <h4>Skills</h4>
                     <div class="text-decoration-none courses-links">
