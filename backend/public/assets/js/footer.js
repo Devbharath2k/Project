@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>ATIT</span></strong>. All Rights Reserved. <a href="./privacyPolicy.html" class = "position-relative">Privacy policy</a>
+            Copyrights  &copy; <strong><span>ATIT. </span></strong>All Rights Reserved. <a href="./privacyPolicy.html" class = "d-block d-md-inline position-relative">Privacy policy</a>
         </div>
 
     </div>
@@ -102,14 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready(function () {
     // Change the href to a new value
     // $("footer .courses-links a").attr("href", "one");
+    var link = document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'icon';
+    link.href = './assets/imagesandvectors/vectors/logo.png'; 
+    
     if ($('.coursesList').length > 0) {
-        // If yes, change the href attribute value for the anchor tags in the footer element
+      
         $('footer .courses-links a').attr('href', '../../courses.html');
         $('.copyright a').attr('href', '../../privacyPolicy.html');
+             link.href = '../../assets/imagesandvectors/vectors/logo.png';
     }
     else if ($('.individualBlogs').length > 0) {
-        // If yes, change the href attribute value for the anchor tags in the footer element
         $('footer .courses-links a').attr('href', '../courses.html');
         $('.copyright a').attr('href', '../privacyPolicy.html');
-    }
+             link.href = '../assets/imagesandvectors/vectors/logo.png'; 
+        }
+    document.head.appendChild(link);
 });

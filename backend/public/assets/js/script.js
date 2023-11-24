@@ -260,3 +260,7 @@ if (getCourseList == 1) {
     $('.course .tab-content .tab-pane').removeClass('active')
     $('.course .tab-content .tab-pane:nth-child(1)').addClass('active')
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    
+});
