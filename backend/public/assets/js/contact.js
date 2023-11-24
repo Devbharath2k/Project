@@ -14,6 +14,32 @@ document.addEventListener("DOMContentLoaded", function () {
             output.textContent = "All fields are required!";
             return;
         }
+        
+        // Validation for name (only alphabetical characters)
+        const nameRegex = /^[a-zA-Z]+$/;
+        if (!nameRegex.test(fname)) {
+            output.classList.add("text-danger");
+            output.textContent = "Invalid name. Please use only letters.";
+            return;
+        }
+
+        // Validation for email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            output.classList.add("text-danger");
+            output.textContent = "Invalid email address.";
+            return;
+        }
+
+        // Validation for phone number (allow only digits, optional hyphens or spaces)
+     
+        const phoneRegex = /^\d{10}([- ]?\d+)*$/;
+        if (!phoneRegex.test(phone)) {
+            output.classList.add("text-danger");
+            output.textContent = "Phone.No should be 10 digit.";
+            return;
+        }
+
 
         fetch("http://localhost:4000/api/post", {
             method: "POST",
