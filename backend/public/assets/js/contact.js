@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
     const output = document.getElementById("output");
-
+ 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const phone = document.getElementById("phone").value;
         const message = document.getElementById("message").value;
-
+        console.log("fname",fname,email,phone,message)
         if (fname === "" || email === "" || phone === "") {
             output.textContent = "All fields are required!";
             return;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const phoneRegex = /^\d{10}([- ]?\d+)*$/;
         if (!phoneRegex.test(phone)) {
             output.classList.add("text-danger");
-            output.textContent = "Phone.No should be 10 digit.";
+            output.textContent = "Phone.No should be 10 digits.";
             return;
         }
 
