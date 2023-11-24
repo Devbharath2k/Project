@@ -10,7 +10,7 @@
             <div class="box rounded-5 ">
                 <img src="./assets/img/Blog/Blog3.png">
                 <div class="box-content">                           
-                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT Career</h2>                   
+                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT Jobs</h2>                   
                 </div>
             </div>
             </a>
@@ -23,7 +23,7 @@
             <div class="box rounded-5 ">
                 <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
-                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  searching</h2>                   
+                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
                 </div>
             </div>
             </a>
@@ -36,7 +36,7 @@
             <div class="box rounded-5 ">
                 <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
-                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  job race</h2>                   
+                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category"> IT Jobs</h2>                   
                 </div>
             </div>
             </a>
@@ -49,7 +49,7 @@
             <div class="box rounded-5 ">
                 <img src="./assets/img/Blog/Blog3.png">
                 <div class="box-content">                           
-                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  clearGoal</h2>                   
+                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Others</h2>                   
                 </div>
             </div>
             </a>
@@ -62,7 +62,7 @@
             <div class="box rounded-5 ">
                 <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
-                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT job</h2>                   
+                   <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT Jobs</h2>                   
                 </div>
             </div>
             </a>
@@ -75,7 +75,7 @@
         <div class="box rounded-5 ">
             <img src="./assets/img/Blog/Blog3.png">
             <div class="box-content">                           
-               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   Complete Giude</h2>                   
+               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
             </div>
         </div>
         </a>
@@ -89,7 +89,7 @@
         <div class="box rounded-5 ">
             <img src="./assets/img/Blog/Blog2.png">
             <div class="box-content">                           
-               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   dynamic duo</h2>                   
+               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">IT Jobs</h2>                   
             </div>
         </div>
         </a>
@@ -103,7 +103,7 @@
         <div class="box rounded-5 ">
             <img src="./assets/img/Blog/Blog3.png">
             <div class="box-content">                           
-               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   Mastering_ Technical</h2>                   
+               <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
             </div>
         </div>
         </a>
