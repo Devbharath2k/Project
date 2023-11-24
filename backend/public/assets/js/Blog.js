@@ -8,7 +8,7 @@
             `<div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/itCareer.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/blogimg.jpg">
+                <img src="./assets/img/Blog/Blog3.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT Career</h2>                   
                 </div>
@@ -21,7 +21,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/Searching.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/blogimg.jpg">
+                <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  searching</h2>                   
                 </div>
@@ -34,7 +34,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/jobRace.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/blogimg.jpg">
+                <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  job race</h2>                   
                 </div>
@@ -47,7 +47,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/clearGoal.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/blogimg.jpg">
+                <img src="./assets/img/Blog/Blog3.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  clearGoal</h2>                   
                 </div>
@@ -60,7 +60,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/it_Job.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/blogimg.jpg">
+                <img src="./assets/img/Blog/Blog2.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT job</h2>                   
                 </div>
@@ -73,7 +73,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
         <a href="./Blog-page/completeGuide.html" class="">
         <div class="box rounded-5 ">
-            <img src="./assets/img/Blog/blogimg.jpg">
+            <img src="./assets/img/Blog/Blog3.png">
             <div class="box-content">                           
                <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   Complete Giude</h2>                   
             </div>
@@ -87,7 +87,7 @@
     <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
         <a href="./Blog-page/dynamic_duo.html" class="">
         <div class="box rounded-5 ">
-            <img src="./assets/img/Blog/blogimg.jpg">
+            <img src="./assets/img/Blog/Blog2.png">
             <div class="box-content">                           
                <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   dynamic duo</h2>                   
             </div>
@@ -101,7 +101,7 @@
     <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
         <a href="./Blog-page/mastering_technical.html" class="">
         <div class="box rounded-5 ">
-            <img src="./assets/img/Blog/blogimg.jpg">
+            <img src="./assets/img/Blog/Blog3.png">
             <div class="box-content">                           
                <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">   Mastering_ Technical</h2>                   
             </div>
