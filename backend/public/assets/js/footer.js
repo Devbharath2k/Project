@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </div>
 
-        <div class="row gy-3 mt-4">
+        <div class="row gy-3 mt-3">
             
             <div class="col-lg-3 col-md-6 d-flex address" data-aos="fade-up" data-aos-duration="700">
             <a href="https://maps.app.goo.gl/Cx14du1boxQ4R8MY9" target="_blank" class="map"><i class="bi bi-geo-alt icon"></i></a>
