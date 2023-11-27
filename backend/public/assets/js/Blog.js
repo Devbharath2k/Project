@@ -8,7 +8,7 @@
             `<div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/itCareer.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/Blog3.png">
+                <img src="./assets/img/Blog/Blog5.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">  IT Jobs</h2>                   
                 </div>
@@ -21,7 +21,7 @@
         <div class="col-md-4 pb-5" data-aos="fade-right" data-aos-duration="900">
             <a href="./Blog-page/Searching.html" class="">
             <div class="box rounded-5 ">
-                <img src="./assets/img/Blog/Blog2.png">
+                <img src="./assets/img/Blog/Blog8.png">
                 <div class="box-content">                           
                    <h2 class="text-decoration-none text-dark mt-3 ms-2 blog-category">Interviews</h2>                   
                 </div>
