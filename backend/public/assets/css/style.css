@@ -1888,6 +1888,9 @@ form  .text{
 .form-floating>.form-control:not(:placeholder-shown)~label{
     color: #0e5483;
 }
+input {
+    text-transform: none;
+}
 input:-webkit-autofill { 
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     /* -webkit-text-fill-color: green; */
