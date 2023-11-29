@@ -20,6 +20,10 @@ body,
     scroll-behavior: smooth;
 }
 
+a, a *, dotlottie-player, .atit-card-1 *, button , button * {
+    cursor: pointer !important;
+}
+
 .text-1 {
     font-size: 15px;
     line-height: 2;
@@ -49,7 +53,8 @@ img {
     --fam2: 'Jost', sans-serif;
 }
 
-.bg-primary, #bg-primary {
+.bg-primary,
+#bg-primary {
     background-color: var(--primary-color) !important;
 }
 
@@ -136,7 +141,7 @@ img {
     height: 500px !important;
 }
 
-.h-250px{
+.h-250px {
     height: 180px;
 }
 
@@ -500,6 +505,7 @@ img {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent;
 }
+
 /* created by
 
 Nivetha
@@ -829,7 +835,14 @@ vertical-align: middle;
     background-color: #f7851d;
     color: whitesmoke;
 
-  }
+}
+
+.btn.primary-btn:hover {
+    background-color: transparent !important; /* Set background color to transparent on hover */
+    color: #f7851d !important; /* Set text color to orange on hover */
+}
+
+
 .atit-box .atit-card-1 {
     border: none;
     background: 0 0;
@@ -1151,7 +1164,7 @@ vertical-align: middle;
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-    padding: 0 0 80px 0 ;
+    padding: 0 0 80px 0;
     /* background: url("pattern.svg") center fixed no-repeat; */
     background-size: cover;
     position: relative;
@@ -1316,9 +1329,10 @@ vertical-align: middle;
 /* .footer .footer-links {
     margin-bottom: 30px;
 } */
-.footer .address a{
+.footer .address a {
     color: #ffffffb3;
 }
+
 .footer .footer-links ul {
     list-style: none;
     padding: 0;
@@ -1844,25 +1858,29 @@ footer a:hover {
 
 /* form------nivi starts */
 
-form .form-floating{
+form .form-floating {
     margin: 10px;
 }
-form  .text{
+
+form .text {
     color: red;
 }
-.form-floating input{
+
+.form-floating input {
     border: none;
     border-bottom: 2px solid var(--primary-color);
-    border-radius:0px;
+    border-radius: 0px;
     background-color: #fff !important;
 }
-.form-floating textarea{
+
+.form-floating textarea {
     border: none;
     border-bottom: 2px solid var(--primary-color);
-    border-radius:0px;
+    border-radius: 0px;
     resize: none;
 
 }
+
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
@@ -1873,47 +1891,54 @@ form  .text{
 
 }
 
-.form-floating>.form-control:focus~label{
+.form-floating>.form-control:focus~label {
     color: #0e5483;
 }
-#contactForm button{
-        background-color: var(--primary-color);
-        border-color:var(--primary-color) ;
+
+#contactForm button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
-#contactForm button:hover{
+
+#contactForm button:hover {
     background-color: white;
-    border-color:var(--primary-color) ;
+    border-color: var(--primary-color);
     color: var(--primary-color);
 }
-.form-floating>.form-control:not(:placeholder-shown)~label{
+
+.form-floating>.form-control:not(:placeholder-shown)~label {
     color: #0e5483;
 }
+
 input {
     text-transform: none;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
-input:-webkit-autofill { 
+
+input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     /* -webkit-text-fill-color: green; */
-  }
-  input:-webkit-autofill:focus { 
+}
+
+input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     /* -webkit-text-fill-color: green; */
-  }
-  
+}
+
 /* form------nivi ends */
 .individualBlogs .share {
-    background-color: #1bbb61;
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+   
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
 }
+
