@@ -1,31 +1,28 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
-const PORT = process.env.PORT || 4000;
+const routers =require("./Router/router.js");
+const dotenv = require('dotenv');
+
 const app = express();
-const MoinPlug =require("./Router/router.js");
-require('dotenv').config();
+dotenv.config();
 
+const PORT = process.env.PORT;
+const MONGODB_URI = process.env.MONGODB_URI;
 
-app.use(express.static('public'));
 app.use(express.json());
-app.use(MoinPlug)
 app.use(cors());
+app.use(routers)
 
-
-
-mongoose
-  .connect(`mongodb+srv://admin:${process.env.password}@atlascluster.lllsis7.mongodb.net/?retryWrites=true&w=majority`, {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
-    console.log("Connected to MongoDB");
     app.listen(PORT, () => {
-      console.log("Server is listening on port " + PORT);
-    });
+        console.log(`Server is running on port ${PORT}`);
+      });
   })
-  .catch(error => {
-    console.error("Error connecting to MongoDB:", error);
+  .catch((err) => {
+    console.error('Error connecting to MongoDB', err);
   });
-
