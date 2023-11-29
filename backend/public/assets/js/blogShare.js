@@ -31,7 +31,7 @@ const shareBlog = `
 
     var currentURL = window.location.href;
 
-    var whatsappLink = 'whatsapp://send?text=' + encodeURIComponent(currentURL);
+    var whatsappLink = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(currentURL);
     $('#whatsapp-share').attr('href', whatsappLink);
     $('#whatsapp-share').on('click', function (e) {
         e.preventDefault();

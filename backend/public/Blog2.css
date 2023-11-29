@@ -276,3 +276,15 @@ img {
 .blog-category{
     font-size: 26px;
 }
+
+
+.btn.primary-btn {
+    background-color: #f7851d;
+    color: whitesmoke;
+   
+}
+
+.btn.primary-btn:hover {
+    background-color: transparent !important; 
+    color: #f7851d !important;
+}
