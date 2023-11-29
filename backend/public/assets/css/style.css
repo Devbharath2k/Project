@@ -1937,8 +1937,10 @@ input:-webkit-autofill:focus {
 }
 
 /* form------nivi ends */
-.individualBlogs .share {
-   
-    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-}
+.individualBlogs .share #whatsapp-share:hover{
+   color: #00be07 !important
+   }
+   .individualBlogs .share #instagram-share:hover{
+    color: #f2051c !important
+    }
 
