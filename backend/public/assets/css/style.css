@@ -20,6 +20,10 @@ body,
     scroll-behavior: smooth;
 }
 
+a, a *, dotlottie-player, .atit-card-1 *, button , button * {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='29' fill='none' viewBox='0 0 28 29'%3E%3Cpath fill='%23fff' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.25' d='M6.84 21.83c-.47-.6-1.05-1.82-2.07-3.34-.58-.83-2.01-2.41-2.45-3.23a2.1 2.1 0 0 1-.25-1.67 2.2 2.2 0 0 1 2.39-1.67c.85.18 1.63.6 2.25 1.2.43.41.82.85 1.18 1.32.27.34.33.47.63.85.3.39.5.77.35.2-.11-.83-.31-2.23-.6-3.48-.21-.95-.26-1.1-.46-1.82s-.32-1.32-.54-2.13c-.2-.8-.35-1.62-.46-2.44a4.7 4.7 0 0 1 .43-3.08c.58-.55 1.44-.7 2.17-.37a4.4 4.4 0 0 1 1.57 2.17c.43 1.07.72 2.19.86 3.33.27 1.67.79 4.1.8 4.6 0-.61-.11-1.91 0-2.5.12-.6.54-1.1 1.12-1.33.5-.15 1.02-.19 1.53-.1.52.1.98.4 1.29.83.38.98.6 2 .63 3.05.04-.91.2-1.82.47-2.7.28-.39.68-.67 1.15-.8.55-.1 1.11-.1 1.66 0 .46.15.85.44 1.14.82.35.88.56 1.82.63 2.77 0 .23.12-.65.48-1.24a1.67 1.67 0 1 1 3.17 1.07v3.77c-.06.97-.2 1.94-.4 2.9-.29.85-.7 1.65-1.2 2.38-.8.9-1.48 1.92-1.98 3.02a6.67 6.67 0 0 0 .03 3.2c-.68.07-1.37.07-2.05 0-.65-.1-1.45-1.4-1.67-1.8a.63.63 0 0 0-1.13 0c-.37.64-1.18 1.79-1.75 1.85-1.12.14-3.42 0-5.23 0 0 0 .3-1.66-.39-2.27-.68-.6-1.38-1.3-1.9-1.76l-1.4-1.6Z' clip-rule='evenodd'/%3E%3Cpath fill='%23000' d='M20.65 22.3v-6.24c0-.38-.31-.68-.7-.68-.37 0-.68.3-.68.68v6.23c0 .38.3.68.69.68.38 0 .69-.3.69-.68ZM17.2 22.3l-.04-6.25a.67.67 0 1 0-1.34.01l.04 6.24a.67.67 0 1 0 1.34 0ZM12.37 16.07l.04 6.22c0 .38.3.68.67.68.37 0 .67-.3.67-.68l-.04-6.23c0-.38-.3-.68-.67-.68-.37 0-.67.31-.67.69Z'/%3E%3C/svg%3E"), auto !important;
+}
+
 .text-1 {
     font-size: 15px;
     line-height: 2;
@@ -49,7 +53,8 @@ img {
     --fam2: 'Jost', sans-serif;
 }
 
-.bg-primary, #bg-primary {
+.bg-primary,
+#bg-primary {
     background-color: var(--primary-color) !important;
 }
 
@@ -136,7 +141,7 @@ img {
     height: 500px !important;
 }
 
-.h-250px{
+.h-250px {
     height: 180px;
 }
 
@@ -500,6 +505,7 @@ img {
     background-image: linear-gradient(to right, #ff0000, #00ff00);
     color: transparent;
 }
+
 /* created by
 
 Nivetha
@@ -829,7 +835,8 @@ vertical-align: middle;
     background-color: #f7851d;
     color: whitesmoke;
 
-  }
+}
+
 .atit-box .atit-card-1 {
     border: none;
     background: 0 0;
@@ -1151,7 +1158,7 @@ vertical-align: middle;
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-    padding: 0 0 80px 0 ;
+    padding: 0 0 80px 0;
     /* background: url("pattern.svg") center fixed no-repeat; */
     background-size: cover;
     position: relative;
@@ -1316,9 +1323,10 @@ vertical-align: middle;
 /* .footer .footer-links {
     margin-bottom: 30px;
 } */
-.footer .address a{
+.footer .address a {
     color: #ffffffb3;
 }
+
 .footer .footer-links ul {
     list-style: none;
     padding: 0;
@@ -1844,25 +1852,29 @@ footer a:hover {
 
 /* form------nivi starts */
 
-form .form-floating{
+form .form-floating {
     margin: 10px;
 }
-form  .text{
+
+form .text {
     color: red;
 }
-.form-floating input{
+
+.form-floating input {
     border: none;
     border-bottom: 2px solid var(--primary-color);
-    border-radius:0px;
+    border-radius: 0px;
     background-color: #fff !important;
 }
-.form-floating textarea{
+
+.form-floating textarea {
     border: none;
     border-bottom: 2px solid var(--primary-color);
-    border-radius:0px;
+    border-radius: 0px;
     resize: none;
 
 }
+
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
@@ -1873,44 +1885,51 @@ form  .text{
 
 }
 
-.form-floating>.form-control:focus~label{
+.form-floating>.form-control:focus~label {
     color: #0e5483;
 }
-#contactForm button{
-        background-color: var(--primary-color);
-        border-color:var(--primary-color) ;
+
+#contactForm button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
-#contactForm button:hover{
+
+#contactForm button:hover {
     background-color: white;
-    border-color:var(--primary-color) ;
+    border-color: var(--primary-color);
     color: var(--primary-color);
 }
-.form-floating>.form-control:not(:placeholder-shown)~label{
+
+.form-floating>.form-control:not(:placeholder-shown)~label {
     color: #0e5483;
 }
+
 input {
     text-transform: none;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
-input:-webkit-autofill { 
+
+input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     /* -webkit-text-fill-color: green; */
-  }
-  input:-webkit-autofill:focus { 
+}
+
+input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     /* -webkit-text-fill-color: green; */
-  }
-  
+}
+
 /* form------nivi ends */
 .individualBlogs .share {
     background-color: #1bbb61;
